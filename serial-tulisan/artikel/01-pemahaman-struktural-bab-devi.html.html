@@ -1,0 +1,2047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+/*# sourceURL=webpack://./node_modules/github-markdown-css/github-markdown.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9naXRodWItbWFya2Rvd24tY3NzL2dpdGh1Yi1tYXJrZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBMEI7RUFDMUIsMkRBQXF0RTtBQUN2dEU7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTs7Ozs7O0VBTUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7O0FBRUE7Ozs7OztFQU1FLHFCQUFxQjtBQUN2Qjs7QUFFQTs7Ozs7O0VBTUUsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLDhCQUE4QjtFQUM5QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGtJQUFrSTtFQUNsSSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7Ozs7OztFQU9FLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7OztFQUdFLGNBQWM7RUFDZCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFD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 */
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*# sourceURL=webpack://./node_modules/prismjs/themes/prism.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9wcmlzbWpzL3RoZW1lcy9wcmlzbS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7RUFJRTs7QUFFRjs7Q0FFQyxZQUFZO0NBQ1osZ0JBQWdCO0NBQ2hCLHdCQUF3QjtDQUN4QixzRUFBc0U7Q0FDdEUsY0FBYztDQUNkLGdCQUFnQjtDQUNoQixnQkFBZ0I7Q0FDaEIsb0JBQW9CO0NBQ3BCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsZ0JBQWdCOztDQUVoQixnQkFBZ0I7Q0FDaEIsY0FBYztDQUNkLFdBQVc7O0NBRVgscUJBQXFCO0NBQ3JCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsYUFBYTtBQUNkOztBQUVBOztDQUVDLGlCQUFpQjtDQUNqQixtQkFBbUI7QUFDcEI7O0FBRUE7O0NBRUMsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDOztFQUVDLGlCQUFpQjtDQUNsQjtBQUNEOztBQUVBLGdCQUFnQjtBQUNoQjtDQUNDLFlBQVk7Q0FDWixjQUFjO0NBQ2QsY0FBYztBQUNmOztBQUVBOztDQUVDLG1CQUFtQjtBQUNwQjs7QUFFQSxnQkFBZ0I7QUFDaEI7Q0FDQyxhQUFhO0NBQ2IsbUJBQW1CO0NBQ25CLG1CQUFtQjtBQUNwQjs7QUFFQTs7OztDQUlDLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTs7Ozs7OztDQU9DLFdBQVc7QUFDWjs7QUFFQTs7Ozs7O0NBTUMsV0FBVztBQUNaOztBQUVBOzs7OztDQUtDLGNBQWM7Q0FDZCxvRUFBb0U7Q0FDcEUsaUNBQWlDO0FBQ2xDOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsY0FBYztBQUNmOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxZQUFZO0FBQ2IiLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+
+/*# sourceURL=webpack://./src/muya/lib/assets/styles/exportStyle.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9tdXlhL2xpYi9hc3NldHMvc3R5bGVzL2V4cG9ydFN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFNBQVM7RUFDVCxVQUFVO0VBQ1YscUJBQXFCO0FBQ3ZCOztBQUVBOztFQUVFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBOzs7RUFHRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxPQUFPO0VBQ1AsY0FBYztFQUNkLGNBQWM7RUFDZCwrQkFBK0I7QUFDakMiLCJzb3VyY2VSb290IjoiIn0= */</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <article class="markdown-body"><h1 class="atx" id="pemahaman-struktural-bab-andquotthe-construction-of-the-authoritarianandquot">PEMAHAMAN STRUKTURAL BAB "THE CONSTRUCTION OF THE AUTHORITARIAN"</h1>
+<h1 class="atx" id="a-pola-pengorganisasian-utama-dalam-andquotthe-construction-of-the-authoritarianandquot">A. Pola Pengorganisasian Utama dalam "The Construction of the Authoritarian"</h1>
+<p>Teks "The Construction of the Authoritarian" menggunakan pola pengorganisasian argumentatif-konseptual sebagai pola utama, yang didukung oleh struktur tematik dan diskursif yang kompleks. Teks ini merupakan bab kelima dari sebuah karya yang lebih besar yang membahas konsep otoritarianisme dalam interpretasi teks keagamaan, khususnya dalam konteks Islam.</p>
+<h2 class="atx" id="1-struktur-argumentatif-konseptual">1. Struktur Argumentatif-Konseptual</h2>
+<p>Penulis membangun argumennya secara progresif dengan:</p>
+<ol>
+<li>Mendefinisikan konsep inti (otoritarianisme)</li>
+<li>Mengembangkan kerangka teoretis</li>
+<li>Menyajikan prinsip-prinsip dan klaim-klaim</li>
+<li>Memberikan contoh dan ilustrasi untuk memperkuat argumennya</li>
+</ol>
+<p>Pola argumentasi utama dalam teks ini bersifat deduktif-induktif, dimana penulis:</p>
+<ul>
+<li>Dimulai dengan pernyataan konseptual tentang otoritarianisme</li>
+<li>Mengembangkan argumen teoretis</li>
+<li>Memberikan contoh konkret</li>
+<li>Kembali ke prinsip-prinsip umum</li>
+</ul>
+<h2 class="atx" id="2-struktur-tematik">2. Struktur Tematik</h2>
+<p>Teks ini diorganisasikan ke dalam beberapa bagian/subtema utama yang ditandai dengan subjudul:</p>
+<ol>
+<li><strong>Pendahuluan tentang otoritarianisme</strong> (halaman 293-294)</li>
+<li><strong>The iron law of authoritarianism</strong> (halaman 295-299)</li>
+<li><strong>Islamic law as a work in movement</strong> (halaman 300-304)</li>
+<li><strong>The fundamentals of religion and burdens of proof</strong> (halaman 309-328)</li>
+<li><strong>Moral objections and authoritarianism</strong> (halaman 329-335)</li>
+</ol>
+<p>Setiap bagian membahas aspek berbeda dari konstruksi otoritarianisme dalam konteks interpretasi hukum Islam.</p>
+<h2 class="atx" id="3-struktur-diskursif">3. Struktur Diskursif</h2>
+<p>Penulis menggunakan pola diskursif yang melibatkan:</p>
+<h3 class="atx" id="a-pengenalan-pandangan-beragam">a. Pengenalan Pandangan Beragam</h3>
+<blockquote>
+<p>"Some scholars have tended to equate speculative or unreasonable interpretations of the text and epistemological authoritarianism, while some have branded the attempt to limit the instabilities of textual meaning or the dependence on authorial intent as the source of meaning, as authoritarian." (hal. 293)</p>
+<p>"Beberapa sarjana cenderung menyamakan interpretasi spekulatif atau tidak masuk akal terhadap teks dan otoritarianisme epistemologis, sementara beberapa telah mencap upaya untuk membatasi ketidakstabilan makna tekstual atau ketergantungan pada maksud pengarang sebagai sumber makna, sebagai otoriter."</p>
+</blockquote>
+<h3 class="atx" id="b-formulasi-posisi-pribadi">b. Formulasi Posisi Pribadi</h3>
+<blockquote>
+<p>"In the Islamic context, I believe that authoritarianism is an act of ultimate lack of self-restraint that involves a fraudulent claim whose natural effect is to usurp the Divine Will." (hal. 293)</p>
+<p>"Dalam konteks Islam, saya percaya bahwa otoritarianisme adalah suatu tindakan kekurangan pengendalian diri yang paling parah yang melibatkan klaim penipuan yang efek alaminya adalah merampas Kehendak Ilahi."</p>
+</blockquote>
+<h3 class="atx" id="c-pengajuan-argumen-teoretis">c. Pengajuan Argumen Teoretis</h3>
+<blockquote>
+<p>"Authoritarianism, then, is the marginalization of the ontological reality of the Divine and the depositing of this Divine Will in the agent so that the agent effectively becomes self-referential." (hal. 293)</p>
+<p>"Otoritarianisme, kemudian, adalah marginalisasi realitas ontologis Ilahi dan penyimpanan Kehendak Ilahi ini dalam agen sehingga agen secara efektif menjadi self-referential (merujuk pada diri sendiri)."</p>
+</blockquote>
+<h3 class="atx" id="d-eksplorasi-implikasi">d. Eksplorasi Implikasi</h3>
+<blockquote>
+<p>"The risk is that the text and the construction of the reader will become one and the same. In this process, the text is rendered subservient to the reader and, effectively, the reader is substituted for the text." (hal. 295)</p>
+<p>"Risikonya adalah bahwa teks dan konstruksi pembaca akan menjadi satu dan sama. Dalam proses ini, teks dibuat tunduk pada pembaca dan, secara efektif, pembaca digantikan untuk teks."</p>
+</blockquote>
+<h3 class="atx" id="e-kasus-konkret-dan-ilustrasi">e. Kasus Konkret dan Ilustrasi</h3>
+<p>Penulis menggunakan contoh-contoh kasus seperti:</p>
+<ul>
+<li>Persoalan jilbab/hijab dalam hukum Islam (hal. 296-299)</li>
+<li>Contoh pernikahan antara wanita Hanafi dan ayah Syafi'i (hal. 329-331)</li>
+<li>Contoh apostasi dalam Islam (hal. 332-335)</li>
+</ul>
+<h2 class="atx" id="4-aspek-dialektis">4. Aspek Dialektis</h2>
+<p>Teks ini juga menunjukkan pola dialektis yang kuat, di mana penulis:</p>
+<ol>
+<li>Menyajikan argumen</li>
+<li>Mengantisipasi sanggahan</li>
+<li>Memberikan tanggapan terhadap sanggahan tersebut</li>
+</ol>
+<p>Contoh:</p>
+<blockquote>
+<p>"Let us assume that I have positioned myself as a person knowledgeable in Islamic law [...] One of those agents asks me whether in Islamic law, a woman has the power to divorce her husband. I respond by saying, according to Islamic law a woman always has the power to divorce her husband for cause or no cause. This response is misleading and dishonest because by asking about Islamic law, and not simply my personal opinion, the agent is implicitly asking about the determination of the system that produced Islamic law." (hal. 297-298)</p>
+<p>"Mari kita asumsikan bahwa saya telah memposisikan diri sebagai orang yang berpengetahuan dalam hukum Islam [...] Salah satu dari agen-agen tersebut bertanya kepada saya apakah dalam hukum Islam, seorang wanita memiliki kekuasaan untuk menceraikan suaminya. Saya menjawab dengan mengatakan, menurut hukum Islam seorang wanita selalu memiliki kekuasaan untuk menceraikan suaminya dengan alasan atau tanpa alasan. Respons ini menyesatkan dan tidak jujur karena dengan bertanya tentang hukum Islam, dan bukan hanya pendapat pribadi saya, agen tersebut secara implisit bertanya tentang penentuan sistem yang menghasilkan hukum Islam."</p>
+</blockquote>
+<h2 class="atx" id="kesimpulan">Kesimpulan</h2>
+<p>Pola pengorganisasian utama dalam teks "The Construction of the Authoritarian" adalah argumentatif-konseptual, didukung oleh struktur tematik yang jelas dan pola diskursif yang kompleks. Penulis membangun argumennya secara bertahap, mulai dari definisi konseptual hingga implikasi praktis, menggunakan campuran penalaran deduktif dan induktif. Struktur ini memungkinkan penulis untuk mengembangkan kerangka teoretis yang kompleks tentang otoritarianisme dalam interpretasi teks keagamaan Islam sambil menjaga koherensi argumentasi dan memperjelas posisinya dalam perdebatan akademis yang lebih luas.</p>
+<h1 class="atx" id="b--konsep-konsep-kunci-dalam-andquotthe-construction-of-the-authoritarianandquot">B.  KONSEP-KONSEP KUNCI DALAM "The Construction of the Authoritarian"</h1>
+<p>Teks "The Construction of the Authoritarian" mengetengahkan beberapa konsep kunci yang saling terhubung membentuk kerangka teoretis tentang otoritarianisme dalam interpretasi teks keagamaan Islam. Berikut adalah pemetaan konsep-konsep utama tersebut dan bagaimana konsep-konsep tersebut saling berhubungan.</p>
+<h2 class="atx" id="1-otoritarianisme">1. Otoritarianisme</h2>
+<p>Konsep sentral dalam teks ini adalah <strong>otoritarianisme</strong> dalam konteks interpretasi teks keagamaan. Penulis mendefinisikannya sebagai:</p>
+<blockquote>
+<p>"In the Islamic context, I believe that authoritarianism is an act of ultimate lack of self-restraint that involves a fraudulent claim whose natural effect is to usurp the Divine Will. Authoritarianism, then, is the marginalization of the ontological reality of the Divine and the depositing of this Divine Will in the agent so that the agent effectively becomes self-referential." (hal. 293)</p>
+<p>"Dalam konteks Islam, saya percaya bahwa otoritarianisme adalah suatu tindakan kekurangan pengendalian diri yang paling parah yang melibatkan klaim penipuan yang efek alaminya adalah merampas Kehendak Ilahi. Otoritarianisme, kemudian, adalah marginalisasi realitas ontologis Ilahi dan penyimpanan Kehendak Ilahi ini dalam agen sehingga agen secara efektif menjadi self-referential (merujuk pada diri sendiri)."</p>
+</blockquote>
+<p>Konsep otoritarianisme ini berhubungan langsung dengan konsep:</p>
+<ul>
+<li>Kehendak Ilahi (Divine Will)</li>
+<li>Agen (interpreter/reader)</li>
+<li>Teks (sebagai representasi instruksi dari Kehendak Ilahi)</li>
+</ul>
+<h2 class="atx" id="2-lima-kontingensi-five-contingencies">2. Lima Kontingensi (Five Contingencies)</h2>
+<p>Penulis menyebutkan <strong>lima kontingensi</strong> sebagai syarat untuk menghindari otoritarianisme:</p>
+<blockquote>
+<p>"The authoritarian tendency is resisted through the implementation of the five contingencies discussed earlier – honesty, self-restraint, diligence, comprehensiveness, and reasonableness. In fact, authoritarianism invariably involves the violation of one or more of the five contingencies." (hal. 295-296)</p>
+<p>"Kecenderungan otoriter dilawan melalui penerapan lima kontingensi yang dibahas sebelumnya – kejujuran, pengendalian diri, ketekunan, komprehensif, dan kelayakan. Sebenarnya, otoritarianisme selalu melibatkan pelanggaran terhadap satu atau lebih dari lima kontingensi tersebut."</p>
+</blockquote>
+<p>Lima kontingensi ini adalah:</p>
+<ol>
+<li><strong>Kejujuran</strong> (honesty)</li>
+<li><strong>Pengendalian diri</strong> (self-restraint)</li>
+<li><strong>Ketekunan</strong> (diligence)</li>
+<li><strong>Komprehensif</strong> (comprehensiveness)</li>
+<li><strong>Kelayakan/masuk akal</strong> (reasonableness)</li>
+</ol>
+<h2 class="atx" id="3-teks-terbuka-open-text">3. Teks Terbuka (Open Text)</h2>
+<p>Konsep <strong>teks terbuka</strong> (open text) adalah kunci dalam pemahaman penulis tentang bagaimana menghindari otoritarianisme:</p>
+<blockquote>
+<p>"The Qur'ān and Sunnah, to borrow Umberto Eco's expression, are 'works in movement' – they are works that leave themselves open to multiple interpretive strategies. This does not mean that they are open to any interpretation, but that they are capable of supporting a dynamic interpretive movement." (hal. 301)</p>
+<p>"Al-Qur'an dan Sunnah, meminjam ungkapan Umberto Eco, adalah 'karya dalam pergerakan' – karya-karya yang membuka diri untuk berbagai strategi interpretatif. Ini tidak berarti bahwa mereka terbuka untuk interpretasi apa pun, tetapi bahwa mereka mampu mendukung gerakan interpretatif yang dinamis."</p>
+</blockquote>
+<p>Penulis menjelaskan bahwa <strong>menutup teks</strong> (closing the text) adalah tindakan otoritarian:</p>
+<blockquote>
+<p>"The closing of the text takes place when the reader insists that the text has a determined, stable, constant and unchangeable meaning. A source becomes a closed text when a reader is able to shut down the interpretive process and is able to merge the text with a particular determination." (hal. 302)</p>
+<p>"Penutupan teks terjadi ketika pembaca bersikeras bahwa teks memiliki makna yang ditentukan, stabil, konstan, dan tidak dapat diubah. Sebuah sumber menjadi teks tertutup ketika pembaca mampu mematikan proses interpretatif dan mampu menggabungkan teks dengan determinasi tertentu."</p>
+</blockquote>
+<h2 class="atx" id="4-mukhaṭṭiand39ah-dan-muṣawwibah">4. Mukhaṭṭi'ah dan Muṣawwibah</h2>
+<p>Penulis menjelaskan dua aliran pemikiran utama dalam yurisprudensi Islam mengenai kebenaran interpretasi:</p>
+<h3 class="atx" id="a-mukhaṭṭiand39ah">a. Mukhaṭṭi'ah:</h3>
+<blockquote>
+<p>"The first school, known as the mukhaṭṭi'ah, argued that ultimately, there is a correct answer to every textual or legal problem. However, only God knows what the correct response is and the truth will not be revealed until the Final Day." (hal. 305)</p>
+<p>"Mazhab pertama, yang dikenal sebagai mukhaṭṭi'ah, berpendapat bahwa pada akhirnya, ada jawaban yang benar untuk setiap masalah tekstual atau hukum. Namun, hanya Tuhan yang tahu apa jawaban yang benar dan kebenaran tidak akan terungkap sampai Hari Akhir."</p>
+</blockquote>
+<h3 class="atx" id="b-muṣawwibah">b. Muṣawwibah:</h3>
+<blockquote>
+<p>"The second school, known as the muṣawwibah, included prominent jurists such as al-Juwaynī, al-Suyūṭī, al-Ghazālī and al-Rāzī... The muṣawwibah argued that there is no specific and correct answer (ḥukm mu'ayyati) that God wants human beings to discover, in part, because if there were a correct answer, God would have made the textual evidence conclusive and clear." (hal. 306)</p>
+<p>"Mazhab kedua, yang dikenal sebagai muṣawwibah, termasuk ahli hukum terkemuka seperti al-Juwaynī, al-Suyūṭī, al-Ghazālī dan al-Rāzī... Muṣawwibah berpendapat bahwa tidak ada jawaban khusus dan benar (ḥukm mu'ayyati) yang Tuhan inginkan manusia untuk menemukan, sebagian, karena jika ada jawaban yang benar, Tuhan akan membuat bukti tekstual yang konklusif dan jelas."</p>
+</blockquote>
+<h2 class="atx" id="pengertian-andquotdeterminasi-maknaandquot">Pengertian "Determinasi Makna"</h2>
+<p>Dalam konteks pembahasan di teks "The Construction of the Authoritarian", konsep determinasi makna (determination of meaning) adalah konsep yang sangat sentral dan kompleks.</p>
+<p><strong>1. Definisi Dasar</strong></p>
+<p>Determinasi makna merujuk pada proses menetapkan atau menentukan arti dari sebuah teks, khususnya teks keagamaan seperti Al-Qur'an dan Sunnah. Ini berkaitan dengan pertanyaan fundamental: bagaimana kita mengetahui apa arti sebenarnya dari sebuah teks? Apakah makna tersebut tetap, dapat diketahui dengan pasti, atau bersifat fleksibel dan bergantung pada interpretasi?</p>
+<p>Dalam teks ini, penulis mengeksplorasi berbagai dimensi dari determinasi makna dalam konteks hukum Islam dan bagaimana proses ini dapat menjadi otoritarian.</p>
+<p><strong>2. Komponen-Komponen Determinasi Makna</strong></p>
+<p>Berdasarkan teks, determinasi makna memiliki beberapa komponen penting:</p>
+<ul>
+<li><p><strong>Hubungan Tiga Pihak</strong>: Determinasi makna melibatkan hubungan antara tiga entitas - pembaca (reader/agent), teks (text), dan penulis atau dalam konteks teks keagamaan adalah Tuhan (Author/Principal).</p>
+<blockquote>
+<p>"In short, the checks and balances of the interpretive process, which requires three distinct participants – the reader, the text, and the author (or authorial enterprise) – has been diluted into a unified dictatorship." (hal. 332)</p>
+</blockquote>
+</li>
+<li><p><strong>Proses Interaktif</strong>: Determinasi makna adalah proses interaktif di mana pembaca "bernegosiasi" dengan teks untuk memahami maksud penulisnya.</p>
+<blockquote>
+<p>"But the determination of meaning will depend on an interactive and negotiative process between the reader, text and the Author." (hal. 333)</p>
+</blockquote>
+</li>
+<li><p><strong>Kontingensi</strong>: Proses determinasi makna tunduk pada lima kontingensi yang disebutkan penulis - kejujuran, pengendalian diri, ketekunan, komprehensif, dan kelayakan/masuk akal.</p>
+</li>
+</ul>
+<p><strong>3. Dua Pandangan Utama Tentang Determinasi Makna</strong></p>
+<p>Dalam konteks yurisprudensi Islam, teks mengidentifikasi dua pandangan utama tentang determinasi makna yang diwakili oleh dua mazhab pemikiran:</p>
+<p><strong>a. Pandangan Mukhaṭṭi'ah: Determinasi Makna Objektif</strong></p>
+<p>Mazhab Mukhaṭṭi'ah berpegang pada pandangan bahwa:</p>
+<ul>
+<li>Setiap pertanyaan hukum atau tekstual memiliki satu jawaban benar yang telah ditentukan oleh Tuhan</li>
+<li>Makna ini bersifat objektif dan pasti, terlepas dari apakah manusia dapat menemukannya atau tidak</li>
+<li>Makna "benar" telah ditentukan dan disimpan dalam "repositori Pengetahuan Ilahi"</li>
+<li>Manusia hanya bisa berusaha mendekati kebenaran ini, tapi tidak pernah bisa yakin 100% telah mencapainya di dunia ini</li>
+</ul>
+<p>Pandangan ini mewakili determinasi makna yang lebih "tetap" dan independen dari interpreter.</p>
+<blockquote>
+<p>"The first school, known as the mukhaṭṭi'ah, argued that ultimately, there is a correct answer to every textual or legal problem. However, only God knows what the correct response is and the truth will not be revealed until the Final Day. In this sense, on every legal issue and in every textual encounter, God has predetermined a correct answer that exists in the repository of Divine Knowledge." (hal. 305)</p>
+</blockquote>
+<p><strong>b. Pandangan Muṣawwibah: Determinasi Makna Subjektif</strong></p>
+<p>Mazhab Muṣawwibah memiliki pandangan yang berbeda:</p>
+<ul>
+<li>Tidak ada jawaban yang telah ditentukan sebelumnya yang Tuhan ingin manusia temukan</li>
+<li>Makna bergantung pada interpretasi manusia setelah ijtihad (upaya penalaran) yang jujur dan tekun</li>
+<li>Kebenaran hukum bergantung pada keyakinan dan bukti yang tersedia</li>
+<li>Hukum Tuhan untuk setiap individu adalah sesuai dengan "preponderance of belief" (keyakinan terkuat) mereka setelah upaya ijtihad yang jujur</li>
+</ul>
+<p>Pandangan ini mewakili determinasi makna yang lebih "fleksibel" dan terkait dengan proses interpretasi.</p>
+<blockquote>
+<p>"Al-Juwaynī explains this point by asserting, 'The most a mujtahid would claim is a preponderance of belief (ghalabat al-ẓann) and the balancing of the evidence. However, certainty was never claimed by any of [the early jurists]... He explains that it is as if God has said: 'My command to My servants is in accordance with the preponderance of their beliefs. So whoever preponderantly believes that they are obligated to do something, acting upon it becomes My command.'" (hal. 306-307)</p>
+</blockquote>
+<p><strong>4. Masalah Determinasi Makna dalam Konteks Otoritarianisme</strong></p>
+<p>Penulis mengidentifikasi beberapa masalah kritis terkait determinasi makna yang dapat mengarah pada otoritarianisme:</p>
+<p><strong>a. Klaim Determinasi Final</strong></p>
+<p>Otoritarianisme terjadi ketika seseorang mengklaim telah mencapai determinasi makna final yang tidak dapat diubah:</p>
+<blockquote>
+<p>"The risk is that the text and the construction of the reader will become one and the same. In this process, the text is rendered subservient to the reader and, effectively, the reader is substituted for the text." (hal. 295)</p>
+</blockquote>
+<p><strong>b. Menutup Teks</strong></p>
+<p>Salah satu bentuk otoritarianisme adalah "menutup teks" dengan mengklaim bahwa teks memiliki makna yang tetap dan tidak berubah:</p>
+<blockquote>
+<p>"The closing of the text takes place when the reader insists that the text has a determined, stable, constant and unchangeable meaning. A source becomes a closed text when a reader is able to shut down the interpretive process and is able to merge the text with a particular determination." (hal. 302)</p>
+</blockquote>
+<p><strong>c. Mengklaim Identitas dengan Kehendak Tuhan</strong></p>
+<p>Otoritarianisme terjadi ketika interpreter mengklaim bahwa interpretasinya identik dengan kehendak Tuhan:</p>
+<blockquote>
+<p>"If the reader overcomes and usurps the text, the danger is that the reader stands suspended, untouchable, transcendent, and authoritarian." (hal. 295)</p>
+</blockquote>
+<p><strong>5. Alternatif Determinasi Makna yang Tidak Otoritarian</strong></p>
+<p>Penulis menyarankan pendekatan determinasi makna yang tidak otoritarian:</p>
+<ul>
+<li><p><strong>Pengakuan Keterbatasan</strong>: Mengakui bahwa determinasi makna oleh manusia selalu bersifat tentatif dan tidak pernah dapat menjadi final.</p>
+</li>
+<li><p><strong>Teks Terbuka</strong>: Memperlakukan teks sebagai "karya dalam pergerakan" yang terbuka untuk berbagai strategi interpretatif:</p>
+<blockquote>
+<p>"The Qur'ān and Sunnah, to borrow Umberto Eco's expression, are 'works in movement' – they are works that leave themselves open to multiple interpretive strategies." (hal. 301)</p>
+</blockquote>
+</li>
+<li><p><strong>Kejujuran Intelektual</strong>: Menjaga kejujuran intelektual dengan mengakui pluralitas interpretasi dan bukti yang bertentangan:</p>
+<blockquote>
+<p>"Wakī' is reported to have said: 'The people of knowledge (the scholars) document all the evidence [on a matter], whether pro or con. The people of whim, however, document only the evidence that supports their position [and ignore the rest].'" (hal. 335)</p>
+</blockquote>
+</li>
+<li><p><strong>Transparansi Asumsi</strong>: Selalu transparan tentang asumsi-asumsi dasar yang mendasari determinasi makna tertentu.</p>
+</li>
+</ul>
+<p><strong>6. Implikasi Filosofis Determinasi Makna</strong></p>
+<p>Pertanyaan tentang determinasi makna memiliki implikasi filosofis yang dalam:</p>
+<ul>
+<li><p><strong>Epistemologis</strong>: Bagaimana kita bisa mengetahui makna sebenarnya dari teks keagamaan? Apakah manusia dapat mengakses "Kehendak Ilahi"?</p>
+</li>
+<li><p><strong>Ontologis</strong>: Apakah makna "benar" dari teks ada secara independen dari interpretasi manusia?</p>
+</li>
+<li><p><strong>Teologis</strong>: Bagaimana hubungan antara pengetahuan manusia dan pengetahuan Tuhan? Penulis mengutip ayat Al-Qur'an:</p>
+<blockquote>
+<p>"The Qur'ān states: 'The Word of your Lord has been completed in truth and justice. None can replace your Lord's Words for your Lord is the All-Hearing and All-Knowing.'" (hal. 303)</p>
+</blockquote>
+</li>
+</ul>
+<p>Determinasi makna dalam konteks ini adalah konsep multidimensi yang berkaitan dengan bagaimana kita menetapkan arti dari teks keagamaan dan siapa yang memiliki otoritas untuk melakukannya. Penulis berpendapat bahwa pengakuan terhadap kompleksitas proses ini, pluralitas interpretasi, dan keterbatasan manusia dalam memahami Kehendak Ilahi adalah kunci untuk menghindari otoritarianisme dalam interpretasi keagamaan.</p>
+<p>Pandangan penulis cenderung lebih mendukung pendekatan muṣawwibah yang mengakui bahwa determinasi makna adalah proses yang subjektif, meskipun terikat oleh syarat-syarat kejujuran intelektual dan ketekunan. Pendekatan ini menghindari klaim-klaim absolut tentang makna teks dan mengakui pluralisme interpretasi sebagai aspek tak terhindarkan dari upaya manusia memahami pesan Ilahi.</p>
+<h2 class="atx" id="5-asumsi-asumsi-dasar-basic-assumptions-dalam-komunitas-interpretatif-hukum-islam">5. Asumsi-Asumsi Dasar (Basic Assumptions) dalam komunitas interpretatif hukum Islam</h2>
+<p>Penulis mengidentifikasi empat jenis asumsi dasar dalam komunitas interpretatif Islam:</p>
+<blockquote>
+<p>"As far as the basic assumptions of the juristic communities are concerned, one can differentiate between four types. This is not an exhaustive survey of all the pertinent assumptions, but I have sought to take account of the major unspoken assumptions in the Islamic juristic culture." (hal. 316)</p>
+<p>"Sejauh menyangkut asumsi dasar komunitas yuristik, seseorang dapat membedakan antara empat jenis. Ini bukan survei menyeluruh dari semua asumsi yang relevan, tetapi saya telah berusaha untuk memperhitungkan asumsi-asumsi besar yang tidak terucapkan dalam budaya yuristik Islam."</p>
+</blockquote>
+<p>Keempat jenis asumsi tersebut adalah:</p>
+<h3 class="atx" id="a-asumsi-berbasis-nilai-value-based-assumptions">a. Asumsi Berbasis Nilai (Value-based assumptions)</h3>
+<blockquote>
+<p>"Value-based assumptions are founded on normative values that the legal system considers necessary or basic. They are the fundamental values of a juristic culture, or what a particular juristic community considers normatively desirable." (hal. 317)</p>
+<p>"Asumsi berbasis nilai didasarkan pada nilai-nilai normatif yang dianggap perlu atau mendasar oleh sistem hukum. Ini adalah nilai-nilai fundamental dari budaya yuristik, atau apa yang dianggap secara normatif diinginkan oleh komunitas yuristik tertentu."</p>
+</blockquote>
+<h3 class="atx" id="b-asumsi-metodologis-methodological-assumptions">b. Asumsi Metodologis (Methodological assumptions)</h3>
+<blockquote>
+<p>"Methodological assumptions differ from value-based assumptions in certain respects, and in other respects they tend to overlap with value assumptions of the legal system. Methodological assumptions relate to the means or requisite steps for achieving the normative goals of the law." (hal. 318)</p>
+<p>"Asumsi metodologis berbeda dari asumsi berbasis nilai dalam aspek tertentu, dan dalam aspek lain mereka cenderung tumpang tindih dengan asumsi nilai dari sistem hukum. Asumsi metodologis berkaitan dengan sarana atau langkah yang diperlukan untuk mencapai tujuan normatif hukum."</p>
+</blockquote>
+<h3 class="atx" id="c-asumsi-berbasis-alasan-reason-based-assumptions">c. Asumsi Berbasis Alasan (Reason-based assumptions)</h3>
+<blockquote>
+<p>"Unlike value-based assumption or methodological assumption, a reason-based assumption defends its existence by an appeal to logic or legal evidence on a substantive legal determination." (hal. 318-319)</p>
+<p>"Tidak seperti asumsi berbasis nilai atau asumsi metodologis, asumsi berbasis alasan mempertahankan keberadaannya dengan mengacu pada logika atau bukti hukum pada determinasi hukum substantif."</p>
+</blockquote>
+<h3 class="atx" id="d-asumsi-berbasis-iman-faith-based-assumptions">d. Asumsi Berbasis Iman (Faith-based assumptions)</h3>
+<blockquote>
+<p>"Faith-based assumptions find their genesis in a collateral relationship between the agent and the Divine. These assumptions do not claim to be derived directly from the instructions of the Principal, but from a dynamic between the agent and the Principal." (hal. 320)</p>
+<p>"Asumsi berbasis iman menemukan asal-usulnya dalam hubungan kolateral antara agen dan Ilahi. Asumsi-asumsi ini tidak mengklaim berasal langsung dari instruksi Prinsipal, tetapi dari dinamika antara agen dan Prinsipal."</p>
+</blockquote>
+<h2 class="atx" id="6-fundamental-agama-uṣul-vs-cabang-furuand39">6. Fundamental Agama (Uṣūl) vs. Cabang (Furū')</h2>
+<p>Penulis membahas pembedaan antara hal-hal fundamental (uṣūl) dan hal-hal cabang (furū') dalam agama:</p>
+<blockquote>
+<p>"Most jurists argued that indeterminacy or performing ijtihād in matters of uṣūl is a sin because in these types of issues there is an unwavering duty to realize the truth." (hal. 311)</p>
+<p>"Sebagian besar ahli hukum berpendapat bahwa ketidakpastian atau melakukan ijtihād dalam masalah uṣūl adalah dosa karena dalam jenis masalah ini ada kewajiban yang teguh untuk mewujudkan kebenaran."</p>
+</blockquote>
+<p>Namun, penulis mengkritik ketidakjelasan definisi dari apa yang termasuk "fundamental":</p>
+<blockquote>
+<p>"However, defining the fundamentals remained a rather challenging problem. As discussed earlier, some argued that the fundamentals are those things that are 'aqliyyāt (things that are clearly apparent through the dictates of reason). Others argued that all legal matters that have been established to the point of conclusive certainty are not susceptible to indeterminacy..." (hal. 311)</p>
+<p>"Namun, mendefinisikan hal-hal fundamental tetap menjadi masalah yang cukup menantang. Seperti yang dibahas sebelumnya, beberapa berpendapat bahwa hal-hal fundamental adalah 'aqliyyāt (hal-hal yang jelas melalui dikte akal). Yang lain berpendapat bahwa semua masalah hukum yang telah ditetapkan sampai pada tingkat kepastian yang konklusif tidak rentan terhadap ketidakpastian..."</p>
+</blockquote>
+<p><strong>Diagram konsep utama dalam Bab The Construction of the Authoritarian</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/05.%20DEVI-The%20Construction%20of%20the%20Authoritarian/Diagram-diagram/Konsep%20utama/Enam%20Konsep%20utama.png"></p>
+<h2 class="atx" id="7-hubungan-antara-konsep-konsep-utama">7. Hubungan Antara Konsep-Konsep Utama</h2>
+<p>Konsep-konsep kunci dalam teks saling terhubung dalam kerangka teoretis yang koheren:</p>
+<ol>
+<li><p><strong>Otoritarianisme</strong> adalah konsep sentral yang didefinisikan sebagai tindakan mengambil alih Kehendak Ilahi</p>
+</li>
+<li><p><strong>Lima kontingensi</strong> (kejujuran, pengendalian diri, ketekunan, komprehensif, dan kelayakan) adalah syarat untuk menghindari otoritarianisme</p>
+</li>
+<li><p><strong>Teks terbuka</strong> vs. <strong>teks tertutup</strong> - menutup teks adalah tindakan otoritarian yang meniadakan pluralisme interpretasi</p>
+</li>
+<li><p><strong>Mukhaṭṭi'ah</strong> dan <strong>Muṣawwibah</strong> mewakili dua pendekatan berbeda terhadap kebenaran interpretasi:</p>
+<ul>
+<li>Mukhaṭṭi'ah: ada kebenaran tunggal yang hanya diketahui Tuhan</li>
+<li>Muṣawwibah: kebenaran bergantung pada keyakinan individu setelah upaya ijtihad yang jujur</li>
+</ul>
+</li>
+<li><p><strong>Empat jenis asumsi</strong> (berbasis nilai, metodologis, berbasis alasan, berbasis iman) membentuk dasar interpretasi komunitas yuristik</p>
+</li>
+<li><p><strong>Uṣūl</strong> vs. <strong>Furū'</strong> - pembedaan antara hal-hal fundamental dan cabang agama yang mempengaruhi ruang lingkup interpretasi</p>
+</li>
+</ol>
+<p>Penulis mengintegrasikan konsep-konsep ini untuk membangun argumen bahwa otoritarianisme dalam interpretasi hukum Islam terjadi ketika:</p>
+<ul>
+<li>Interpreter gagal memenuhi lima kontingensi</li>
+<li>Teks "ditutup" dan tidak lagi dianggap sebagai "karya dalam pergerakan"</li>
+<li>Terjadi pengaburan batas antara kehendak interpreter dan Kehendak Ilahi</li>
+<li>Asumsi-asumsi dasar diklaim sebagai kebenaran mutlak tanpa mengakui keterbatasannya</li>
+</ul>
+<p><strong>Diagram Hubungan antar Konsep yang 6</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/05.%20DEVI-The%20Construction%20of%20the%20Authoritarian/Diagram-diagram/Konsep%20utama/Hubungan%20antar%20konsep%20yang%206..png"></p>
+<h2 class="atx" id="kesimpulan-1">Kesimpulan</h2>
+<p>Konsep-konsep kunci dalam "The Construction of the Authoritarian" membentuk kerangka teoretis yang saling terhubung dan kompleks. Penulis menggunakan konsep-konsep ini untuk mengkritik pendekatan otoritarian dalam interpretasi hukum Islam dan mengusulkan model interpretasi yang lebih terbuka, reflektif, dan sadar diri. Konsep-konsep ini mengartikulasikan hubungan dialektis antara teks, pembaca, dan Tuhan, serta menekankan pentingnya kejujuran intelektual, pluralisme interpretif, dan pengakuan terhadap keterbatasan manusia dalam memahami Kehendak Ilahi.</p>
+<h1 class="atx" id="pentingnya-menjaga-4-asumsi-dasar-agar-tidak-diklaim-jadi-kebenaran-mutlak">Pentingnya Menjaga 4 Asumsi Dasar agar Tidak Diklaim Jadi Kebenaran Mutlak</h1>
+<p>Kalimat "Asumsi-asumsi dasar diklaim sebagai kebenaran mutlak tanpa mengakui keterbatasannya" merujuk pada salah satu aspek penting dari praktik otoritarian dalam interpretasi teks keagamaan yang dibahas dalam teks "The Construction of the Authoritarian".  </p>
+<h2 class="atx" id="pengertian-asumsi-asumsi-dasar">Pengertian Asumsi-asumsi Dasar</h2>
+<p>Dalam teks, penulis mengidentifikasi empat jenis asumsi dasar yang digunakan oleh komunitas yuristik (ahli hukum Islam):</p>
+<ol>
+<li><strong>Asumsi berbasis nilai</strong> (value-based) - asumsi tentang nilai-nilai fundamental yang dianggap mendasar dalam sistem hukum</li>
+<li><strong>Asumsi metodologis</strong> - asumsi tentang cara atau metode yang tepat untuk mencapai tujuan normatif hukum</li>
+<li><strong>Asumsi berbasis alasan</strong> (reason-based) - asumsi yang bersandar pada logika atau bukti hukum</li>
+<li><strong>Asumsi berbasis iman</strong> (faith-based) - asumsi yang berasal dari hubungan pribadi antara interpreter dan Tuhan</li>
+</ol>
+<p>Asumsi-asumsi ini menjadi dasar atau titik awal dari proses interpretasi.</p>
+<h2 class="atx" id="masalah-klaim-kebenaran-mutlak">Masalah Klaim Kebenaran Mutlak</h2>
+<p>Ketika penulis menyebut "asumsi-asumsi dasar diklaim sebagai kebenaran mutlak", beliau merujuk pada praktik problematik di mana interpreter:</p>
+<ol>
+<li><p><strong>Meningkatkan status asumsi</strong>: Mengubah asumsi yang pada dasarnya bersifat tentatif menjadi klaim kebenaran mutlak atau hakiki</p>
+</li>
+<li><p><strong>Menghilangkan batas</strong>: Mengaburkan batas antara asumsi manusia dan Kehendak Ilahi</p>
+</li>
+</ol>
+<p>Sebagaimana dijelaskan dalam teks:</p>
+<blockquote>
+<p>"Importantly, the very act of claiming any determination or doctrine to be presumptively settled runs the very serious risk of being authoritarian. Consequently, someone proposing such a premise must be aware that he or she is flirting with the possibility of usurping the Divine Will and marginalizing the text." (hal. 326)</p>
+<p>"Penting, tindakan mengklaim bahwa determinasi atau doktrin apa pun telah ditetapkan secara presumtif membawa risiko serius menjadi otoriter. Akibatnya, seseorang yang mengusulkan premis seperti itu harus menyadari bahwa dia sedang bermain-main dengan kemungkinan merampas Kehendak Ilahi dan memarjinalkan teks."</p>
+</blockquote>
+<h2 class="atx" id="tidak-mengakui-keterbatasan">Tidak Mengakui Keterbatasan</h2>
+<p>Bagian "tanpa mengakui keterbatasannya" merujuk pada:</p>
+<ol>
+<li><p><strong>Kurangnya pengakuan akan keterbatasan manusia</strong> dalam memahami Kehendak Ilahi. Penulis menekankan bahwa pengetahuan manusia tidak pernah bisa sepenuhnya mencapai pengetahuan Tuhan:</p>
+<blockquote>
+<p>"The Qur'ān insists that God's knowledge is supreme and that it is not equaled by anyone." (hal. 303)</p>
+<p>"Al-Qur'an menegaskan bahwa pengetahuan Tuhan adalah tertinggi dan tidak disamai oleh siapa pun."</p>
+</blockquote>
+</li>
+<li><p><strong>Gagal mengakui sifat tentatif dari asumsi</strong>: Interpreter otoritarian tidak mengakui bahwa asumsi-asumsi mereka hanyalah salah satu dari banyak kemungkinan cara untuk memahami teks:</p>
+<blockquote>
+<p>"Even more, it is doubtful that one can be diligent, comprehensive and reasonable in evaluating the totality of the evidence, and yet, be able to claim that the text is closed because its meaning is definitively determinable." (hal. 304)</p>
+<p>"Lebih lagi, diragukan bahwa seseorang dapat tekun, komprehensif, dan masuk akal dalam mengevaluasi totalitas bukti, namun dapat mengklaim bahwa teks tersebut tertutup karena maknanya dapat ditentukan secara definitif."</p>
+</blockquote>
+</li>
+<li><p><strong>Kegagalan membedakan jenis asumsi</strong>: Interpreter sering gagal mengklarifikasi apakah asumsi mereka adalah asumsi berbasis nilai, metodologis, berbasis alasan, atau berbasis iman:</p>
+<blockquote>
+<p>"It is imperative that an interpretive community be conscientious about identifying the exact nature of its basic assumptions – is it normative, is it methodological, is it evidentiary, or is it a matter of faith and pietistic conviction?" (hal. 321)</p>
+<p>"Penting bagi komunitas interpretatif untuk teliti dalam mengidentifikasi sifat tepat dari asumsi-asumsi dasarnya – apakah itu normatif, metodologis, bukti, atau masalah keyakinan dan pendirian religius?"</p>
+</blockquote>
+</li>
+</ol>
+<h2 class="atx" id="contoh-konkret-dari-teks">Contoh Konkret dari Teks</h2>
+<p>Penulis memberikan contoh konkret tentang bagaimana asumsi dasar bisa diklaim sebagai kebenaran mutlak tanpa mengakui keterbatasannya dalam kasus kesaksian perempuan:</p>
+<blockquote>
+<p>"Assume that a particular juristic community asserts that the testimony of two women is equal to the testimony of one man. Assume further that the juristic community asserts that this position is a firmly established presumption to the point that anyone who denies it is committing a grave sin." (hal. 322)</p>
+<p>"Asumsikan bahwa komunitas yuristik tertentu menegaskan bahwa kesaksian dua wanita sama dengan kesaksian satu pria. Asumsikan lebih jauh bahwa komunitas yuristik menegaskan bahwa posisi ini adalah anggapan yang telah mapan sampai pada titik bahwa siapa pun yang menyangkalnya melakukan dosa besar."</p>
+</blockquote>
+<p>Dalam contoh ini, suatu interpretasi Al-Qur'an (berdasarkan ayat 2:282) yang awalnya merupakan asumsi berbasis alasan untuk situasi spesifik (transaksi utang) telah diangkat menjadi kebenaran mutlak yang berlaku universal tanpa mengakui keterbatasannya, yaitu:</p>
+<ol>
+<li>Konteks spesifik ayat tersebut (transaksi utang)</li>
+<li>Konteks sosio-historis (tingkat pendidikan perempuan pada masa itu)</li>
+<li>Perbedaan metodologis yang mungkin diterapkan</li>
+</ol>
+<h2 class="atx" id="implikasi-otoritarian">Implikasi Otoritarian</h2>
+<p>Praktik mengklaim asumsi-asumsi dasar sebagai kebenaran mutlak tanpa mengakui keterbatasannya memiliki implikasi otoritarian karena:</p>
+<ol>
+<li><p><strong>Menutup ruang dialog</strong>: Mencegah adanya interpretasi alternatif</p>
+</li>
+<li><p><strong>Mengaburkan batas manusia-Tuhan</strong>: Mengklaim pengetahuan manusia setara dengan pengetahuan Tuhan</p>
+</li>
+<li><p><strong>Memarjinalkan teks</strong>: Menggantikan teks dengan interpretasi manusia</p>
+</li>
+<li><p><strong>Memaksakan uniformitas</strong>: Menolak pluralisme interpretatif yang sehat</p>
+</li>
+</ol>
+<p>Penulis menyimpulkan bahwa pendekatan yang lebih tepat adalah:</p>
+<blockquote>
+<p>"In my view, any attempt to claim that a determination is part of the uṣūl if such a claim is based on textual evidence or the instructions of the Principal, and not a collateral relationship with the Principal, in all probability sets the stage for an authoritarian dynamic." (hal. 326-327)</p>
+<p>"Menurut pendapat saya, setiap upaya untuk mengklaim bahwa suatu determinasi adalah bagian dari uṣūl jika klaim tersebut didasarkan pada bukti tekstual atau instruksi Prinsipal, dan bukan hubungan kolateral dengan Prinsipal, kemungkinan besar menyiapkan panggung untuk dinamika otoriter."</p>
+</blockquote>
+<h2 class="atx" id="kesimpulan-2">Kesimpulan</h2>
+<p>Kalimat "Asumsi-asumsi dasar diklaim sebagai kebenaran mutlak tanpa mengakui keterbatasannya" merangkum salah satu unsur utama dari praktik otoritarian dalam interpretasi keagamaan - yaitu kecenderungan untuk mengambil asumsi manusia yang pada dasarnya bersifat tentatif, terbatas, dan tidak sempurna, kemudian mengangkatnya ke level kebenaran mutlak yang tidak dapat dipertanyakan. Praktik ini mengabaikan keterbatasan pengetahuan manusia, kompleksitas teks, dan pluralitas interpretasi yang mungkin, sehingga pada akhirnya menciptakan dinamika otoritarian di mana interpreter secara efektif menggantikan posisi teks dan Tuhan sebagai sumber otoritas.</p>
+<h2 class="atx" id="hubungan-empat-asumsi-dasar-dengan-komunitas-yuristik">Hubungan Empat Asumsi Dasar dengan Komunitas Yuristik</h2>
+<p>Berdasarkan penjelasan penulis dalam teks, empat asumsi dasar ini <strong>tidak</strong> berfungsi sebagai pembeda eksklusif antara komunitas yuristik yang berbeda (satu komunitas hanya menggunakan satu jenis asumsi), dan juga <strong>tidak</strong> berfungsi sebagai syarat yang harus dipenuhi semua komunitas yuristik (setiap komunitas harus menggunakan keempat asumsi).</p>
+<p>Sebaliknya, hubungan antara asumsi-asumsi ini dan komunitas yuristik lebih kompleks. Penulis menjelaskan:</p>
+<blockquote>
+<p>"As far as the basic assumptions of the juristic communities are concerned, one can differentiate between four types. This is not an exhaustive survey of all the pertinent assumptions, but I have sought to take account of the major unspoken assumptions in the Islamic juristic culture." (hal. 316)</p>
+<p>"Sejauh menyangkut asumsi dasar komunitas yuristik, seseorang dapat membedakan antara empat jenis. Ini bukan survei menyeluruh dari semua asumsi yang relevan, tetapi saya telah berusaha untuk memperhitungkan asumsi-asumsi besar yang tidak terucapkan dalam budaya yuristik Islam."</p>
+</blockquote>
+<p>Dari pernyataan ini, kita dapat menyimpulkan bahwa:</p>
+<ol>
+<li>Keempat asumsi ini hadir dalam "budaya yuristik Islam" secara umum</li>
+<li>Ini adalah asumsi-asumsi utama tetapi tidak menyeluruh (mungkin ada jenis asumsi lain)</li>
+<li>Asumsi-asumsi ini sering kali "tidak terucapkan" (implicit/unspoken)</li>
+</ol>
+<h2 class="atx" id="tumpang-tindih-dan-pembedaan-antar-komunitas">Tumpang Tindih dan Pembedaan Antar Komunitas</h2>
+<p>Penulis menjelaskan bahwa asumsi-asumsi ini dapat tumpang tindih dan berkontribusi pada pembedaan antar komunitas yuristik, tetapi dengan cara yang lebih dinamis:</p>
+<blockquote>
+<p>"The assumptions that might characterize a particular juristic community could differ in material respects from the assumptions of another community." (hal. 324)</p>
+<p>"Asumsi-asumsi yang mungkin mencirikan komunitas yuristik tertentu dapat berbeda dalam hal-hal material dari asumsi-asumsi komunitas lain."</p>
+</blockquote>
+<p>Ini menunjukkan bahwa <strong>kombinasi unik</strong> dari berbagai asumsi ini (bukan penerapan eksklusif satu jenis asumsi) yang membantu membedakan satu komunitas yuristik dari yang lain.</p>
+<p>Contohnya, penulis membahas bagaimana asumsi metodologis sering tumpang tindih dengan asumsi berbasis nilai:</p>
+<blockquote>
+<p>"Methodological assumptions differ from value-based assumptions in certain respects, and in other respects they tend to overlap with value assumptions of the legal system... it is not always possible to distinguish between methodological assumptions and value-based assumptions." (hal. 318)</p>
+<p>"Asumsi metodologis berbeda dari asumsi berbasis nilai dalam aspek tertentu, dan dalam aspek lain mereka cenderung tumpang tindih dengan asumsi nilai dari sistem hukum... tidak selalu mungkin untuk membedakan antara asumsi metodologis dan asumsi berbasis nilai."</p>
+</blockquote>
+<h2 class="atx" id="komunitas-yuristik-menggunakan-kombinasi-asumsi">Komunitas Yuristik Menggunakan Kombinasi Asumsi</h2>
+<p>Penulis menyiratkan bahwa komunitas yuristik biasanya menggunakan <strong>kombinasi dari berbagai jenis asumsi</strong> ini, bukan hanya satu jenis. Misalnya, dalam contoh tentang kesaksian perempuan, penulis menunjukkan bagaimana berbagai jenis asumsi dapat beroperasi secara bersamaan dalam satu diskusi:</p>
+<blockquote>
+<p>"I might reply, 'This does not necessarily follow; this is based on a methodological assumption that permits the extension of a specific rule, regarding a particular matter, to collateral situations and collateral matters... The interpretive community could respond, 'Your methodology looks to the underlying factual and normative basis of the law, and we do not accept this methodological approach...' I in turn respond, 'God is not a sexist! God does not decide that all women are forgetful – God acted on a factual assumption that existed at a particular time and place...'" (hal. 322-323)</p>
+<p>Dalam percakapan hipotetis ini, berbagai jenis asumsi (metodologis, berbasis nilai, dan berbasis iman) semua berperan dalam argumen dari komunitas interpretatif yang sama.</p>
+</blockquote>
+<h2 class="atx" id="fungsi-asumsi-dalam-komunitas-yuristik">Fungsi Asumsi dalam Komunitas Yuristik</h2>
+<p>Penulis menjelaskan bahwa asumsi-asumsi ini berperan sebagai "shortcut diskursif" dan sarana untuk meningkatkan efisiensi dalam komunitas yuristik:</p>
+<blockquote>
+<p>"Assumptions are often adopted as a matter of efficient discourse – instead of re-arguing and re-demonstrating the same exact points again and again, a juristic community will take certain determinations for granted and proceed onwards with the analysis from the point that was assumed to be settled." (hal. 324)</p>
+<p>"Asumsi-asumsi sering diadopsi sebagai masalah wacana yang efisien - alih-alih berdebat ulang dan mendemonstrasikan ulang poin-poin yang sama persis berulang-ulang, komunitas yuristik akan menganggap determinasi tertentu sebagai given dan melanjutkan analisis dari titik yang diasumsikan telah ditetapkan."</p>
+</blockquote>
+<p>Ini menunjukkan bahwa fungsi asumsi-asumsi ini lebih pada efisiensi praktis daripada sebagai penanda identitas yang kaku untuk komunitas yuristik.</p>
+<h2 class="atx" id="batas-batas-komunitas-dan-asumsi-berbasis-iman">Batas-Batas Komunitas dan Asumsi Berbasis Iman</h2>
+<p>Meskipun semua jenis asumsi dapat beroperasi dalam komunitas yuristik mana pun, penulis memang menyarankan bahwa asumsi berbasis iman memiliki peran khusus dalam menentukan batas-batas antar komunitas:</p>
+<blockquote>
+<p>"Faith-based assumptions demand a different analysis. These are assumptions that act as moral values serving as the foundation for the legal discourse. This does not mean that they are necessarily closed to discussion or analysis. It does mean that they might provide the effective boundary lines between one interpretive community and another, and that these boundary lines are not resolvable by textually-based arguments." (hal. 324-325)</p>
+<p>"Asumsi berbasis iman menuntut analisis yang berbeda. Ini adalah asumsi yang bertindak sebagai nilai-nilai moral yang menjadi dasar wacana hukum. Ini tidak berarti bahwa mereka harus tertutup untuk diskusi atau analisis. Ini berarti bahwa mereka mungkin memberikan garis batas efektif antara satu komunitas interpretatif dan yang lain, dan bahwa garis batas ini tidak dapat diselesaikan oleh argumen berbasis tekstual."</p>
+</blockquote>
+<p>Ini menunjukkan bahwa asumsi berbasis iman memiliki peran khusus dalam membentuk batas-batas antar komunitas yuristik, tetapi tidak mengimplikasikan bahwa setiap komunitas hanya beroperasi berdasarkan satu jenis asumsi.</p>
+<h2 class="atx" id="kesimpulan-dan-uraian">Kesimpulan dan Uraian</h2>
+<p>Jadi, </p>
+<ol>
+<li><p>Empat asumsi ini <strong>bukan</strong> pembeda eksklusif di mana satu komunitas yuristik hanya berdiri di atas satu jenis asumsi.</p>
+</li>
+<li><p>Empat asumsi ini juga <strong>bukan</strong> syarat yang harus dipenuhi oleh semua komunitas yuristik (dalam arti setiap komunitas harus menggunakan semua jenis asumsi).</p>
+</li>
+<li><p>Sebaliknya, penulis menggambarkan empat jenis asumsi ini sebagai "asumsi-asumsi besar yang tidak terucapkan dalam budaya yuristik Islam" yang dapat hadir dalam berbagai kombinasi dan variasi dalam komunitas yuristik yang berbeda.</p>
+</li>
+<li><p>Kombinasi unik dari asumsi-asumsi ini (dan bukan jenis tunggal) yang membantu membedakan satu komunitas yuristik dari yang lain, dengan asumsi berbasis iman memiliki peran khusus dalam menentukan batas-batas antar komunitas.</p>
+</li>
+</ol>
+<p>Penulis tidak bertujuan untuk menyajikan taksonomi kaku dari komunitas yuristik berdasarkan asumsi-asumsi ini, tetapi lebih untuk menunjukkan bagaimana asumsi-asumsi ini beroperasi dalam dinamika interpretasi hukum Islam dan bagaimana mereka dapat berkontribusi pada praktik otoritarian jika tidak diakui dan dibahas secara eksplisit. Fokus penulis lebih pada mengidentifikasi dan mengkritisi praktik-praktik otoritarian yang muncul ketika asumsi-asumsi ini diklaim sebagai kebenaran mutlak tanpa mengakui keterbatasannya.</p>
+<h1 class="atx" id="c-kerangka-pemikiran-dalam-bab-andquotthe-construction-of-the-authoritarianandquot">C. KERANGKA PEMIKIRAN DALAM BAB "The Construction of the Authoritarian"</h1>
+<p>Teks "The Construction of the Authoritarian" menggunakan beberapa kerangka pemikiran yang saling terhubung untuk membangun argumennya tentang otoritarianisme dalam interpretasi teks keagamaan Islam. Analisis ini mengidentifikasi pendekatan-pendekatan yang digunakan penulis dan menjelaskan bagaimana pendekatan tersebut membentuk kerangka teoretisnya.</p>
+<p><strong>Mindmap Bab The Construction of the Authoritarian: Untuk Pemahaman Konseptual</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/05.%20DEVI-The%20Construction%20of%20the%20Authoritarian/Diagram-diagram/Mindmap%20bab%20the%20construcion%20of%20the%20authoritarian.png"></p>
+<h2 class="atx" id="1-pendekatan-yuridis-hermeneutis">1. Pendekatan Yuridis-Hermeneutis</h2>
+<p>Kerangka pemikiran utama yang diterapkan penulis adalah pendekatan yuridis-hermeneutis - menggabungkan analisis hukum Islam (fiqh) dengan teori interpretasi teks (hermeneutika). Pendekatan ini meneliti hubungan antara teks, pembaca (interpreter), dan Kehendak Ilahi.</p>
+<blockquote>
+<p>"In the authoritarian dynamic, the distinction between the agent and the Principal becomes indistinct and blurred. The Will of the Principal and the speech of the agent become one and the same, as the agent superimposes his or her own determination upon the instructions of the Principal." (hal. 293-294)</p>
+<p>"Dalam dinamika otoriter, perbedaan antara agen dan Prinsipal menjadi tidak jelas dan kabur. Kehendak Prinsipal dan ucapan agen menjadi satu dan sama, karena agen menimpakan determinasinya sendiri pada instruksi Prinsipal."</p>
+</blockquote>
+<p>Pendekatan hermeneutis ini mengeksplorasi dampak dari proses interpretasi pada makna teks dan hubungan kekuasaan yang tercipta antara pembaca, teks, dan pengarang.</p>
+<h2 class="atx" id="2-teori-hubungan-agen-prinsipal">2. Teori Hubungan Agen-Prinsipal</h2>
+<p>Penulis menggunakan kerangka "hubungan agen-prinsipal" yang disesuaikan untuk konteks keagamaan. Dalam model ini:</p>
+<ul>
+<li>Tuhan adalah "Prinsipal" (pemberi instruksi/otoritas)</li>
+<li>Ahli hukum/interpreter adalah "agen" (penerima instruksi yang melakukan interpretasi)</li>
+<li>Umat adalah "agen umum" (orang awam yang bergantung pada interpretasi agen khusus)</li>
+</ul>
+<blockquote>
+<p>"The agent may then conclude that as far as his or her affairs are concerned, he or she will follow this determination regardless of any evidence to the contrary or competing determinations. Can it be argued that the agent is acting despotically towards himself or herself? I doubt whether this treatment of the self can be described as authoritarian unless the agent adopts a normative role vis-à-vis others." (hal. 294)</p>
+<p>"Agen kemudian dapat menyimpulkan bahwa sejauh menyangkut urusannya, dia akan mengikuti determinasi ini terlepas dari bukti apa pun yang bertentangan atau determinasi yang bersaing. Dapatkah dikatakan bahwa agen bertindak despotik terhadap dirinya sendiri? Saya meragukan apakah perlakuan terhadap diri ini dapat digambarkan sebagai otoriter kecuali agen mengadopsi peran normatif vis-à-vis orang lain."</p>
+</blockquote>
+<p>Teori ini memberikan kerangka untuk menganalisis bagaimana klaim otoritas interpretatif dibuat, dijustifikasi, dan potensial menjadi otoritarian.</p>
+<h2 class="atx" id="3-pendekatan-teori-etika-diskursus">3. Pendekatan Teori Etika Diskursus</h2>
+<p>Penulis mengadopsi perspektif etika diskursus yang menekankan nilai moralitas dalam proses diskursif, bukan hanya hasil akhir diskursus. Ini terlihat dari pernyataan:</p>
+<blockquote>
+<p>"The material point is not whether the reader accurately represents the true intention of the author of the text, but whether the reader sufficiently respects the text by trying to understand but not replace it. In this sense, the highest morality is the morality of the discourse and not necessarily correctness." (hal. 301)</p>
+<p>"Poin materialnya bukanlah apakah pembaca secara akurat merepresentasikan niat sebenarnya dari penulis teks, tetapi apakah pembaca cukup menghormati teks dengan mencoba memahami tetapi tidak menggantikannya. Dalam pengertian ini, moralitas tertinggi adalah moralitas wacana dan bukan kebenaran."</p>
+</blockquote>
+<p>Pendekatan ini juga muncul dalam diskusi tentang lima kontingensi (kejujuran, pengendalian diri, ketekunan, komprehensif, dan kelayakan) sebagai syarat untuk menghindari otoritarianisme.</p>
+<h2 class="atx" id="4-teori-teks-terbuka-open-text-theory">4. Teori Teks Terbuka (Open Text Theory)</h2>
+<p>Penulis mengadopsi konsep "teks terbuka" (open text) atau "karya dalam pergerakan" (work in movement) dari Umberto Eco sebagai kerangka utama untuk memahami teks keagamaan:</p>
+<blockquote>
+<p>"The Qur'ān and Sunnah, to borrow Umberto Eco's expression, are 'works in movement' – they are works that leave themselves open to multiple interpretive strategies." (hal. 301)</p>
+<p>"Al-Qur'an dan Sunnah, meminjam ungkapan Umberto Eco, adalah 'karya dalam pergerakan' – karya-karya yang membuka diri untuk berbagai strategi interpretatif."</p>
+</blockquote>
+<p>Teori ini memosisikan teks keagamaan sebagai karya yang mendukung pluralitas interpretasi dan berevolusi melalui interaksi dengan pembaca dari berbagai generasi. Teks tetap relevan justru karena keterbukaan dan kemampuannya untuk "berbicara" dalam konteks yang terus berubah.</p>
+<h2 class="atx" id="5-analisis-sosiologi-pengetahuan">5. Analisis Sosiologi Pengetahuan</h2>
+<p>Penulis menggunakan perspektif sosiologi pengetahuan untuk menganalisis bagaimana struktur sosial dan konteks institusional mempengaruhi perkembangan doktrin hukum Islam:</p>
+<blockquote>
+<p>"For instance, one suspects that in some Muslim juristic cultures, order, stability and obedience, the exclusion of women from public life, and the protection of the financial interests of the elite are the actual primary values of the legal systems." (hal. 317-318)</p>
+<p>"Misalnya, seseorang mencurigai bahwa dalam beberapa kultur yuristik Muslim, ketertiban, stabilitas dan kepatuhan, pengecualian perempuan dari kehidupan publik, dan perlindungan kepentingan finansial elit adalah nilai-nilai primer aktual dari sistem hukum."</p>
+</blockquote>
+<p>Pendekatan ini melihat bagaimana faktor-faktor sosial-politik membentuk interpretasi hukum dan bagaimana klaim otoritas keagamaan seringkali mencerminkan dan memperkuat struktur kekuasaan yang ada.</p>
+<h2 class="atx" id="6-pendekatan-teologis-filosofis">6. Pendekatan Teologis-Filosofis</h2>
+<p>Penulis juga menggunakan kerangka teologis-filosofis yang mempertanyakan hubungan antara pengetahuan manusia dan pengetahuan Ilahi:</p>
+<blockquote>
+<p>"The theological difficulty with this is that it conflicts with the idea of God's supreme knowledge. The Qur'ān insists that God's knowledge is supreme and that it is not equaled by anyone." (hal. 303)</p>
+<p>"Kesulitan teologis dengan ini adalah bahwa ia bertentangan dengan gagasan pengetahuan tertinggi Tuhan. Al-Qur'an menegaskan bahwa pengetahuan Tuhan adalah tertinggi dan tidak disamai oleh siapa pun."</p>
+</blockquote>
+<p>Kerangka ini mengeksplorasi pertanyaan filosofis tentang bagaimana manusia dapat mengklaim mengetahui kehendak Tuhan dan batasan epistemologis dari klaim tersebut.</p>
+<h2 class="atx" id="7-tipologi-asumsi-dasar">7. Tipologi Asumsi Dasar</h2>
+<p>Penulis membangun tipologi asumsi dasar yang digunakan dalam komunitas yuristik Islam:</p>
+<blockquote>
+<p>"As far as the basic assumptions of the juristic communities are concerned, one can differentiate between four types... valuebased; methodological; faith-based; and reason-based." (hal. 316-317)</p>
+<p>"Sejauh menyangkut asumsi dasar komunitas yuristik, seseorang dapat membedakan antara empat jenis... berbasis nilai; metodologis; berbasis iman; dan berbasis alasan."</p>
+</blockquote>
+<p>Tipologi ini menyediakan kerangka analitis untuk memahami jenis-jenis asumsi yang mendasari interpretasi hukum dan bagaimana asumsi-asumsi ini berfungsi dalam dinamika otoritarian.</p>
+<h2 class="atx" id="8-pendekatan-komparatif-historis">8. Pendekatan Komparatif-Historis</h2>
+<p>Penulis menggunakan pendekatan komparatif-historis untuk menganalisis perdebatan klasik dalam tradisi yuristik Islam, terutama antara mazhab Mukhaṭṭi'ah dan Muṣawwibah:</p>
+<blockquote>
+<p>"The first school, known as the mukhaṭṭi'ah, argued that ultimately, there is a correct answer to every textual or legal problem... The second school, known as the muṣawwibah, included prominent jurists such as al-Juwaynī, al-Suyūṭī, al-Ghazālī and al-Rāzī... The muṣawwibah argued that there is no specific and correct answer (ḥukm mu'ayyati) that God wants human beings to discover..." (hal. 305-306)</p>
+<p>"Mazhab pertama, yang dikenal sebagai mukhaṭṭi'ah, berpendapat bahwa pada akhirnya, ada jawaban yang benar untuk setiap masalah tekstual atau hukum... Mazhab kedua, yang dikenal sebagai muṣawwibah, termasuk ahli hukum terkemuka seperti al-Juwaynī, al-Suyūṭī, al-Ghazālī dan al-Rāzī... Muṣawwibah berpendapat bahwa tidak ada jawaban khusus dan benar (ḥukm mu'ayyati) yang Tuhan inginkan manusia untuk menemukan..."</p>
+</blockquote>
+<p>Pendekatan ini menunjukkan bagaimana perdebatan historis mencerminkan ketegangan yang terus berlanjut dalam pemikiran hukum Islam tentang determinasi makna dan otoritas interpretatif.</p>
+<h2 class="atx" id="9-teori-hukum-kritis-critical-legal-theory">9. Teori Hukum Kritis (Critical Legal Theory)</h2>
+<p>Penulis mengadopsi perspektif hukum kritis yang menganalisis bagaimana klaim hukum seringkali menyembunyikan dinamika kekuasaan:</p>
+<blockquote>
+<p>"Importantly, the very act of claiming any determination or doctrine to be presumptively settled runs the very serious risk of being authoritarian. Consequently, someone proposing such a premise must be aware that he or she is flirting with the possibility of usurping the Divine Will and marginalizing the text." (hal. 326)</p>
+<p>"Penting, tindakan mengklaim bahwa determinasi atau doktrin apa pun telah ditetapkan secara presumtif membawa risiko serius menjadi otoriter. Akibatnya, seseorang yang mengusulkan premis seperti itu harus menyadari bahwa dia sedang bermain-main dengan kemungkinan merampas Kehendak Ilahi dan memarjinalkan teks."</p>
+</blockquote>
+<p>Kerangka ini mengkritisi klaim otoritas interpretatif dan mengungkap bagaimana wacana hukum Islam dapat menjadi alat untuk melegitimasi hubungan kekuasaan tertentu.</p>
+<h2 class="atx" id="10-integratif-multidisiplin">10. Integratif-Multidisiplin</h2>
+<p>Pada tingkat yang lebih luas, pendekatan penulis bersifat integratif-multidisiplin, menggabungkan perspektif dari:</p>
+<ul>
+<li>Hukum Islam klasik (fiqh dan ushul fiqh)</li>
+<li>Teori interpretasi modern (hermeneutika)</li>
+<li>Teori sastra (konsep teks terbuka)</li>
+<li>Sosiologi pengetahuan</li>
+<li>Filsafat hukum</li>
+<li>Teologi Islam</li>
+<li>Teori otoritas dan kekuasaan</li>
+</ul>
+<p>Pendekatan multidisiplin ini memungkinkan penulis untuk menganalisis kompleksitas konstruksi otoritarianisme dalam interpretasi teks keagamaan Islam dari berbagai perspektif.</p>
+<h2 class="atx" id="hubungan-antar-kerangka-pemikiran">Hubungan Antar Kerangka Pemikiran</h2>
+<p>Kerangka-kerangka pemikiran yang digunakan penulis saling terhubung dan saling memperkuat. Berikut adalah cara keterkaitan antara kerangka-kerangka tersebut:</p>
+<ol>
+<li><p><strong>Pendekatan yuridis-hermeneutis</strong> menyediakan landasan umum untuk menganalisis hubungan antara teks, pembaca, dan Tuhan.</p>
+</li>
+<li><p><strong>Teori hubungan agen-prinsipal</strong> memberikan kerangka untuk memahami dinamika kekuasaan dalam interpretasi teks keagamaan.</p>
+</li>
+<li><p><strong>Etika diskursus</strong> menekankan nilai moralitas dalam proses interpretasi, bukan hanya hasil akhirnya.</p>
+</li>
+<li><p><strong>Teori teks terbuka</strong> menyediakan model untuk memahami bagaimana teks keagamaan tetap relevan melalui pluralitas interpretasi.</p>
+</li>
+<li><p><strong>Sosiologi pengetahuan</strong> menganalisis bagaimana faktor sosial-politik mempengaruhi perkembangan doktrin hukum Islam.</p>
+</li>
+<li><p><strong>Pendekatan teologis-filosofis</strong> mempertanyakan batas-batas pengetahuan manusia dalam mengklaim memahami Kehendak Ilahi.</p>
+</li>
+<li><p><strong>Tipologi asumsi dasar</strong> memberikan alat analitis untuk mengidentifikasi jenis-jenis asumsi yang mendasari interpretasi hukum.</p>
+</li>
+<li><p><strong>Pendekatan komparatif-historis</strong> menunjukkan bagaimana perdebatan historis mencerminkan ketegangan yang terus berlanjut dalam pemikiran hukum Islam.</p>
+</li>
+<li><p><strong>Teori hukum kritis</strong> mengungkap bagaimana klaim otoritas interpretatif dapat menyembunyikan dinamika kekuasaan.</p>
+</li>
+<li><p><strong>Pendekatan integratif-multidisiplin</strong> menggabungkan perspektif dari berbagai disiplin untuk menganalisis kompleksitas otoritarianisme dalam interpretasi teks keagamaan.</p>
+</li>
+</ol>
+<p>Bagaimana kerangka-kerangka pemikiran ini saling terhubung satu sama lain, dapat dilihat dalam diagram berikut: </p>
+<p><strong>Diagram Kerangka Pemikiran dalam Bab The Construction of the Authoritarian: Untuk Pemahaman kategoris</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/05.%20DEVI-The%20Construction%20of%20the%20Authoritarian/Diagram-diagram/Kerangka%20pemikiran%20dalam%20bab%20The%20Construction.png"></p>
+<h2 class="atx" id="posisi-teoretis-penulis">Posisi Teoretis Penulis</h2>
+<p>Dari berbagai kerangka pemikiran yang digunakan, penulis tampaknya mengadopsi posisi teoretis yang:</p>
+<ol>
+<li><p><strong>Menekankan pluralisme interpretatif</strong> - melihat interpretasi hukum Islam sebagai proses yang selalu terbuka dan plural</p>
+</li>
+<li><p><strong>Mengkritisi klaim otoritas absolut</strong> - menolak klaim bahwa interpretasi manusia dapat sepenuhnya mencerminkan Kehendak Ilahi</p>
+</li>
+<li><p><strong>Mendukung pendekatan muṣawwibah</strong> - menyarankan bahwa kebenaran hukum Islam bersifat relatif terhadap upaya ijtihad yang jujur</p>
+</li>
+<li><p><strong>Mendukung konsep "karya dalam pergerakan"</strong> - melihat teks keagamaan sebagai karya yang terus berinteraksi dengan pembaca dalam konteks yang berubah</p>
+</li>
+<li><p><strong>Menekankan etika diskursus</strong> - melihat moralitas tertinggi dalam interpretasi adalah kejujuran dan integritas proses, bukan klaim kebenaran hasil akhir</p>
+</li>
+</ol>
+<p>Posisi teoretis ini mencerminkan pendekatan yang menekankan perlunya menghindari otoritarianisme dalam interpretasi teks keagamaan Islam dan mendorong dialog yang lebih terbuka dan reflektif tentang hukum Islam</p>
+<p><strong>Diagram Penjelas  Posisi Teoretis Khaleed Abou el-Fadl</strong></p>
+<p><strong>1. Hierarki Posisi Penulis</strong></p>
+<p>Diagram ini menunjukkan struktur hierarkis posisi teoretis penulis, dengan lima cabang utama: pluralisme interpretatif, kritik terhadap klaim otoritas absolut, dukungan terhadap pendekatan Muṣawwibah, dukungan konsep "karya dalam pergerakan", dan penekanan pada etika diskursus. Setiap cabang diuraikan lebih lanjut untuk menunjukkan aspek-aspek spesifik dari posisi teoretis tersebut.</p>
+<p><strong>2. Mindmap Posisi Teoretis Penulis</strong></p>
+<img data-align="center" alt="" src="file:///G:/My Drive/06. Proyek Pribadi/Kuliah Devi/Tugas-tugas/Prof. Amin Abdullah/05. DEVI-The Construction of the Authoritarian/Diagram-diagram/2. mindmap posisi teoretis.png" title="">
+
+<p>Mindmap ini mengelompokkan posisi teoretis penulis ke dalam lima kategori utama: pandangan tentang teks, pandangan tentang otoritas, pandangan tentang kebenaran hukum, pandangan tentang asumsi dasar, dan dampak sosial dan etis. Mindmap ini memungkinkan eksplorasi komprehensif dan terstruktur dari berbagai aspek pemikiran penulis.</p>
+<p><strong>3. Hubungan Posisi Teoretis dengan Praktik Interpretatif</strong></p>
+<img data-align="center" alt="" src="file:///G:/My Drive/06. Proyek Pribadi/Kuliah Devi/Tugas-tugas/Prof. Amin Abdullah/05. DEVI-The Construction of the Authoritarian/Diagram-diagram/3. Hubungan posisi teoretis dengan praktik interpretasi.png" title="">
+
+<p>Visualisasi ini menunjukkan bagaimana posisi teoretis penulis diterjemahkan ke dalam praktik interpretatif, dengan membandingkan praktik otoritarian yang dikritik dan praktik otoritatif yang didukung. Diagram ini juga mencakup contoh-contoh kasus konkret dari teks (hijab/jilbab, pernikahan wanita Hanafi, dan apostasi) untuk menunjukkan bagaimana prinsip-prinsip teoretis diterapkan dalam situasi spesifik.</p>
+<p><strong>4. Perbandingan Posisi Teoretis Penulis dengan Pendekatan Lain</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/05.%20DEVI-The%20Construction%20of%20the%20Authoritarian/Diagram-diagram/4.%20Perbandingan%20posisi%20teoretis%20Abou%20el-Fadl%20dengan%20pendekatan%20lain.png"></p>
+<p>Visualisasi ini membandingkan posisi teoretis penulis dengan tiga pendekatan lain: Mukhaṭṭi'ah, Tradisionalis, dan Modernis. Perbandingan dilakukan pada empat aspek utama: determinasi makna, otoritas interpretatif, hubungan teks-pembaca, dan pendekatan terhadap asumsi dasar. Diagram ini menunjukkan bagaimana posisi penulis berbeda dari dan berhubungan dengan tradisi pemikiran Islam lainnya.</p>
+<p><strong>5. Model Operasional Posisi Teoretis</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/05.%20DEVI-The%20Construction%20of%20the%20Authoritarian/Diagram-diagram/5.%20Model%20Operasional%20Posisi%20Teoretis.png"></p>
+<p>Visualisasi terakhir menunjukkan bagaimana posisi teoretis penulis dapat dioperasionalkan dalam proses interpretasi teks keagamaan. Diagram ini menggambarkan alur proses dari teks keagamaan hingga interpretasi otoritatif, melalui lima tahap utama: pengakuan teks sebagai "karya dalam pergerakan", penerapan lima kontingensi, identifikasi dan transparansi asumsi dasar, pengakuan pluralitas interpretasi, dan diferensiasi interpretasi dari Kehendak Ilahi. Diagram ini juga menunjukkan konteks eksternal yang mempengaruhi proses interpretasi.</p>
+<p>Kelima visualisasi ini memberikan gambaran komprehensif tentang posisi teoretis penulis dari berbagai perspektif: konseptual, perbandingan, praktis, operasional, dan kontekstual. Visualisasi-visualisasi ini menangkap kompleksitas pemikiran penulis tentang interpretasi teks keagamaan Islam dan kritiknya terhadap pendekatan otoritarian.</p>
+<h2 class="atx" id="kesimpulan-3">Kesimpulan</h2>
+<p>Kerangka pemikiran yang digunakan penulis dalam "The Construction of the Authoritarian" mencerminkan pendekatan yang kompleks, multidisiplin, dan kritis terhadap interpretasi teks keagamaan Islam. Penulis mengintegrasikan perspektif dari hukum Islam klasik, hermeneutika modern, teori sastra, sosiologi pengetahuan, dan teori kritis untuk menganalisis bagaimana otoritarianisme dikonstruksi dalam interpretasi teks keagamaan.</p>
+<p>Pendekatan ini memungkinkan penulis untuk mengungkap dinamika kekuasaan yang tersembunyi dalam klaim otoritas interpretatif dan mengusulkan model interpretasi yang lebih terbuka, pluralistik, dan sadar diri. Kerangka pemikiran ini mencerminkan posisi teoretis yang menekankan pluralisme interpretatif, mengkritisi klaim otoritas absolut, dan melihat interpretasi teks keagamaan sebagai proses yang terus berlangsung dan berkembang.</p>
+<h1 class="atx" id="d-alur-penyampaian-dan-struktur-teks-bab-andquotthe-construction-of-the-authoritarianandquot">D. ALUR PENYAMPAIAN DAN STRUKTUR TEKS BAB "The Construction of the Authoritarian"</h1>
+<p>Teks "The Construction of the Authoritarian" distrukturkan dengan pola yang metodis dan progresif untuk mencapai tujuan penulis dalam menganalisis dan mengkritik konstruksi otoritarianisme dalam interpretasi teks keagamaan Islam. Analisis berikut ini mengidentifikasi bagaimana alur penyampaian teks distrukturkan untuk mencapai tujuan tersebut.</p>
+<h2 class="atx" id="1-struktur-makro-teks">1. Struktur Makro Teks</h2>
+<p>Teks diorganisasikan ke dalam lima bagian utama yang saling terkait dalam sebuah alur progresif:</p>
+<ol>
+<li><strong>Pendahuluan</strong>: Mengenalkan masalah otoritarianisme dan mendefinisikannya (hal. 293-294)</li>
+<li><strong>The iron law of authoritarianism</strong>: Mengembangkan teori tentang kecenderungan otoritarian dan cara melawannya (hal. 295-299)</li>
+<li><strong>Islamic law as a work in movement</strong>: Mengelaborasi konsep teks terbuka (hal. 300-304)</li>
+<li><strong>The fundamentals of religion and burdens of proof</strong>: Eksplorasi mendalam tentang kebenaran interpretatif dan asumsi dasar (hal. 309-328)</li>
+<li><strong>Moral objections and authoritarianism</strong>: Aplikasi praktis melalui contoh kasus dan kesimpulan (hal. 329-335)</li>
+</ol>
+<p>Struktur ini menunjukkan alur logis dari definisi konseptual → teoretisasi → pengembangan kerangka alternatif → analisis filosofis mendalam → aplikasi praktis.</p>
+<p><strong>Diagram Struktur Makro Teks</strong></p>
+<img data-align="center" width="270" alt="" src="file:///G:/My Drive/06. Proyek Pribadi/Kuliah Devi/Tugas-tugas/Prof. Amin Abdullah/05. DEVI-The Construction of the Authoritarian/Diagram-diagram/Struktur teks dan alur pembahasan/1. Struktur Makro Bab.png" title="">
+
+<p>Diagram ini menunjukkan lima bagian utama teks dan bagaimana mereka berhubungan dalam alur logis dari definisi konseptual hingga aplikasi praktis.</p>
+<h2 class="atx" id="2-pola-pengembangan-argumen">2. Pola Pengembangan Argumen</h2>
+<p>Penulis menggunakan beberapa pola pengembangan argumen yang saling terkait:</p>
+<h3 class="atx" id="a-pola-diagnostik-preskriptif">a. Pola Diagnostik-Preskriptif</h3>
+<blockquote>
+<p>"The authoritarian tendency is resisted through the implementation of the five contingencies discussed earlier – honesty, self-restraint, diligence, comprehensiveness, and reasonableness. In fact, authoritarianism invariably involves the violation of one or more of the five contingencies." (hal. 295-296)</p>
+<p>"Kecenderungan otoriter dilawan melalui penerapan lima kontingensi yang dibahas sebelumnya – kejujuran, pengendalian diri, ketekunan, komprehensif, dan kelayakan. Sebenarnya, otoritarianisme selalu melibatkan pelanggaran terhadap satu atau lebih dari lima kontingensi tersebut."</p>
+</blockquote>
+<p>Penulis:</p>
+<ol>
+<li>Mendiagnosis masalah (otoritarianisme dan mekanismenya)</li>
+<li>Mengajukan preskripsi (lima kontingensi)</li>
+</ol>
+<h3 class="atx" id="b-pola-kontras-komparatif">b. Pola Kontras-Komparatif</h3>
+<p>Penulis sering membandingkan sudut pandang yang berbeda untuk menjelaskan posisinya:</p>
+<blockquote>
+<p>"The first school, known as the mukhaṭṭi'ah, argued that ultimately, there is a correct answer to every textual or legal problem... The second school, known as the muṣawwibah... The muṣawwibah argued that there is no specific and correct answer (ḥukm mu'ayyati) that God wants human beings to discover..." (hal. 305-306)</p>
+<p>"Mazhab pertama, yang dikenal sebagai mukhaṭṭi'ah, berpendapat bahwa pada akhirnya, ada jawaban yang benar untuk setiap masalah tekstual atau hukum... Mazhab kedua, yang dikenal sebagai muṣawwibah... Muṣawwibah berpendapat bahwa tidak ada jawaban khusus dan benar (ḥukm mu'ayyati) yang Tuhan inginkan manusia untuk menemukan..."</p>
+</blockquote>
+<h3 class="atx" id="c-pola-teoretis-ilustratif">c. Pola Teoretis-Ilustratif</h3>
+<p>Penulis mengajukan konsep teoretis kemudian mengilustrasikannya dengan contoh konkret:</p>
+<blockquote>
+<p>"For the first example, we will deal with the issue of the veiling of women in Islamic law. This is not intended to be a full exposition on this matter; I am simply selecting some issues in order to clarify the argument." (hal. 296)</p>
+<p>"Untuk contoh pertama, kita akan membahas masalah pemakaian kerudung bagi perempuan dalam hukum Islam. Ini tidak dimaksudkan sebagai paparan lengkap tentang masalah ini; saya hanya memilih beberapa isu untuk memperjelas argumen."</p>
+</blockquote>
+<h3 class="atx" id="d-pola-analitis-rekonstruktif">d. Pola Analitis-Rekonstruktif</h3>
+<p>Penulis menganalisis konsep yang sudah ada, lalu merekonstruksinya dalam kerangka baru:</p>
+<blockquote>
+<p>"As far as the basic assumptions of the juristic communities are concerned, one can differentiate between four types... I have sought to take account of the major unspoken assumptions in the Islamic juristic culture." (hal. 316)</p>
+<p>"Sejauh menyangkut asumsi dasar komunitas yuristik, seseorang dapat membedakan antara empat jenis... saya telah berusaha untuk memperhitungkan asumsi-asumsi besar yang tidak terucapkan dalam budaya yuristik Islam."</p>
+</blockquote>
+<p><strong>Diagram Pola Pengembangan Argumen</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/05.%20DEVI-The%20Construction%20of%20the%20Authoritarian/Diagram-diagram/Struktur%20teks%20dan%20alur%20pembahasan/2.%20Pola%20pengembangan%20argumen.png"></p>
+<p>Mindmap ini menggambarkan empat pola pengembangan argumen: diagnostik-preskriptif (Abu-abu), kontras-komparatif (Kuning), teoretis-ilustratif (Ungu), dan analitis-rekonstruktif (Pink).</p>
+<h2 class="atx" id="3-strategi-retoris">3. Strategi Retoris</h2>
+<p>Penulis menggunakan beberapa strategi retoris untuk membangun argumennya:</p>
+<h3 class="atx" id="a-posisi-otoritatif-moderat">a. Posisi Otoritatif Moderat</h3>
+<p>Penulis memposisikan dirinya sebagai suara yang otoritatif namun tetap reflektif dengan menggunakan frasa seperti:</p>
+<blockquote>
+<p>"In the Islamic context, I believe that authoritarianism is an act of ultimate lack of self-restraint..." (hal. 293)</p>
+<p>"Dalam konteks Islam, saya percaya bahwa otoritarianisme adalah suatu tindakan kekurangan pengendalian diri yang paling parah..."</p>
+</blockquote>
+<blockquote>
+<p>"In my view, any attempt to claim that a determination is part of the uṣūl... in all probability sets the stage for an authoritarian dynamic." (hal. 326-327)</p>
+<p>"Menurut pendapat saya, setiap upaya untuk mengklaim bahwa suatu determinasi adalah bagian dari uṣūl... kemungkinan besar menyiapkan panggung untuk dinamika otoriter."</p>
+</blockquote>
+<p>Pendekatan ini membangun kredibilitas sambil tetap terbuka terhadap dialog.</p>
+<h3 class="atx" id="b-elaborasi-bertahap">b. Elaborasi Bertahap</h3>
+<p>Penulis menggunakan strategi elaborasi bertahap, memulai dengan definisi sederhana dan kemudian mengembangkannya:</p>
+<ol>
+<li>Mendefinisikan otoritarianisme (hal. 293)</li>
+<li>Mengidentifikasi mekanismenya (hal. 294-295)</li>
+<li>Menjelaskan cara melawannya (hal. 295-296)</li>
+<li>Memberikan contoh (hal. 296-299)</li>
+<li>Merumuskan alternatifnya (hal. 300-309)</li>
+<li>Mengembangkan kerangka filosofisnya (hal. 309-328)</li>
+<li>Mengaplikasikannya pada kasus nyata (hal. 329-335)</li>
+</ol>
+<h3 class="atx" id="c-argumentasi-dialogis">c. Argumentasi Dialogis</h3>
+<p>Penulis sering menggunakan bentuk dialog hipotetis untuk menjelaskan posisinya:</p>
+<blockquote>
+<p>"Assume that I read the following Qur'ānic verse... After reading these verses, I assert to my friend that these verses require women to cover their entire bodies... Somewhat confused, my friend inquires how I reached this conclusion... My response to this is that various juristic interpretive communities..." (hal. 296-297)</p>
+<p>"Asumsikan bahwa saya membaca ayat Al-Qur'an berikut... Setelah membaca ayat-ayat ini, saya menegaskan kepada teman saya bahwa ayat-ayat ini mengharuskan perempuan menutup seluruh tubuh mereka... Agak bingung, teman saya bertanya bagaimana saya mencapai kesimpulan ini... Tanggapan saya adalah bahwa berbagai komunitas interpretatif yuristik..."</p>
+</blockquote>
+<p>Strategi ini membuat argumen kompleks lebih mudah diakses dan memungkinkan penulis untuk mengantisipasi sanggahan.</p>
+<p><strong>Diagram Strategi Retoris</strong></p>
+<img data-align="center" alt="" src="file:///G:/My Drive/06. Proyek Pribadi/Kuliah Devi/Tugas-tugas/Prof. Amin Abdullah/05. DEVI-The Construction of the Authoritarian/Diagram-diagram/Struktur teks dan alur pembahasan/03. Strategi Retoris.png" title="">
+
+<p>Diagram ini menunjukkan tiga strategi retoris utama: posisi otoritatif moderat, elaborasi bertahap, dan argumentasi dialogis.</p>
+<h2 class="atx" id="4-struktur-analisis-dan-tahap-pengembangannya">4. Struktur Analisis dan tahap Pengembangannya</h2>
+<p>Alur penyampaian teks mengikuti struktur progresif yang memiliki koherensi internal yang kuat:</p>
+<h3 class="atx" id="a-fondasi-konseptual-hal-293-296">a. Fondasi Konseptual (hal. 293-296)</h3>
+<p>Penulis memulai dengan mendefinisikan konsep utama (otoritarianisme) dan menyiapkan kerangka teoretis dasar. Ini memberikan landasan untuk seluruh analisis yang mengikuti.</p>
+<blockquote>
+<p>"In the Islamic context, I believe that authoritarianism is an act of ultimate lack of self-restraint that involves a fraudulent claim whose natural effect is to usurp the Divine Will." (hal. 293)</p>
+<p>"Dalam konteks Islam, saya percaya bahwa otoritarianisme adalah suatu tindakan kekurangan pengendalian diri yang paling parah yang melibatkan klaim penipuan yang efek alaminya adalah merampas Kehendak Ilahi."</p>
+</blockquote>
+<h3 class="atx" id="b-elaborasi-teoretis-hal-295-309">b. Elaborasi Teoretis (hal. 295-309)</h3>
+<p>Penulis kemudian mengembangkan kerangka teoretisnya, memperkenalkan konsep-konsep kunci seperti "lima kontingensi" dan "teks terbuka".</p>
+<blockquote>
+<p>"The authoritarian tendency is resisted through the implementation of the five contingencies..." (hal. 295)</p>
+<p>"Kecenderungan otoriter dilawan melalui penerapan lima kontingensi..."</p>
+</blockquote>
+<blockquote>
+<p>"The Qur'ān and Sunnah, to borrow Umberto Eco's expression, are 'works in movement'..." (hal. 301)</p>
+<p>"Al-Qur'an dan Sunnah, meminjam ungkapan Umberto Eco, adalah 'karya dalam pergerakan'..."</p>
+</blockquote>
+<h3 class="atx" id="c-analisis-historio-filosofis-hal-309-328">c. Analisis Historio-Filosofis (hal. 309-328)</h3>
+<p>Penulis memperdalamnya dengan menjelajahi perdebatan historis dalam yurisprudensi Islam (mukhaṭṭi'ah vs. muṣawwibah) dan menganalisis asumsi-asumsi dasar yang mendasari interpretasi.</p>
+<blockquote>
+<p>"The issue of the extent to which the Divine Will is accessible or attainable... takes us back to a debate that we touched upon in the previous chapter." (hal. 304)</p>
+<p>"Isu sejauh mana Kehendak Ilahi dapat diakses atau dicapai... membawa kita kembali ke debat yang telah kita singgung di bab sebelumnya."</p>
+</blockquote>
+<h3 class="atx" id="d-aplikasi-praktis-hal-329-335">d. Aplikasi Praktis (hal. 329-335)</h3>
+<p>Penulis mengakhiri dengan aplikasi kerangka teoretisnya pada contoh-contoh konkret, membuktikan relevansi praktisnya.</p>
+<blockquote>
+<p>"I will summarize the arguments of this chapter by working through a second example..." (hal. 332)</p>
+<p>"Saya akan merangkum argumen-argumen bab ini dengan mengerjakan contoh kedua..."</p>
+</blockquote>
+<p><strong>Diagram Struktur Analisis dan Tahap Pengembangannya</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/05.%20DEVI-The%20Construction%20of%20the%20Authoritarian/Diagram-diagram/Struktur%20teks%20dan%20alur%20pembahasan/4.%20Struktur%20dan%20tahap%20Pengembangan%20analisis.png"></p>
+<p>Diagram ini memiliki subgraph detail untuk setiap bagian utama, menunjukkan bagaimana teks bergerak dari fondasi konseptual hingga aplikasi praktis.</p>
+<h2 class="atx" id="5-perangkat-tekstual-dan-gaya-penyampaian">5. Perangkat Tekstual dan Gaya Penyampaian</h2>
+<p>Penulis menggunakan beberapa perangkat tekstual untuk memfasilitasi pemahaman:</p>
+<h3 class="atx" id="a-penggunaan-contoh-dan-ilustrasi">a. Penggunaan Contoh dan Ilustrasi</h3>
+<p>Untuk mengkonkretkan konsep-konsep abstrak, penulis menggunakan banyak contoh:</p>
+<ul>
+<li>Contoh jilbab/hijab (hal. 296-299)</li>
+<li>Contoh ijtihad dan kisah Shāfi'ī (hal. 305-306)</li>
+<li>Contoh pernikahan wanita Ḥanafī (hal. 307-308)</li>
+<li>Contoh kesaksian perempuan (hal. 322-323)</li>
+<li>Contoh apostasi (hal. 332-335)</li>
+</ul>
+<h3 class="atx" id="b-sintesis-tradisi-dan-modernitas">b. Sintesis Tradisi dan Modernitas</h3>
+<p>Penulis secara mahir memadukan tradisi yuristik Islam klasik dengan kerangka teoretis kontemporer:</p>
+<blockquote>
+<p>"The Qur'ān and Sunnah, to borrow Umberto Eco's expression, are 'works in movement'..." (hal. 301)</p>
+<p>"Al-Qur'an dan Sunnah, meminjam ungkapan Umberto Eco, adalah 'karya dalam pergerakan'..."</p>
+</blockquote>
+<h3 class="atx" id="c-penggunaan-kutipan-strategis">c. Penggunaan Kutipan Strategis</h3>
+<p>Penulis mengutip otoritas tradisional untuk mendukung argumennya, menambah bobot pada posisinya:</p>
+<blockquote>
+<p>"Imam al-Ḥaramayn al-Juwaynī (d. 478/1085). He states: 'If the mujtahid is not negligent in his research and is diligent in his search for sources and does not find them, then the law of God, as to him, is according to his ijtihād'" (hal. 300-301)</p>
+<p>"Imam al-Ḥaramayn al-Juwaynī (w. 478/1085). Dia menyatakan: 'Jika mujtahid tidak lalai dalam penelitiannya dan tekun dalam pencarian sumbernya dan tidak menemukannya, maka hukum Tuhan, baginya, adalah sesuai dengan ijtihād-nya'"</p>
+</blockquote>
+<h3 class="atx" id="d-penekanan-pada-kontinuitas-historis">d. Penekanan pada Kontinuitas Historis</h3>
+<p>Penulis menekankan bagaimana perdebatan kontemporer berakar dalam tradisi intelektual Islam:</p>
+<blockquote>
+<p>"As noted earlier, pre-modern Muslim jurists frequently debated the meaning of the phrase 'Every mujtahid is correct.'" (hal. 304)</p>
+<p>"Seperti yang dicatat sebelumnya, ahli-ahli hukum Muslim pra-modern sering memperdebatkan makna frasa 'Setiap mujtahid adalah benar.'"</p>
+</blockquote>
+<p><strong>Diagram Perangkat Tekstual dan Gaya Penyampaian</strong></p>
+<img width="741" alt="" src="file:///G:/My Drive/06. Proyek Pribadi/Kuliah Devi/Tugas-tugas/Prof. Amin Abdullah/05. DEVI-The Construction of the Authoritarian/Diagram-diagram/Struktur teks dan alur pembahasan/5. Perangkat tekstual dan Gaya penyampaian.png" title="">
+
+<p>Diagram ini menggambarkan empat perangkat tekstual utama: contoh dan ilustrasi, sintesis tradisi dan modernitas, kutipan strategis, dan penekanan pada kontinuitas historis.</p>
+<h2 class="atx" id="6-alur-argumentasi-spiral">6. Alur Argumentasi Spiral</h2>
+<p>Secara keseluruhan, alur penyampaian teks mengikuti pola "spiral" di mana penulis:</p>
+<ol>
+<li><strong>Memperkenalkan</strong> suatu konsep pada tingkat dasar</li>
+<li><strong>Mengeksplorasi</strong> dimensi-dimensinya</li>
+<li><strong>Kembali</strong> ke konsep tersebut dengan pemahaman yang lebih dalam</li>
+<li><strong>Mengembangkan</strong> konsep tersebut ke tingkat yang lebih tinggi</li>
+<li><strong>Mengintegrasikan</strong> dengan konsep-konsep lain</li>
+</ol>
+<p>Contoh spiral ini terlihat dalam perkembangan konsep otoritarianisme:</p>
+<ul>
+<li>Pertama didefinisikan sebagai "merampas Kehendak Ilahi" (hal. 293)</li>
+<li>Kemudian dikaitkan dengan "lima kontingensi" (hal. 295-296)</li>
+<li>Lalu dihubungkan dengan konsep "teks terbuka" (hal. 300-304)</li>
+<li>Kemudian dipertentangkan dengan perdebatan mukhaṭṭi'ah vs. muṣawwibah (hal. 304-309)</li>
+<li>Selanjutnya diperdalam melalui analisis asumsi dasar (hal. 316-328)</li>
+<li>Akhirnya dikonkretkan melalui contoh-contoh spesifik (hal. 329-335)</li>
+</ul>
+<p><strong>Diagram Alur Argumentasi yang Melingkar (Spiral)</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/05.%20DEVI-The%20Construction%20of%20the%20Authoritarian/Diagram-diagram/Struktur%20teks%20dan%20alur%20pembahasan/6.%20Alur%20argumentasi%20yang%20melingkar%20(spiral).png"></p>
+<p>Diagram ini menunjukkan bagaimana argumen bergerak melalui enam level pengembangan, dari definisi dasar hingga aplikasi konkret, dengan koneksi umpan balik yang menunjukkan sifat spiral (melingkar dari argumentasi.</p>
+<h2 class="atx" id="7-tujuan-teks-dan-efektivitas-struktur">7. Tujuan Teks dan Efektivitas Struktur</h2>
+<p>Tujuan utama teks ini adalah menganalisis dan mengkritik konstruksi otoritarianisme dalam interpretasi teks keagamaan Islam, serta mengusulkan alternatif yang lebih terbuka, reflektif, dan sadar diri. Struktur teks secara efektif mendukung tujuan ini melalui:</p>
+<h3 class="atx" id="a-pendekatan-multidimensi">a. Pendekatan Multidimensi</h3>
+<p>Teks menyajikan otoritarianisme sebagai fenomena kompleks yang memiliki dimensi:</p>
+<ul>
+<li>Epistemologis (terkait pengetahuan dan kebenaran)</li>
+<li>Metodologis (terkait proses interpretasi)</li>
+<li>Etis (terkait tanggung jawab moral interpreter)</li>
+<li>Sosio-politik (terkait hubungan kekuasaan)</li>
+</ul>
+<p>Struktur teks memungkinkan penulis untuk menangani semua dimensi ini.</p>
+<h3 class="atx" id="b-kombinasi-analisis-dan-rekonstruksi">b. Kombinasi Analisis dan Rekonstruksi</h3>
+<p>Teks tidak hanya mengkritik praktik otoritarian tetapi juga:</p>
+<ul>
+<li>Menganalisis mekanisme yang mendasarinya</li>
+<li>Menelusuri akar historisnya</li>
+<li>Mengidentifikasi asumsi-asumsi implisit</li>
+<li>Merekonstruksi alternatif yang lebih terbuka</li>
+</ul>
+<h3 class="atx" id="c-dialog-antara-tradisi-dan-modernitas">c. Dialog Antara Tradisi dan Modernitas</h3>
+<p>Struktur teks memungkinkan dialog produktif antara:</p>
+<ul>
+<li>Tradisi yuristik Islam klasik</li>
+<li>Teori interpretasi kontemporer</li>
+<li>Perdebatan filosofis tentang otoritas</li>
+<li>Keprihatinan etis kontemporer</li>
+</ul>
+<p>Dengan cara ini, struktur teks menjembatani kesenjangan antara tradisi dan modernitas tanpa mengorbankan salah satunya.</p>
+<p><strong>Diagram Tujuan Teks dan Efektivitas Struktur</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/05.%20DEVI-The%20Construction%20of%20the%20Authoritarian/Diagram-diagram/Struktur%20teks%20dan%20alur%20pembahasan/7.%20Tujuan%20dan%20Efektivitas%20struktur%20Bab.png"></p>
+<p>Diagram ini menunjukkan empat dimensi tujuan teks (epistemologis, metodologis, etis, sosio-politik) dan tiga strategi struktural yang membuat teks efektif dalam mencapai tujuan-tujuan tersebut.</p>
+<h2 class="atx" id="8-strategi-penutupan-dan-kesimpulan">8. Strategi Penutupan dan Kesimpulan</h2>
+<p>Penulis mengakhiri teks dengan cara yang memadukan:</p>
+<h3 class="atx" id="a-ringkasan-konseptual">a. Ringkasan Konseptual</h3>
+<blockquote>
+<p>"This response is authoritarian – it ignores the evidence, misrepresents the tradition, and usurps the integrity and autonomy of the Principal's instructions. The jurist invokes the authoritativeness of the juristic tradition by referring to 'Islamic law' but then proceeds to ignore its determinations as simply misguided or non-existent." (hal. 332)</p>
+<p>"Respons ini otoriter – mengabaikan bukti, menyalahtafsirkan tradisi, dan merampas integritas dan otonomi instruksi Prinsipal. Ahli hukum tersebut merujuk pada otoritativitas tradisi yuristik dengan mengacu pada 'hukum Islam' tetapi kemudian mengabaikan determinasinya sebagai sesuatu yang menyesatkan atau tidak ada."</p>
+</blockquote>
+<h3 class="atx" id="b-kutipan-otoritatif">b. Kutipan Otoritatif</h3>
+<blockquote>
+<p>"The early jurist Wakī' is reported to have said: 'The people of knowledge (the scholars) document all the evidence [on a matter], whether pro or con. The people of whim, however, document only the evidence that supports their position [and ignore the rest].'" (hal. 335)</p>
+<p>"Ahli hukum awal Wakī' dilaporkan telah mengatakan: 'Orang-orang berpengetahuan (para ulama) mendokumentasikan semua bukti [tentang suatu masalah], baik pro maupun kontra. Orang-orang berdasarkan keinginan, bagaimanapun, mendokumentasikan hanya bukti yang mendukung posisi mereka [dan mengabaikan yang lain].'"</p>
+</blockquote>
+<h3 class="atx" id="c-implikasi-praktis">c. Implikasi Praktis</h3>
+<p>Penulis mengaitkan diskusi teoretisnya dengan implikasi praktis untuk interpretasi teks keagamaan, menggarisbawahi relevansi analisisnya untuk diskusi kontemporer tentang otoritas keagamaan.</p>
+<p><strong>Diagram Strategi Penutupan dan kesimpulan</strong></p>
+<img data-align="center" alt="" src="file:///G:/My Drive/06. Proyek Pribadi/Kuliah Devi/Tugas-tugas/Prof. Amin Abdullah/05. DEVI-The Construction of the Authoritarian/Diagram-diagram/Struktur teks dan alur pembahasan/8. Strategi Penutupan dan Kesimpulan.png" title="">
+
+<h2 class="atx" id="kesimpulan-4">Kesimpulan</h2>
+<p>Alur penyampaian dalam "The Construction of the Authoritarian" distrukturkan dengan cara yang metodis, progresif, dan spiral untuk menganalisis konstruksi otoritarianisme dalam interpretasi teks keagamaan Islam dari berbagai dimensi. Dari definisi konseptual hingga aplikasi praktis, teks bergerak melalui elaborasi bertahap yang semakin dalam, sintesis tradisi dan modernitas, dan kombinasi kritis analisis dan rekonstruksi.</p>
+<p>Struktur ini efektif mencapai tujuan penulis untuk mengkritik praktik otoritarian dan mengusulkan alternatif yang lebih terbuka, reflektif, dan sadar diri. Melalui penggunaan strategis contoh, dialog hipotetis, dan argumentasi historis, penulis membuat konsep-konsep kompleks dapat diakses dan menunjukkan relevansi praktisnya. Alur spiral memungkinkan penulis untuk terus kembali ke konsep-konsep inti dengan pemahaman yang semakin dalam, menciptakan teks yang koheren namun multidimensi.</p>
+</article>
+</body>
+</html>
