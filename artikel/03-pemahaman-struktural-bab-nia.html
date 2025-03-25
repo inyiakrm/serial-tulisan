@@ -1,0 +1,2081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+/*# sourceURL=webpack://./node_modules/github-markdown-css/github-markdown.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9naXRodWItbWFya2Rvd24tY3NzL2dpdGh1Yi1tYXJrZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBMEI7RUFDMUIsMkRBQXF0RTtBQUN2dEU7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTs7Ozs7O0VBTUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7O0FBRUE7Ozs7OztFQU1FLHFCQUFxQjtBQUN2Qjs7QUFFQTs7Ozs7O0VBTUUsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLDhCQUE4QjtFQUM5QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGtJQUFrSTtFQUNsSSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7Ozs7OztFQU9FLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7OztFQUdFLGNBQWM7RUFDZCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFD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 */
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*# sourceURL=webpack://./node_modules/prismjs/themes/prism.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9wcmlzbWpzL3RoZW1lcy9wcmlzbS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7RUFJRTs7QUFFRjs7Q0FFQyxZQUFZO0NBQ1osZ0JBQWdCO0NBQ2hCLHdCQUF3QjtDQUN4QixzRUFBc0U7Q0FDdEUsY0FBYztDQUNkLGdCQUFnQjtDQUNoQixnQkFBZ0I7Q0FDaEIsb0JBQW9CO0NBQ3BCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsZ0JBQWdCOztDQUVoQixnQkFBZ0I7Q0FDaEIsY0FBYztDQUNkLFdBQVc7O0NBRVgscUJBQXFCO0NBQ3JCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsYUFBYTtBQUNkOztBQUVBOztDQUVDLGlCQUFpQjtDQUNqQixtQkFBbUI7QUFDcEI7O0FBRUE7O0NBRUMsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDOztFQUVDLGlCQUFpQjtDQUNsQjtBQUNEOztBQUVBLGdCQUFnQjtBQUNoQjtDQUNDLFlBQVk7Q0FDWixjQUFjO0NBQ2QsY0FBYztBQUNmOztBQUVBOztDQUVDLG1CQUFtQjtBQUNwQjs7QUFFQSxnQkFBZ0I7QUFDaEI7Q0FDQyxhQUFhO0NBQ2IsbUJBQW1CO0NBQ25CLG1CQUFtQjtBQUNwQjs7QUFFQTs7OztDQUlDLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTs7Ozs7OztDQU9DLFdBQVc7QUFDWjs7QUFFQTs7Ozs7O0NBTUMsV0FBVztBQUNaOztBQUVBOzs7OztDQUtDLGNBQWM7Q0FDZCxvRUFBb0U7Q0FDcEUsaUNBQWlDO0FBQ2xDOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsY0FBYztBQUNmOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxZQUFZO0FBQ2IiLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+
+/*# sourceURL=webpack://./src/muya/lib/assets/styles/exportStyle.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9tdXlhL2xpYi9hc3NldHMvc3R5bGVzL2V4cG9ydFN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFNBQVM7RUFDVCxVQUFVO0VBQ1YscUJBQXFCO0FBQ3ZCOztBQUVBOztFQUVFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBOzs7RUFHRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxPQUFPO0VBQ1AsY0FBYztFQUNkLGNBQWM7RUFDZCwrQkFBK0I7QUFDakMiLCJzb3VyY2VSb290IjoiIn0= */</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <article class="markdown-body"><h1 class="atx" id="pemahaman-struktural-atas-bab-andquotthe-anatomy-of-authoritarian-discourseandquot">PEMAHAMAN STRUKTURAL ATAS BAB "The Anatomy of Authoritarian Discourse"</h1>
+<h1 class="atx" id="a-pola-pengorganisasian-utama">A. Pola Pengorganisasian Utama</h1>
+<p>Bab "The Anatomy of Authoritarian Discourses" dari buku "Speaking in God's Name" karya Khaled Abou El Fadl memiliki beberapa pola pengorganisasian yang saling melengkapi:</p>
+<h2 class="atx" id="1-struktur-argumentatif-konseptual">1. Struktur Argumentatif-Konseptual</h2>
+<p>Bab ini dibangun dengan pola argumentasi yang terstruktur, melanjutkan kerangka teoretis dari bab sebelumnya ("The Construction of the Authoritarian") yang kemudian diaplikasikan ke contoh-contoh kasus spesifik:</p>
+<ul>
+<li><strong>Pengantar konseptual</strong> (hal. 348-353): Penulis menetapkan premis utama tentang kemunduran tradisi yuristik Islam dan transformasinya dari metodologi terbuka (<em>fiqh</em>) menjadi serangkaian perintah tetap (<em>ahkam</em>).</li>
+<li><strong>Transisi ke aplikasi praktis</strong> (hal. 353-360): Penulis memperkenalkan metode studi kasus dan menjelaskan mengapa pandangan Wahhabi dipilih sebagai fokus analisis.</li>
+<li><strong>Analisis kasus</strong> (hal. 360-387): Serangkaian contoh fatwa dianalisis untuk mengilustrasikan konsep teoretis.</li>
+<li><strong>Sintesis</strong> (hal. 387-388): Kesimpulan yang menghubungkan kembali contoh-contoh dengan kerangka teoretis.</li>
+</ul>
+<h2 class="atx" id="2-struktur-tematik">2. Struktur Tematik</h2>
+<p>Teks tersebut terbagi dalam tiga tema utama yang masing-masing memiliki subtema:</p>
+<h3 class="atx" id="a-diagnosis-masalah-hal-348-353">A. Diagnosis Masalah (hal. 348-353)</h3>
+<ul>
+<li>Kebuntuan epistemologi hukum Islam kontemporer</li>
+<li>Kegagalan upaya <em>ijtihad</em> modern</li>
+<li>Ambiguitas terhadap tradisi yuristik</li>
+<li>Tantangan membangun wacana otoritatif (vs. otoritarian)</li>
+</ul>
+<h3 class="atx" id="b-metode-analisis-hal-353-360">B. Metode Analisis (hal. 353-360)</h3>
+<ul>
+<li>Penjelasan sumber (responsa dari C.R.L.O dan juris Wahhabi)</li>
+<li>Penentuan kriteria analisis (konsistensi, selektivitas bukti, penyeimbangan kepentingan)</li>
+<li>Klarifikasi fokus pada proses, bukan hasil</li>
+</ul>
+<h3 class="atx" id="c-kategori-praktik-otoritarian-hal-360-387">C. Kategori Praktik Otoritarian (hal. 360-387)</h3>
+<ul>
+<li>Ketidakkonsistenan penerapan prinsip (kasus bra, sepatu hak tinggi, sumpah pernikahan)</li>
+<li>Selektivitas bukti (kunjungan wanita ke pemakaman, perjalanan wanita, tepuk tangan)</li>
+<li>Ketidakseimbangan kepentingan dalam penggunaan diskresi (wanita mengemudi, menyusui suami, diseksi mayat)</li>
+</ul>
+<h2 class="atx" id="3-struktur-studi-kasus-komparatif">3. Struktur Studi Kasus Komparatif</h2>
+<p>Penulis menggunakan pendekatan kasus untuk membangun argumennya:</p>
+<ul>
+<li><strong>Pengenalan kasus</strong>: Menyajikan fatwa atau responsa spesifik</li>
+<li><strong>Analisis bukti yang digunakan</strong>: Mengkaji dasar tekstual dan metodologis dari responsa</li>
+<li><strong>Perbandingan dengan tradisi yuristik</strong>: Membandingkan dengan pendapat alternatif dari tradisi klasik</li>
+<li><strong>Kritik metodologis</strong>: Menganalisis kesenjangan dan ketidakkonsistenan dalam penalaran</li>
+<li><strong>Identifikasi pola otoritarian</strong>: Menghubungkan kasus dengan konsep teoretis otoritarianisme</li>
+</ul>
+<h2 class="atx" id="4-struktur-dialogis">4. Struktur Dialogis</h2>
+<p>Teks ini mencerminkan pendekatan dialogis di mana penulis:</p>
+<ul>
+<li>Mengajukan pertanyaan retoris ("Siapa yang melarang apa?", "Apa yang menjelaskan determinasi ini?")</li>
+<li>Mengantisipasi tanggapan ("Mungkin para juris telah mencapai kesimpulan berbasis iman...")</li>
+<li>Mengajukan alternatif ("Akan lebih bijaksana bagi C.R.L.O untuk menanyakan...")</li>
+<li>Menyuarakan perspektif yang diabaikan ("Jika kita bertanya kepada perempuan...")</li>
+</ul>
+<h2 class="atx" id="5-struktur-kontras">5. Struktur Kontras</h2>
+<p>Penulis sering menggunakan struktur kontras untuk memperjelas argumennya:</p>
+<ul>
+<li><strong>Masa lalu vs. sekarang</strong>: Membandingkan tradisi yuristik historis dengan praktik kontemporer</li>
+<li><strong>Proses vs. hasil</strong>: Menekankan pentingnya metodologi di atas determinasi konkret</li>
+<li><strong>Otoritatif vs. otoritarian</strong>: Membedakan bentuk-bentuk klaim otoritas yang sah dan tidak sah</li>
+<li><strong>Prinsip vs. praktik</strong>: Menunjukkan ketidakkonsistenan antara prinsip yang diklaim dengan aplikasi praktisnya</li>
+</ul>
+<p>Bagaimana kontras-kontras ini sebenarnya tersusun dalam bab ini, kita dapat melihatnya dalam diagram berikut. Diagram ini menunjukkan oposisi-oposisi biner yang terdapat dalam bab ini, dan menjadi bagian integral dari analisis. </p>
+<p><strong>Diagram Struktur Oposisi Biner</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/Konsep-konsep%20kunci/05.%20Struktur%20Oposisi%20Biner.png"></p>
+<h2 class="atx" id="kesimpulan-tentang-struktur-konsep">Kesimpulan tentang Struktur Konsep</h2>
+<p>Melalui kombinasi struktur-struktur ini, Abou El Fadl membangun kritik yang komprehensif terhadap wacana otoritarian dalam hukum Islam kontemporer, khususnya yang memengaruhi posisi perempuan dalam masyarakat Islam.</p>
+<p><strong>Diagram Struktur Bab The Anatomy of Authoritarian Discourse</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/01.%20Struktur%20Tematik.png"></p>
+<p>Diagram ini bisa disederhanakan menjadi seperti berikut: </p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/02.%20Struktur%20tematik%20(sederhana).png"></p>
+<h1 class="atx" id="b-konsep-konsep-kunci-dan-hubungannya-satu-dengan-lain">B. KONSEP-KONSEP KUNCI DAN HUBUNGANNYA SATU DENGAN LAIN</h1>
+<h2 class="atx" id="1-transformasi-epistemologis-hukum-islam-fiqh-vs-aḥkam">1. Transformasi Epistemologis Hukum Islam (<em>Fiqh</em> vs. <em>Aḥkām</em>)</h2>
+<p>Konsep sentral dalam bab ini adalah perbedaan antara hukum Islam sebagai proses (<em>fiqh</em>) dan hukum Islam sebagai seperangkat aturan tetap (<em>aḥkām</em>). Penulis berpendapat bahwa transisi dari yang pertama ke yang kedua menandai kemunduran tradisi yuristik Islam dan membuka jalan bagi wacana otoritarian.</p>
+<blockquote>
+<p>"As a set of positive commandments (aḥkām), Islamic law is alive and well in the contemporary age. In other words, if Islamic law consists of a set of rules then, by that measure, Islamic law is thriving in the present age. The annals of modern Islamic law are full of rules and there are plenty of Muslims willing to implement them faithfully. But as an epistemology, process, and methodology of understanding and searching, as a fiqh, Islamic law, for the most part, is dead."</p>
+<p>"Sebagai seperangkat perintah positif (aḥkām), hukum Islam hidup dan berkembang di era kontemporer. Dengan kata lain, jika hukum Islam terdiri dari seperangkat aturan, maka berdasarkan ukuran tersebut, hukum Islam berkembang pesat di masa sekarang. Catatan hukum Islam modern penuh dengan aturan dan ada banyak Muslim yang bersedia menerapkannya dengan setia. Tetapi sebagai epistemologi, proses, dan metodologi pemahaman dan pencarian, sebagai fiqh, hukum Islam, sebagian besar, telah mati."</p>
+</blockquote>
+<p>Penulis mengembangkan dikotomi ini dengan menjelaskan karakteristik epistemologi tradisional yang telah hilang:</p>
+<blockquote>
+<p>"The earmark of traditional Islamic methodology has been its open-ended and anti-authoritarian character. Fundamental to this character was an evolutionary process of exploration, investigation, and adjudication that, according to its own inner logic, resisted settlement or inertia."</p>
+<p>"Ciri khas metodologi Islam tradisional adalah karakternya yang terbuka dan anti-otoritarian. Mendasar bagi karakter ini adalah proses evolusioner eksplorasi, investigasi, dan adjudikasi yang, menurut logika internalnya sendiri, menolak penyelesaian atau inersia."</p>
+</blockquote>
+<p><strong>Diagram Transformasi Epistemologis Hukum Islam: dari Fikih ke Ahkam (hukum)**</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/Konsep-konsep%20kunci/01.%20Transformasi%20Epistemologis%20Hukum%20Islam.png"> </p>
+<h2 class="atx" id="2-ambiguitas-terhadap-tradisi-yuristik">2. Ambiguitas Terhadap Tradisi Yuristik</h2>
+<p>Konsep kedua yang penting adalah ambiguitas kelompok modern (Wahhabi, Salafi, reformis) terhadap tradisi yuristik Islam. Di satu sisi, mereka menolak taqlīd (kepatuhan buta) kepada tradisi; di sisi lain, mereka tidak dapat sepenuhnya melepaskan diri dari tradisi tersebut:</p>
+<blockquote>
+<p>"The Wahhābīs, Salafis, and reformers rejected the notion of fidelity to specific legal schools and argued that there is no reason why a Muslim should be obligated to limit himself to a particular set of determinations... The material result of the purist system of thought of the Wahhābls and Salafis was a return to the classical tradition, but in a highly selective, unsystematic, and opportunistic fashion."</p>
+<p>"Kaum Wahhabi, Salafi, dan reformis menolak gagasan kesetiaan pada mazhab hukum tertentu dan berpendapat bahwa tidak ada alasan mengapa seorang Muslim harus membatasi dirinya pada serangkaian ketentuan tertentu... Hasil material dari sistem pemikiran murni kaum Wahhabi dan Salafi adalah kembali ke tradisi klasik, tetapi dengan cara yang sangat selektif, tidak sistematis, dan oportunistik."</p>
+</blockquote>
+<p>Ambiguitas ini menghasilkan kontradiksi yang tidak terpecahkan:</p>
+<blockquote>
+<p>"On the one hand, for instance, one finds that there is great pride taken in the idea that Islam endorses and even promotes diversity of opinions, but, on the other, one finds an insistence that disagreements are only permitted as to relatively unimportant issues relating to the branches (furū')."</p>
+<p>"Di satu sisi, misalnya, ada kebanggaan besar pada gagasan bahwa Islam mendukung dan bahkan mempromosikan keragaman pendapat, tetapi, di sisi lain, ada desakan bahwa perselisihan hanya diizinkan pada masalah yang relatif tidak penting terkait dengan cabang (furū')."</p>
+</blockquote>
+<h2 class="atx" id="3-klaim-representasi-andquotislam-yang-sejatiandquot">3. Klaim Representasi "Islam yang Sejati"</h2>
+<p>Penulis mengidentifikasi klaim representasi "Islam yang sejati" sebagai konsep kunci dalam wacana otoritarian. Para juris yang dianalisis tidak mengklaim mewakili interpretasi terbaik, tetapi kebenaran mutlak:</p>
+<blockquote>
+<p>"The authors of these responsa, for example, will favor one or two classical jurists over all others, but the criteria for inclusion or exclusion are never clearly articulated. Furthermore, the writers of the responsa repeatedly assert that they are representing the true and real Islam. As will be seen, they do not claim to represent a process or even the best interpretive efforts, but the actual law of God."</p>
+<p>"Para penulis responsa ini, misalnya, akan memilih satu atau dua ahli hukum klasik di atas semua yang lain, tetapi kriteria untuk inklusi atau eksklusi tidak pernah diartikulasikan dengan jelas. Selain itu, para penulis responsa berulang kali menegaskan bahwa mereka mewakili Islam yang benar dan nyata. Seperti akan terlihat, mereka tidak mengklaim mewakili suatu proses atau bahkan upaya interpretatif terbaik, tetapi hukum Tuhan yang sebenarnya."</p>
+</blockquote>
+<h2 class="atx" id="4-distorsi-hubungan-agen-prinsipal">4. Distorsi Hubungan Agen-Prinsipal</h2>
+<p>Mengembangkan konsep dari bab sebelumnya, penulis menjelaskan bagaimana juris-juris kontemporer mendistorsi hubungan agen-prinsipal dengan memonopoli interpretasi:</p>
+<blockquote>
+<p>"Their claim to authoritativeness is derived from the fact that they are acting as special agents deciphering the instructions of the Principal. Their claim to authenticity is largely dependent on the assertion that they are not innovators in religion (mubtadī'ūn fī al-dīn), and that their opinions are representative of the jamā'ah (the critical mass of God-fearing Muslims or orthodoxy)."</p>
+<p>"Klaim mereka atas otoritas berasal dari fakta bahwa mereka bertindak sebagai agen khusus yang memecahkan kode instruksi Prinsipal. Klaim mereka atas keaslian sangat bergantung pada pernyataan bahwa mereka bukan pembuat inovasi dalam agama (mubtadī'ūn fī al-dīn), dan bahwa pendapat mereka mewakili jamā'ah (massa kritis Muslim yang takut Tuhan atau ortodoksi)."</p>
+</blockquote>
+<p><strong>Diagram Distorsi Hubungan Agen-Prinsipal</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/Konsep-konsep%20kunci/04.%20%20Distorsi%20Hubungan%20Agen-Prinsipal.png"></p>
+<h2 class="atx" id="5-tiga-jenis-praktik-otoritarian">5. Tiga Jenis Praktik Otoritarian</h2>
+<p>Penulis mengidentifikasi tiga praktik interpretif utama yang mencerminkan otoritarianisme dalam responsa yang dianalisis:</p>
+<h3 class="atx" id="a-ketidakkonsistenan">a. Ketidakkonsistenan</h3>
+<p>Para juris menerapkan prinsip-prinsip secara tidak konsisten, terutama terkait masalah gender:</p>
+<blockquote>
+<p>"At the most basic level, the jurists were engaged in an undisclosed balancing process between different legal obligations, and the different interests attached to these legal obligations. Assuming that a daughter does have an obligation to obey her father, is weighed against the fact that a daughter has the right to choose her marital partner."</p>
+<p>"Pada tingkat paling dasar, para ahli hukum terlibat dalam proses penyeimbangan yang tidak diungkapkan antara kewajiban hukum yang berbeda, dan kepentingan berbeda yang melekat pada kewajiban hukum tersebut. Asumsi bahwa seorang anak perempuan memang memiliki kewajiban untuk mematuhi ayahnya, dipertimbangkan terhadap fakta bahwa seorang anak perempuan memiliki hak untuk memilih pasangan pernikahannya."</p>
+</blockquote>
+<h3 class="atx" id="b-selektivitas-bukti">b. Selektivitas Bukti</h3>
+<p>Para juris secara selektif memilih dan mengungkapkan bukti untuk mendukung kesimpulan yang telah ditentukan sebelumnya:</p>
+<blockquote>
+<p>"None of these subtleties emerge in the responsa of the modern jurists, but as stated above, it is unlikely that this is the result of a lack of knowledge or sloppy investigation. Rather, what is more likely is that the authors of the responsa, because of their value-based assumptions about the role of women, selectively disclosed the evidence to their audience."</p>
+<p>"Tidak ada nuansa-nuansa ini yang muncul dalam responsa para ahli hukum modern, tetapi seperti yang dinyatakan di atas, kecil kemungkinan bahwa ini adalah hasil dari kurangnya pengetahuan atau investigasi yang ceroboh. Sebaliknya, yang lebih mungkin adalah bahwa para penulis responsa, karena asumsi berdasarkan nilai mereka tentang peran perempuan, secara selektif mengungkapkan bukti kepada audiens mereka."</p>
+</blockquote>
+<h3 class="atx" id="c-ketidakseimbangan-dalam-penyeimbangan-kepentingan">c. Ketidakseimbangan dalam Penyeimbangan Kepentingan</h3>
+<p>Para juris mensubordinasi kepentingan perempuan dan individu terhadap kepentingan institusional atau patriarkal:</p>
+<blockquote>
+<p>"If applied fairly, a methodology guided by the fear of speculative evils would lead to what are plainly absurd results. If we fear that many men from the Arabian Gulf area who travel to Europe and the United States will visit nightclubs, then we should ban men from traveling outside Arabia... Nevertheless what is most despotic about the determinations discussed above is not only the failure to rely on a sound methodology, but even more, is that they are founded upon value-based determinations without being forthright about the policy assessments made."</p>
+<p>"Jika diterapkan secara adil, metodologi yang dipandu oleh ketakutan akan kejahatan spekulatif akan mengarah pada hasil yang jelas-jelas absurd. Jika kita takut bahwa banyak pria dari daerah Teluk Arab yang bepergian ke Eropa dan Amerika Serikat akan mengunjungi klub malam, maka kita harus melarang pria bepergian ke luar Arabia... Namun demikian, apa yang paling despotik tentang determinasi yang dibahas di atas bukan hanya kegagalan untuk mengandalkan metodologi yang sehat, tetapi lebih dari itu, adalah bahwa mereka didasarkan pada determinasi berbasis nilai tanpa terus terang tentang penilaian kebijakan yang dibuat."</p>
+</blockquote>
+<p><strong>Diagram Praktik Otoritarianisme</strong></p>
+<img data-align="center" alt="" title="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/Konsep-konsep%20kunci/03.%20Praktik%20Otoritarianisme.png">
+
+<h2 class="atx" id="6-perempuan-sebagai-sumber-fitnah-godaan">6. Perempuan sebagai Sumber <em>Fitnah</em> (Godaan)</h2>
+<p>Asumsi mendasar yang menjadi dasar banyak responsa adalah pandangan bahwa perempuan terutama merupakan sumber <em>fitnah</em> (godaan/kekacauan):</p>
+<blockquote>
+<p>"It appears that Ibn Jibrīn assumes a general intent on the part of women that is not presented to him in the inquiry posed in the question. This raises the question, what social-based values inform Ibn Jibrīn's response? The answer is that women are a constant source of fitnah (sexual enticement), and so everything related to the functionality of women is seen from that perspective."</p>
+<p>"Tampaknya Ibn Jibrīn mengasumsikan niat umum dari pihak perempuan yang tidak disampaikan kepadanya dalam penyelidikan yang diajukan dalam pertanyaan. Ini memunculkan pertanyaan, nilai-nilai berbasis sosial apa yang menginformasikan respons Ibn Jibrīn? Jawabannya adalah bahwa perempuan adalah sumber fitnah (godaan seksual) yang konstan, sehingga segala hal yang terkait dengan fungsionalitas perempuan dilihat dari perspektif itu."</p>
+</blockquote>
+<p>Bagaimana kasus-kasus yang dianalisis untuk menunjukkan konsep perempuan sebagai sumber fitnah ini dapat dilihat dalam diagram struktur studi kasus berikut ini:</p>
+<p><strong>Diagram Studi Kasus yang Dianalisis</strong></p>
+<img width="442" data-align="center" alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/Konsep-konsep%20kunci/06.%20%20Studi%20Kasus%20dalam%20Analisis.png" title="">
+
+<h2 class="atx" id="7-sadd-al-dhariand39ah-mencegah-sarana-menuju-kemungkaran-vs-maṣaliḥ-al-mursalah-kepentingan-umum">7. Sadd al-Dharī'ah (Mencegah Sarana Menuju Kemungkaran) vs. Maṣāliḥ al-Mursalah (Kepentingan Umum)</h2>
+<p>Dua konsep yuristik ini digunakan secara oportunistik oleh juris-juris kontemporer:</p>
+<blockquote>
+<p>"Ironically, an observer can identify the political and social inclinations of a modern jurist by how they use the two concepts – a liberal or reformer would normally talk of al-maṣāliḥ al-mursalah, and a conservative would normally talk of sadd al-dharī'ah. In what has become juristic opportunism, liberals invoke the idea of public interest whenever they wish to advocate the legality of any policy determination that they find desirable, and prevention of harm is invoked by conservatives when resisting social or political changes that they find undesirable."</p>
+<p>"Ironisnya, seorang pengamat dapat mengidentifikasi kecenderungan politik dan sosial seorang ahli hukum modern berdasarkan bagaimana mereka menggunakan kedua konsep tersebut – seorang liberal atau reformis biasanya akan berbicara tentang al-maṣāliḥ al-mursalah, dan seorang konservatif biasanya akan berbicara tentang sadd al-dharī'ah. Dalam apa yang telah menjadi oportunisme yuristik, kaum liberal menggunakan gagasan kepentingan umum setiap kali mereka ingin mengadvokasi legalitas penentuan kebijakan apa pun yang mereka anggap diinginkan, dan pencegahan bahaya digunakan oleh kaum konservatif ketika menolak perubahan sosial atau politik yang mereka anggap tidak diinginkan."</p>
+</blockquote>
+<p><strong>Diagram Sadd al-Dharī'ah (Mencegah Sarana Menuju Kemungkaran) vs. Maṣāliḥ al-Mursalah (Kepentingan Umum)</strong></p>
+<img width="445" data-align="center" alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/Konsep-konsep%20kunci/07.%20%20Sadd%20al-Dharī'ah%20vs.%20Maṣāliḥ%20al-Mursalah.png" title="">
+
+<h2 class="atx" id="8-andquotsensitivitas-institusionalandquot">8. "Sensitivitas Institusional"</h2>
+<p>Penulis mengidentifikasi pola di mana kepentingan institusi atau negara diutamakan daripada kepentingan individu:</p>
+<blockquote>
+<p>"Social non-institutional interests are not as weighty or significant as institutional and governmental interests. The expatriate experience with its particular pains is not a part of their sensitivities or consciousness. Consequently, it is fairly easy to dismiss the role of photographs for expatriates who, quite often, cannot afford to visit their families, as a non-necessity. Meanwhile, the photographs of the King of Saudi Arabia, which decorate the C.R.L.O building itself and most other public places, is a necessity."</p>
+<p>"Kepentingan sosial non-institusional tidak seberat atau signifikan seperti kepentingan institusional dan pemerintah. Pengalaman ekspatriat dengan rasa sakit khususnya bukan bagian dari sensitivitas atau kesadaran mereka. Akibatnya, cukup mudah untuk mengabaikan peran foto bagi ekspatriat yang, seringkali, tidak mampu mengunjungi keluarga mereka, sebagai sesuatu yang tidak perlu. Sementara itu, foto-foto Raja Arab Saudi, yang menghiasi gedung C.R.L.O sendiri dan kebanyakan tempat umum lainnya, adalah suatu keharusan."</p>
+</blockquote>
+<p><strong>Diagram Sensitivitas Institusional</strong></p>
+<img data-align="center" alt="" title="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/Konsep-konsep%20kunci/08.%20Sensitivitas%20Institusional.png">
+
+<h2 class="atx" id="hubungan-antar-konsep">Hubungan Antar Konsep</h2>
+<p>Konsep-konsep ini saling berhubungan dalam cara yang mendukung dan memperkuat satu sama lain:</p>
+<ol>
+<li><p><strong>Transformasi epistemologis</strong> (<em>fiqh</em> ke <em>aḥkām</em>) membuka jalan bagi <strong>klaim representasi Islam yang sejati</strong>, karena fokus telah beralih dari proses ke hasil yang tidak dapat diganggu gugat.</p>
+</li>
+<li><p><strong>Ambiguitas terhadap tradisi yuristik</strong> memungkinkan <strong>selektivitas bukti</strong>, karena tradisi hanya digunakan ketika mendukung kesimpulan yang diinginkan.</p>
+</li>
+<li><p><strong>Hubungan agen-prinsipal yang terdistorsi</strong> membenarkan <strong>ketidakkonsistenan</strong> dan <strong>ketidakseimbangan dalam penyeimbangan kepentingan</strong>, karena agen (juris) mengidentifikasi dirinya dengan Prinsipal (Tuhan).</p>
+</li>
+<li><p>Pandangan <strong>perempuan sebagai sumber fitnah</strong> menginformasikan penggunaan selektif dari <strong>sadd al-dharī'ah</strong>, mengarah pada pembatasan sistematis terhadap otonomi perempuan.</p>
+</li>
+<li><p><strong>Sensitivitas institusional</strong> memperkuat semua praktik otoritarian lainnya dengan memberikan prioritas pada kepentingan elite daripada kepentingan individu biasa.</p>
+</li>
+</ol>
+<p>Dalam diagram berikut ini akan terlihat bagaimana konsep-konsep di atas terhubung satu sama lain. Diagram ini juga menunjukkan bagaimana implikasi sosial dari kesalingterhubungan konsep-konsep ini menurut penulis. </p>
+<p><strong>Diagram Hubungan antar Konsep</strong></p>
+<img data-align="center" alt="" title="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/Konsep-konsep%20kunci/02.%20Peta%20Hubungan%20Antar%20Konsep%20Kunci.png">
+
+<p>Secara keseluruhan, konsep-konsep ini bersama-sama membentuk wacana otoritarian yang mengklaim mewakili "kehendak Tuhan" sambil sebenarnya mendukung struktur kekuasaan tertentu dan visi sosial-moral konservatif. Signifikansi dari analisis Abou El Fadl adalah bahwa ia mengungkapkan mekanisme wacana ini dan menunjukkan bagaimana hal itu bertentangan dengan tradisi yuristik Islam yang autentik.</p>
+<h1 class="atx" id="c-kerangka-pemikiran-dan-pendekatan-dalam-andquotthe-anatomy-of-authoritarian-discoursesandquot">C. Kerangka Pemikiran dan Pendekatan dalam "The Anatomy of Authoritarian Discourses"</h1>
+<h2 class="atx" id="1-pendekatan-yuridis-hermeneutis">1. Pendekatan Yuridis-Hermeneutis</h2>
+<p>Khaled Abou El Fadl mengintegrasikan pendekatan yuridis dengan analisis hermeneutis, memperlakukan hukum Islam sebagai sistem interpretasi teks.</p>
+<p>Pendekatan yuridis merujuk pada metode analisis yang berfokus pada aspek-aspek formal dari hukum Islam, termasuk studi tentang sumber-sumber hukum (Qur'an, Sunnah, ijma', qiyas), metodologi derivasi hukum (usul al-fiqh), kategorisasi normatif (wajib, mandub, mubah, makruh, haram), serta penerapan prinsip-prinsip tersebut pada kasus-kasus spesifik. Pendekatan ini menekankan ketelitian dalam memahami doktrin hukum, preseden historis, dan prosedur argumentatif yang diterima dalam tradisi yuristik. Analisis yuridis tradisional cenderung memperlakukan hukum sebagai sistem koheren dengan logika internalnya sendiri yang dapat dipelajari dan diterapkan secara objektif.</p>
+<p>Analisis hermeneutis, pada gilirannya, adalah pendekatan yang berfokus pada teori dan praktik interpretasi teks. Alih-alih melihat makna sebagai sesuatu yang tetap dan objektif yang dapat "ditemukan" dalam teks, analisis hermeneutis mengeksplorasi bagaimana makna diproduksi melalui interaksi dinamis antara teks, pembaca, dan konteks sosio-historis. Pendekatan ini mempertanyakan asumsi, prasangka, dan struktur kekuasaan yang membentuk proses interpretasi, serta mengakui pluralitas makna yang mungkin muncul dari teks yang sama. Analisis hermeneutis memperhatikan khususnya pada hubungan triadik antara pengarang (atau intensi pengarang), teks (dengan fitur linguistik dan struktur narasi), dan pembaca (dengan horizon pemahaman yang berbeda-beda).</p>
+<p>Khaled Abou El Fadl mengintegrasikan kedua pendekatan ini dengan cara yang inovatif karena ia memahami bahwa hukum Islam, pada intinya, adalah fenomena hermeneutis. Dengan menggabungkan ketelitian yuridis dengan kesadaran hermeneutis, ia mampu melakukan kritik yang melampaui diskusi doktrinal sederhana tentang apakah fatwa tertentu "benar" secara yuridis. Sebaliknya, ia menyelidiki proses interpretif itu sendiri—bagaimana teks dibaca, bagaimana otoritas diklaim, dan bagaimana hubungan teks-pembaca-pengarang dikonfigurasi. Pendekatan integratif ini memungkinkannya untuk mengidentifikasi momen-momen di mana pembaca (juris) mengambil alih teks dan mengecilkan peran pengarang (Tuhan), sehingga menyebabkan wacana otoritarian. Alasan utama Abou El Fadl mengadopsi pendekatan ini adalah keyakinannya bahwa revitalisasi tradisi hukum Islam memerlukan tidak hanya pembaruan substantif tetapi juga reformasi metodologis yang memulihkan hubungan agen-prinsipal yang tepat dan menghormati integritas teks sebagai entitas terbuka yang mendukung pluralitas interpretasi.</p>
+<blockquote>
+<p>"Islamic law consisted of a set of methodological approaches, normative principles, and positive commandments that were in a constant state of evolvement."</p>
+<p>"Hukum Islam terdiri dari seperangkat pendekatan metodologis, prinsip-prinsip normatif, dan perintah-perintah positif yang berada dalam keadaan perkembangan yang konstan."</p>
+</blockquote>
+<p>Penulis meneliti fatwa-fatwa tidak hanya sebagai produk hukum, tetapi sebagai tindakan interpretif yang mencerminkan hubungan antara teks, pembaca, dan konteks:</p>
+<blockquote>
+<p>"The net result was to misrepresent the efforts of the interpretive communities of Islamic law, and to create the impression that the determination is far more closed than the evidence, itself, admits. Accordingly, the roles of the author and the text become far more limited and diminished while the reader (special agent) stands supreme and uncontested in the determinative process."</p>
+<p>"Hasilnya adalah salah menafsirkan upaya komunitas interpretatif hukum Islam, dan menciptakan kesan bahwa penentuan jauh lebih tertutup daripada yang diakui oleh bukti itu sendiri. Dengan demikian, peran penulis dan teks menjadi jauh lebih terbatas dan berkurang sementara pembaca (agen khusus) berdiri sebagai pihak tertinggi dan tidak terbantahkan dalam proses determinatif."</p>
+</blockquote>
+<h2 class="atx" id="2-teori-hubungan-agen-prinsipal">2. Teori Hubungan Agen-Prinsipal</h2>
+<p>Melanjutkan kerangka konseptual dari bab sebelumnya, penulis menggunakan teori hubungan agen-prinsipal untuk menganalisis legitimasi klaim interpretif:</p>
+<blockquote>
+<p>"Their claim to authoritativeness is derived from the fact that they are acting as special agents deciphering the instructions of the Principal. Their claim to authenticity is largely dependent on the assertion that they are not innovators in religion (mubtadī'ūn fī al-dīn), and that their opinions are representative of the jamā'ah (the critical mass of God-fearing Muslims or orthodoxy)."</p>
+<p>"Klaim mereka atas otoritas berasal dari fakta bahwa mereka bertindak sebagai agen khusus yang memecahkan kode instruksi Prinsipal. Klaim mereka atas keaslian sangat bergantung pada pernyataan bahwa mereka bukan pembuat inovasi dalam agama (mubtadī'ūn fī al-dīn), dan bahwa pendapat mereka mewakili jamā'ah (massa kritis Muslim yang takut Tuhan atau ortodoksi)."</p>
+</blockquote>
+<p>Penulis mengidentifikasi masalah ketika agen khusus mengklaim identitas total dengan kehendak Prinsipal:</p>
+<blockquote>
+<p>"There is a perfect unity between the will of the interpreter, and the Will of the Principal – whatever the interpreter feels, thinks, desires, or values is imputed to the Principal."</p>
+<p>"Ada kesatuan sempurna antara kehendak penafsir dan Kehendak Prinsipal – apa pun yang dirasakan, dipikirkan, diinginkan, atau dinilai oleh penafsir dibebankan kepada Prinsipal."</p>
+</blockquote>
+<h2 class="atx" id="3-analisis-berbasis-andquotlima-kontingensiandquot">3. Analisis Berbasis "Lima Kontingensi"</h2>
+<p>Abou El Fadl menganalisis responsa berdasarkan lima kontingensi yang ia jelaskan di bab sebelumnya: kejujuran, pengendalian diri, kesungguhan, komprehensivitas, dan kelayakan. Ia membuktikan bagaimana juris-juris gagal memenuhi standar-standar ini:</p>
+<blockquote>
+<p>"The examples below all involve a fundamental violation of the logic of special agency, and the contingencies of honesty, diligence, comprehensiveness, self-restraint, and reasonableness."</p>
+<p>"Contoh-contoh di bawah ini semuanya melibatkan pelanggaran fundamental terhadap logika agensi khusus, dan kontingensi kejujuran, ketekunan, komprehensifitas, pengendalian diri, dan kelayakan."</p>
+</blockquote>
+<p>Penulis secara sistematis memeriksa responsa berdasarkan lima kriteria ini:</p>
+<ul>
+<li><strong>Kejujuran</strong>: Sejauh mana juris mengungkapkan asumsi dan proses penyeimbangan mereka</li>
+<li><strong>Pengendalian diri</strong>: Apakah juris menghormati integritas teks dan membatasi proyeksi nilai pribadi</li>
+<li><strong>Kesungguhan</strong>: Tingkat kehati-hatian dalam menyelidiki bukti</li>
+<li><strong>Komprehensivitas</strong>: Sejauh mana juris menangani seluruh korpus bukti yang relevan</li>
+<li><strong>Kelayakan</strong>: Apakah interpretasi masuk akal dalam konteks sosial-historis</li>
+</ul>
+<h2 class="atx" id="4-pendekatan-komparatif-historis">4. Pendekatan Komparatif-Historis</h2>
+<p>Penulis secara konsisten membandingkan responsa kontemporer dengan tradisi yuristik klasik, menunjukkan ketidaksesuaian dan pemisahan dari preseden historis:</p>
+<blockquote>
+<p>"Most of the classical jurists, for example, argued that the issue is not the availability or unavailability of a maḥram, rather, the crux of the matter is safety (amn)... In summary, assessing the totality of evidence including the fact that women traveled alone in the time of the Prophet when it was safe to do so, Muslim jurists separated into two camps..."</p>
+<p>"Sebagian besar ahli hukum klasik, misalnya, berpendapat bahwa masalahnya bukan ketersediaan atau ketidaktersediaan maḥram, melainkan, inti masalahnya adalah keamanan (amn)... Singkatnya, menilai totalitas bukti termasuk fakta bahwa perempuan bepergian sendirian di masa Nabi ketika aman untuk melakukannya, ahli hukum Muslim terpisah menjadi dua kubu..."</p>
+</blockquote>
+<p>Analisis historis ini berfungsi untuk mendokumentasikan:</p>
+<ol>
+<li>Pluralitas pendapat dalam tradisi yuristik</li>
+<li>Sensitivitas kontekstual dari juris klasik</li>
+<li>Kekayaan metodologis yang telah hilang dalam wacana kontemporer</li>
+</ol>
+<h2 class="atx" id="5-analisis-gender">5. Analisis Gender</h2>
+<p>Penulis menggunakan perspektif kritis gender untuk menganalisis bagaimana fatwa-fatwa ini secara sistematis memperlakukan perempuan:</p>
+<blockquote>
+<p>"If we ask either the woman who wanted to visit her injured husband, or the man who wanted to see his wife and child, if they feel betrayed by the special agents' concealment of the counter-determinations of the legal tradition, the response most certainly would be in the affirmative."</p>
+<p>"Jika kita bertanya kepada perempuan yang ingin mengunjungi suaminya yang terluka, atau pria yang ingin melihat istri dan anaknya, apakah mereka merasa dikhianati oleh penyembunyian agen khusus terhadap determinasi-tandingan dari tradisi hukum, jawabannya pasti akan afirmatif."</p>
+</blockquote>
+<p>Penulis mengidentifikasi asumsi berbasis gender yang melandasi banyak fatwa:</p>
+<blockquote>
+<p>"The answer is that women are a constant source of fitnah (sexual enticement), and so everything related to the functionality of women is seen from that perspective."</p>
+<p>"Jawabannya adalah bahwa perempuan adalah sumber fitnah (godaan seksual) yang konstan, sehingga segala hal yang terkait dengan fungsionalitas perempuan dilihat dari perspektif itu."</p>
+</blockquote>
+<h2 class="atx" id="6-analisis-sosiologi-pengetahuan">6. Analisis Sosiologi Pengetahuan</h2>
+<p>Analisis Sosiologi Pengetahuan merupakan salah satu pendekatan kunci yang digunakan Khaled Abou El Fadl dalam bab "The Anatomy of Authoritarian Discourses". Pendekatan ini meneliti bagaimana produksi, distribusi, dan legitimasi pengetahuan keagamaan dibentuk oleh faktor-faktor sosial, politik, dan institusional. Melalui lensa sosiologis ini, Abou El Fadl mengungkap bagaimana fatwa-fatwa yang dianalisis tidak hanya merupakan produk interpretasi tekstual tetapi juga mencerminkan dan memperkuat struktur kekuasaan tertentu. Berikut adalah aspek-aspek utama dari pendekatan sosiologi pengetahuan dalam bab ini, dengan contoh-contoh konkret dari teks.</p>
+<h3 class="atx" id="a-andquotsensitivitas-institusionalandquot">a. "Sensitivitas Institusional"</h3>
+<p>Salah satu konsep paling signifikan yang dikembangkan Abou El Fadl dalam analisisnya adalah "sensitivitas institusional" – kecenderungan wacana yuristik untuk memprioritaskan kepentingan negara dan institusi resmi di atas kepentingan individu.</p>
+<p><strong>Contoh 1: Analisis Foto Raja vs. Foto Keluarga</strong></p>
+<blockquote>
+<p>"Social non-institutional interests are not as weighty or significant as institutional and governmental interests. The expatriate experience with its particular pains is not a part of their sensitivities or consciousness. Consequently, it is fairly easy to dismiss the role of photographs for expatriates who, quite often, cannot afford to visit their families, as a non-necessity. Meanwhile, the photographs of the King of Saudi Arabia, which decorate the C.R.L.O building itself and most other public places, is a necessity."</p>
+</blockquote>
+<p>Dalam kasus ini, penulis mengidentifikasi bagaimana wacana yuristik secara sistematis mensubordinasi pengalaman dan kebutuhan pekerja migran (kepentingan sosial non-institusional) di bawah kebutuhan representasi kekuasaan politik (fotografi sebagai teknologi yang mendukung kekuasaan negara). Analisis ini mengungkap bagaimana fatwa tidak hanya merespons pertanyaan hukum abstrak tetapi juga mengatur dan mendisiplinkan subjek sosial dengan cara yang selaras dengan kepentingan penguasa.</p>
+<p><strong>Contoh 2: Pertemanan dengan Non-Muslim vs. Aliansi Negara</strong></p>
+<blockquote>
+<p>"This, what may be called, 'institutional sensitivity' is also noticeable in the numerous responsa that have decided it is unlawful for a Muslim to socialize with or befriend a non-Muslim, but that it is lawful for the Saudi government to ally itself with the United States against Iraq."</p>
+</blockquote>
+<p>Penulis mengidentifikasi ketidakkonsistenan yang mencerahkan: fatwa-fatwa yang melarang Muslim individual berteman dengan non-Muslim tetapi memperbolehkan negara beraliansi dengan negara non-Muslim. Melalui analisis ini, Abou El Fadl mengungkap bagaimana diskursus yuristik mengonstruksi "kepentingan Islam" secara selektif untuk mendukung struktur kekuasaan yang ada, sambil membatasi agensi individu Muslim biasa.</p>
+<h3 class="atx" id="b-stratifikasi-sosial-dalam-wacana-hukum">b. Stratifikasi Sosial dalam Wacana Hukum</h3>
+<p>Penulis menganalisis bagaimana fatwa-fatwa mencerminkan dan memperkuat hierarki sosial tertentu, terutama terkait gender, status sosial, dan relasi kekuasaan.</p>
+<p><strong>Contoh 1: Stratifikasi Gender dalam Fatwa tentang Pernikahan</strong></p>
+<blockquote>
+<p>"In legal opinions issued by Ibn Bāz, al-'Uthaymīn, and others, it is asserted that it is unlawful to force a woman to marry; consent is a necessary element in the marriage contract and so coercion is impermissible. This holding is unremarkable, except for the fact that some classical jurists had held that the consent of a young and immature girl, or in the opinion of some, a virgin, is unnecessary. Ibn Bāz and al-'Uthaymīn do not refer to this opinion although it might be inferred that they find it unpersuasive. Next, they state that even though a father may not coerce his daughter into marriage, it is unlawful for a daughter to disobey her father by rejecting a suitor without good cause. Ibn Bāz and al-'Uthaymīn contend that fathers know what is in the best interest of their child, especially in the case of women because women are overcome by irrational emotions."</p>
+</blockquote>
+<p>Dalam analisis ini, Abou El Fadl mengidentifikasi bagaimana fatwa, meskipun secara nominal menolak pemaksaan, tetap mempertahankan struktur patriarkal dengan: (1) mengkarakterisasi perempuan sebagai secara emosional tidak mampu, (2) menjadikan keputusan perempuan tunduk pada persetujuan ayah, dan (3) mendefinisikan secara sangat sempit apa yang dianggap sebagai "alasan yang baik" untuk menolak lamaran. Analisis sosiologis ini mengungkap bagaimana wacana hukum mencerminkan dan memperkuat asumsi patriarkal tentang ketidakmampuan perempuan dan kebutuhan mereka untuk perlindungan dan pengawasan laki-laki.</p>
+<p><strong>Contoh 2: Analisis Stratifikasi Kelas dalam Fatwa Diseksi</strong></p>
+<blockquote>
+<p>"A medical student inquires from Ibn Fawzān if it is lawful to dissect the body of a Muslim for the purposes of education and research. Ibn Fawzān responds that a dead person should be buried. If dissections are necessary to benefit the living, then the bodies of unbelievers may be used for the purpose _ under no circumstance may a Muslim be dissected, for educational purposes or otherwise."</p>
+</blockquote>
+<p>Penulis menunjukkan bagaimana fatwa tersebut menciptakan hierarki nilai manusia: tubuh Muslim disakralkan dan dilindungi, sementara tubuh non-Muslim dapat digunakan secara instrumental. Melalui analisis sosiologi pengetahuan, Abou El Fadl mengungkap bagaimana wacana yuristik tidak hanya berbicara tentang "hukum Tuhan" yang abstrak tetapi secara aktif menciptakan kategori sosial tertentu dengan nilai yang berbeda-beda.</p>
+<h3 class="atx" id="c-epistemologi-kelas-terikat">c. Epistemologi Kelas-Terikat</h3>
+<p>Penulis menganalisis bagaimana posisi sosial dari para juris membentuk world-view dan asumsi mereka tentang realitas sosial, yang pada gilirannya membentuk interpretasi hukum mereka.</p>
+<p><strong>Contoh 1: Ketidakpekaan terhadap Pengalaman Ekspatriat</strong></p>
+<blockquote>
+<p>"The insensitivity to the expatriate social experience is underscored by the fact that the legal basis for the prohibition against photographs is far from clear. There are several traditions attributed to the Prophet that condemn or prohibit the act of taṣwīr and suwar (the production of images or statues) but the only similarity between the images and statues of the traditions and photographs is linguistic."</p>
+</blockquote>
+<p>Di sini, Abou El Fadl menunjukkan bagaimana ketidakpekaan terhadap pengalaman sosial ekspatriat tidak hanya terkait dengan bias institusional, tetapi juga keterbatasan epistemologis dari para juris. Posisi sosial mereka yang istimewa mencegah mereka memahami sepenuhnya pengalaman pekerja migran yang tinggal jauh dari keluarga, sehingga mereka dengan mudah mengesampingkan fungsi penting fotografi dalam mempertahankan ikatan keluarga.</p>
+<p><strong>Contoh 2: Prasangka Kelas dalam Asumsi tentang Perempuan</strong></p>
+<blockquote>
+<p>"If a Father selects or approves of a suitor, then it is obligatory upon the daughter to accept that person unless the suitor is not religious – for example, he does not pray or drinks alcohol. Furthermore, it is religiously incumbent upon all women to marry, and deferring marriage in order to study is unlawful. Al-'Uthaymīn offers the advice that if the woman wishes, she may set a condition in the marriage contract that would obligate her husband to allow her to complete her education. However, he adds that he does not believe that it is necessary for a woman to attain an education beyond the elementary level. It is sufficient for a woman to learn to read and write, and a pious Muslim woman should not aspire to more than that."</p>
+</blockquote>
+<p>Melalui analisis sosiologi pengetahuan, Abou El Fadl mengungkap bagaimana pendapat hukum ini mencerminkan posisi sosial dari para juris dalam masyarakat patriarkal yang menempatkan peran reproduktif perempuan di atas aspirasi intelektual mereka. Para juris, dari posisi kelas sosial laki-laki terpelajar, merumuskan batasan pada pendidikan perempuan yang mencerminkan dan memperkuat struktur kekuasaan eksisting.</p>
+<h3 class="atx" id="d-lembaga-fatwa-sebagai-institusi-sosial">d. Lembaga Fatwa sebagai Institusi Sosial</h3>
+<p>Abou El Fadl menganalisis lembaga fatwa bukan hanya sebagai badan penafsir hukum tetapi sebagai institusi sosial yang tertanam dalam jaringan kekuasaan dan otoritas.</p>
+<p><strong>Contoh 1: Hubungan C.R.L.O dengan Negara Saudi</strong></p>
+<blockquote>
+<p>"The Saudi government often adopts the legal opinions of the Council as the law of the land. Otherwise, the responsa of the jurists have persuasive authority for those who consider the opinions authoritative."</p>
+</blockquote>
+<p>Penulis menunjukkan hubungan struktural antara institusi fatwa dan negara, mengungkap bagaimana fatwa berfungsi tidak hanya sebagai interpretasi hukum agama tetapi juga sebagai mekanisme pemerintahan. Ini menunjukkan bagaimana pengetahuan keagamaan diproduksi dalam konteks politik tertentu dan digunakan untuk tujuan yang melampaui interpretasi teks suci.</p>
+<p><strong>Contoh 2: Fatwa sebagai Instrumen Sosial dan Politik</strong></p>
+<blockquote>
+<p>"But my point in this chapter is not to argue that the determinations of these jurists are qualitatively wrong, but to explore the dividing line between the authoritative and the authoritarian."</p>
+</blockquote>
+<p>Abou El Fadl menempatkan fatwa dalam konteks sosial yang lebih luas dari produksi otoritas dan legitimasi. Ia menganalisis fatwa bukan terutama dari segi konten atau argumen yuristik mereka tetapi sebagai mekanisme sosial untuk menjalankan kekuasaan. Pendekatan sosiologi pengetahuan ini mengalihkan fokus dari pertanyaan "apakah fatwa ini benar secara doktrinal?" ke pertanyaan "bagaimana fatwa ini berfungsi sebagai instrumen sosial?"</p>
+<h3 class="atx" id="e-genealogi-institusional-dari-wahhabisme">e. Genealogi Institusional dari Wahhābīsme</h3>
+<p>Penulis melacak hubungan antara doktrin Wahhabi dan pembentukan serta ekspansi negara Saudi modern.</p>
+<p><strong>Contoh 1: Hubungan Wahhābīsme-Negara</strong></p>
+<blockquote>
+<p>"Interestingly, when these jurists are asked which books Muslims should read in order to learn the true religion, the jurists do not hesitate to name specific books mostly by Wahhābí authors. These books include, but are not limited to, the following: Muḥammad b. 'Abd al-Wahhāb, al-Tawḥīd, Ādāb al-Mashy li al-Salāh, and al-Usūl al-Thalāthah..."</p>
+</blockquote>
+<p>Abou El Fadl menunjukkan bagaimana kanon teks Wahhabi mendefinisikan "agama sejati", membongkar hubungan antara wacana teologis dan pembentukan identitas negara Saudi. Melalui analisis sosiologi pengetahuan, ia menunjukkan bagaimana fatwa tidak hanya merepresentasikan interpretasi tekstual tetapi juga mengonstruksi narasi nasional identitas Islam Saudi.</p>
+<p><strong>Contoh 2: Posisi Sosial Juris Wahhabi</strong></p>
+<blockquote>
+<p>"Furthermore, they identify the founder of the Wahhābī doctrine, Muḥammad b. 'Abd al-Wahhāb, with the ahl al-sunnah wa al-jamā'ah. Consequently, they assert that in its attempt to adhere to the teachings of Muḥammad b. 'Abd al-Wahhāb, the state of Saudi Arabia also adheres to the ahl al-sunnah wa al-jamā'ah."</p>
+</blockquote>
+<p>Penulis mengidentifikasi bagaimana hubungan genealogis dibentuk antara doktrin Wahhabi, konsep ortodoksi Sunni (ahl al-sunnah wa al-jamā'ah), dan legitimasi negara Saudi. Pendekatan sosiologi pengetahuan ini menunjukkan hubungan dialektis antara produksi pengetahuan keagamaan dan formasi negara.</p>
+<h3 class="atx" id="f-dialektika-gender-dalam-produksi-pengetahuan-hukum">f. Dialektika Gender dalam Produksi Pengetahuan Hukum</h3>
+<p>Abou El Fadl menganalisis bagaimana konstruksi gender membentuk dan dibentuk oleh wacana hukum.</p>
+<p><strong>Contoh 1: Perempuan sebagai Sumber Fitnah</strong></p>
+<blockquote>
+<p>"It appears that Ibn Jibrīn assumes a general intent on the part of women that is not presented to him in the inquiry posed in the question. This raises the question, what social-based values inform Ibn Jibrīn's response? The answer is that women are a constant source of fitnah (sexual enticement), and so everything related to the functionality of women is seen from that perspective."</p>
+</blockquote>
+<p>Penulis mengidentifikasi asumsi sosial yang mendalam yang membentuk penalaran hukum: konstruksi perempuan sebagai sumber potensial gangguan seksual dan sosial. Melalui analisis sosiologi pengetahuan, ia menunjukkan bagaimana asumsi tentang gender menjadi terbenam dalam nalar yuristik sehingga terlihat sebagai bagian dari hukum Tuhan yang abadi daripada sebagai konstruksi sosial.</p>
+<p><strong>Contoh 2: Gender dan Epistemologi Emosi</strong></p>
+<blockquote>
+<p>"Ibn Bāz and al-'Uthaymīn contend that fathers know what is in the best interest of their child, especially in the case of women because women are overcome by irrational emotions."</p>
+</blockquote>
+<p>Analisis Abou El Fadl mengungkap bagaimana fatwa mengonstruksi dikotomi epistemologis gender: laki-laki diasumsikan rasional, objektif, dan mampu membuat keputusan yang benar, sementara perempuan diasumsikan emosional, subjektif, dan memerlukan bimbingan. Melalui pendekatan sosiologi pengetahuan, ia menunjukkan bagaimana asumsi-asumsi epistemologis ini dibawa ke dalam konstruksi hukum, sehingga secara struktural menghalangi kemampuan perempuan untuk menjadi interpreter hukum yang sah atau bahkan sebagai agen moral yang otonom.</p>
+<h3 class="atx" id="g-mobilisasi-simbolik-dari-tradisi">g. Mobilisasi Simbolik dari Tradisi</h3>
+<p>Penulis menganalisis bagaimana tradisi masa lalu dimobilisasi secara selektif dan instrumental oleh juris kontemporer.</p>
+<p><strong>Contoh 1: Penggunaan Selektif dari Tradisi Klasik</strong></p>
+<blockquote>
+<p>"The Wahhābīs, Salafis, and reformers rejected the notion of fidelity to specific legal schools and argued that there is no reason why a Muslim should be obligated to limit himself to a particular set of determinations... The material result of the purist system of thought of the Wahhābls and Salafis was a return to the classical tradition, but in a highly selective, unsystematic, and opportunistic fashion."</p>
+</blockquote>
+<p>Abou El Fadl menunjukkan ketegangan dalam mobilisasi simbolik tradisi: klaim untuk "kembali ke sumber-sumber asli" yang secara simultan menolak taqlīd (mengikuti secara ketat mazhab hukum) tetapi juga secara selektif menggunakan elemen-elemen tradisi klasik untuk mendukung posisi kontemporer. Analisis sosiologi pengetahuan ini mengungkap penggunaan ideologis tradisi sebagai sumber legitimasi.</p>
+<p><strong>Contoh 2: Dualitas Bid'ah/Jamā'ah</strong></p>
+<blockquote>
+<p>"This dual notion of avoidance of bid'ah (unlawful innovations in religion) and representing the jamā'ah (orthodoxy) is critical to the legitimacy and authoritativeness of the legal opinions of these jurists. Significantly, both concepts are heavily dependent on the classical juristic tradition for their symbolic value. In other words, both derive their symbolic power from Islamic juristic history."</p>
+</blockquote>
+<p>Penulis menganalisis bagaimana konsep-konsep religius seperti bid'ah (inovasi) dan jamā'ah (ortodoksi) menjadi alat simbolik yang ampuh dalam wacana yuristik. Pendekatan sosiologi pengetahuan memungkinkan Abou El Fadl untuk menunjukkan bagaimana konsep-konsep ini mendapatkan kekuatan mereka bukan dari validitas instrinsik mereka tetapi dari nilai simbolik yang mereka ambil dari tradisi yuristik, bahkan ketika tradisi tersebut digunakan secara selektif dan tidak sistematis.</p>
+<h3 class="atx" id="h-ekonomi-politik-fatwa">h. Ekonomi Politik Fatwa</h3>
+<p>Penulis menganalisis bagaimana fatwa dibentuk oleh pertimbangan ekonomi dan politik yang lebih luas.</p>
+<p><strong>Contoh 1: Perempuan dalam Ekonomi Domestik</strong></p>
+<blockquote>
+<p>"Furthermore, it is religiously incumbent upon all women to marry, and deferring marriage in order to study is unlawful."</p>
+</blockquote>
+<p>Abou El Fadl mengidentifikasi bagaimana fatwa yang melarang perempuan menunda pernikahan untuk melanjutkan pendidikan mencerminkan dan memperkuat ekonomi domestik tertentu di mana perempuan diposisikan terutama sebagai istri dan ibu. Melalui analisis sosiologi pengetahuan, ia menunjukkan bagaimana fatwa tidak hanya merepresentasikan interpretasi teks suci tetapi juga instrumen untuk mengatur ekonomi reproduksi sosial.</p>
+<p><strong>Contoh 2: Fatwa tentang Aliansi dengan AS</strong></p>
+<blockquote>
+<p>"The responsa deciding that it is lawful to wage war with the United States and Britain against Iraq rest on three main justifications: (1) Saddam Hussein has become an unbeliever, and so Saudi Arabia is fighting unbelievers and not Muslims; (2) Seeking the assistance of the United States and Britain is a necessity; and (3) The American forces are similar to hired labor. The American forces are not proper allies, but hired hands to fight on behalf of Muslims against unbelievers (i.e. Saddam Hussein)."</p>
+</blockquote>
+<p>Penulis menunjukkan bagaimana fatwa yang memperbolehkan aliansi dengan AS dimobilisasi untuk mendukung hubungan ekonomi-politik tertentu sambil mempertahankan narasi teologis yang tidak mengganggu identitas keagamaan. Melalui analisis sosiologi pengetahuan, Abou El Fadl mengungkap bagaimana wacana teologis (takfīr Saddam Hussein) dan konstruksi sosial ("pekerja upahan") disusun untuk melegitimasi keputusan geopolitik, dengan demikian menunjukkan hubungan dialektis antara pengetahuan keagamaan dan kekuatan material.</p>
+<p>Melalui pendekatan sosiologi pengetahuan, Khaled Abou El Fadl mampu mengungkap bagaimana wacana yuristik tidak hanya merupakan interpretasi teks tetapi juga mekanisme sosial yang mencerminkan dan memperkuat struktur kekuasaan tertentu. Analisis ini memungkinkannya untuk melampaui perdebatan doktrinal sederhana tentang apakah fatwa tertentu "benar" atau "salah" menurut standar hukum Islam, dan mengungkap bagaimana fatwa berfungsi sebagai teknologi sosial yang menanamkan hubungan kekuasaan tertentu.</p>
+<p>Beberapa kontribusi kunci dari pendekatan sosiologi pengetahuan dalam bab ini adalah:</p>
+<ol>
+<li><p><strong>Denaturalisasi Wacana Hukum</strong>: Mengungkap asumsi sosial dan nilai yang membentuk interpretasi hukum, dengan demikian menunjukkan dimensi konstruksi sosial dari apa yang diklaim sebagai "hukum Tuhan".</p>
+</li>
+<li><p><strong>Analisis Relasi Kuasa</strong>: Mengidentifikasi bagaimana fatwa mencerminkan dan memperkuat hierarki gender, kelas, dan institusional.</p>
+</li>
+<li><p><strong>Kontekstualisasi Sosial</strong>: Menempatkan produksi fatwa dalam konteks sosial, politik, dan ekonomi spesifik yang membentuk kontennya.</p>
+</li>
+<li><p><strong>Kritik Epistemologi Sosial</strong>: Mengungkap bagaimana posisi sosial para juris membentuk asumsi mereka tentang dunia dan batas-batas apa yang dapat mereka ketahui.</p>
+</li>
+<li><p><strong>Genealogi Institusional</strong>: Melacak hubungan antara lembaga fatwa, formasi negara, dan legitimasi politik.</p>
+</li>
+</ol>
+<p>Dengan demikian, pendekatan sosiologi pengetahuan Abou El Fadl tidak hanya menawarkan analisis kritis tentang fatwa-fatwa spesifik tetapi juga pemeriksaan yang lebih dalam dari ekonomi politik produksi pengetahuan keagamaan dalam konteks Islam kontemporer. Pendekatan ini memungkinkan untuk kritik yang melampaui kategorisasi sederhana "liberal" versus "konservatif" dan mengungkap mekanisme struktural yang lebih dalam melalui mana otoritas keagamaan dibentuk, dilegitimasi, dan dijalankan.</p>
+<p><strong>Diagram Analisis Sosiologi Pengetahuan dalam Bab The Anatomy of Authoritarian Discourse</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/03.%20Analisis%20sosiologi%20Pengetahuan%20Abou%20el-Fadl.png"></p>
+<h2 class="atx" id="7-pendekatan-berbasis-kasus">7. Pendekatan Berbasis Kasus</h2>
+<p>Metodologi utama penulis adalah analisis kasus (case-based analysis), memeriksa fatwa-fatwa spesifik sebagai studi kasus otoritarianisme interpretif. Untuk setiap kasus, ia:</p>
+<ol>
+<li>Menyajikan fatwa dan konteksnya</li>
+<li>Mengidentifikasi bukti tekstual yang digunakan juris</li>
+<li>Membandingkan dengan perspektif alternatif dari tradisi yuristik</li>
+<li>Mengevaluasi kesenjangan metodologis</li>
+<li>Menghubungkan dengan tema otoritarianisme yang lebih luas</li>
+</ol>
+<p>Pendekatan ini memungkinkan penulis menunjukkan pola-pola sistematis daripada hanya kritik terhadap fatwa individual:</p>
+<blockquote>
+<p>"In summary, the act that will be made unlawful by the enforcement of the principle of prevention of harm, must be the type of act that will definitely lead to the evil feared. There must be a nexus between the prohibited act and the feared evil, which must be established to a degree of certainty or, at least, a degree of high likelihood (al-ẓann al-ghālib)."</p>
+<p>"Singkatnya, tindakan yang akan dijadikan melanggar hukum oleh penerapan prinsip pencegahan bahaya, haruslah jenis tindakan yang pasti akan mengarah pada kejahatan yang ditakuti. Harus ada hubungan antara tindakan yang dilarang dan kejahatan yang ditakuti, yang harus ditetapkan pada tingkat kepastian atau, setidaknya, tingkat kemungkinan tinggi (al-ẓann al-ghālib)."</p>
+</blockquote>
+<h2 class="atx" id="8-pendekatan-multidisipliner">8. Pendekatan Multidisipliner</h2>
+<p>Khaled Abou El Fadl mengembangkan analisis komprehensif terhadap wacana otoritarian dalam hukum Islam dengan mengintegrasikan berbagai disiplin ilmu. Pendekatan multidisipliner ini memungkinkannya meneliti fenomena otoritarianisme tidak hanya dari perspektif yuristik formal, tetapi juga melalui lensa teoretis yang lebih luas. Berikut adalah disiplin ilmu utama yang dipadukan dalam analisisnya, dengan contoh-contoh spesifik dari teks.</p>
+<p>Pendekatan yuridis pada dasarnya adalah metode analisis yang berfokus pada struktur, prinsip, dan penerapan hukum. Dalam konteks hukum Islam, pendekatan ini mencakup pemahaman mendalam tentang sumber-sumber hukum (Qur'an, Sunnah, ijma', qiyas), metodologi derivasi hukum (usul al-fiqh), kategorisasi hukum (wajib, mandub, mubah, makruh, haram), dan aplikasi praktisnya dalam konteks spesifik. Pendekatan yuridis tradisional cenderung menekankan koherensi internal, konsistensi dengan preseden, dan kepatuhan pada metodologi yang ditetapkan.</p>
+<p>Analisis hermeneutis, di sisi lain, berfokus pada proses dan prinsip interpretasi teks. Pendekatan ini mengakui bahwa makna teks tidak statis atau objektif secara sederhana, tetapi dibentuk melalui interaksi dinamis antara teks, pembaca, dan konteks historis-kultural. Analisis hermeneutis menyelidiki bagaimana pembaca membawa asumsi, prasangka, dan kerangka referensi mereka sendiri ke dalam proses interpretasi, dan bagaimana otoritas didistribusikan antara teks, penulis/pembicara asli, dan interpreter.</p>
+<p>Abou El Fadl mengintegrasikan kedua pendekatan ini karena ia mengakui bahwa hukum Islam pada dasarnya adalah fenomena interpretif. Ia menolak pandangan formalistik bahwa hukum Islam adalah seperangkat aturan tetap yang dapat "ditemukan" secara objektif dalam teks. Sebaliknya, ia memandang hukum Islam sebagai praktik interpretif berkelanjutan di mana makna diproduksi melalui dialog antara teks, tradisi interpretatif, dan konteks sosial-historis. Dengan mengintegrasikan pendekatan yuridis dan hermeneutis, Abou El Fadl mampu mengevaluasi tidak hanya substansi fatwa tetapi juga proses interpretif yang menghasilkannya, serta relasi kuasa yang melekat dalam klaim otoritas interpretif. Integrasi ini memungkinkannya untuk mempertanyakan bukan hanya apakah fatwa tertentu "benar" menurut standar yuridis tradisional, tetapi juga bagaimana dan mengapa interpretasi tertentu menjadi dominan, dan apa konsekuensi sosial, politik, dan etis dari dominasi tersebut.</p>
+<h3 class="atx" id="a-yurisprudensi-islam-usul-al-fiqh">a. Yurisprudensi Islam (Usul al-Fiqh)</h3>
+<p>Fondasi analisis Abou El Fadl adalah pengetahuannya yang mendalam tentang metodologi hukum Islam tradisional. Ia menggunakan ini untuk menilai kualitas argumentasi yuristik dalam fatwa-fatwa yang dianalisis.</p>
+<p><strong>Contoh 1: Analisis Konsep Sadd al-Dharī'ah</strong></p>
+<blockquote>
+<p>"The crux of Ibn Bāz's responsa is that the independence and mobility driving might give women leads to moral and social harms. Ibn Fawzān adds another factual determination: cars break down and have accidents, and therefore, this poses dangers to the safety of women... The juristic 'hook' that serves as an enabling device for these factual determinations is the idea that what leads to something unlawful is, in turn, unlawful. In the parlance of Islamic jurisprudence, this is known as sadd al-dharīah, which literally means the blocking of the means, or the prevention of harm."</p>
+</blockquote>
+<p>Penulis kemudian membandingkan penggunaan kontemporer konsep ini dengan standar metodologisnya dalam tradisi yuristik:</p>
+<blockquote>
+<p>"In summary, the act that will be made unlawful by the enforcement of the principle of prevention of harm, must be the type of act that will definitely lead to the evil feared. There must be a nexus between the prohibited act and the feared evil, which must be established to a degree of certainty or, at least, a degree of high likelihood (al-ẓann al-ghālib)."</p>
+</blockquote>
+<p><strong>Contoh 2: Analisis Hierarki Kewajiban Hukum</strong></p>
+<p>Dalam kasus fatwa tentang kewajiban perempuan untuk menikah versus melanjutkan pendidikan, Abou El Fadl menganalisis bagaimana juris kontemporer membalik hierarki kewajiban tradisional:</p>
+<blockquote>
+<p>"According to the classical jurists, marriage is recommended, and is part of the Prophet's Sunnah, but it is not a legal obligation (al-zawāj nadb wa lā yalzam)... In fact, well-known jurists such as Ibn Taymiyyah and al-Nawawī never married... Even more, the seeking of knowledge (ṭalab al-'ilm) is considered a farīdah (religious obligation) or, at least, a wājib (religious duty). Meanwhile, according to classical jurists, marriage is a Sunnah (recommended or favored act), and not a mandatory obligation."</p>
+</blockquote>
+<h3 class="atx" id="b-teori-hermeneutika">b. Teori Hermeneutika</h3>
+<p>Abou El Fadl mengaplikasikan teori interpretasi teks untuk menganalisis hubungan antara teks (instruksi), pembaca (juris), dan makna yang diproduksi.</p>
+<p><strong>Contoh 1: Analisis Penyempitan Makna Teks</strong></p>
+<blockquote>
+<p>"The net result was to misrepresent the efforts of the interpretive communities of Islamic law, and to create the impression that the determination is far more closed than the evidence, itself, admits. Accordingly, the roles of the author and the text become far more limited and diminished while the reader (special agent) stands supreme and uncontested in the determinative process."</p>
+</blockquote>
+<p><strong>Contoh 2: Kritik terhadap Pembacaan Ahistoris</strong></p>
+<p>Dalam analisis fatwa tentang larangan foto-foto, penulis mengkritik penerapan literal tradisi tentang gambar ke teknologi fotografi modern:</p>
+<blockquote>
+<p>"In light of the above, we can re-ask the question: to what extent do the words ṣuwar, taṣwîr, or muṣawwirūn of fourteen-hundred years ago, refer to the same conceptual, physical, and social category or experience that exists today? In fact, it is likely that the Prophet was worried about the possible social and religious role images might have upon his people – considering that Islam was a fairly new religion, it was quite reasonable to assume that people could easily revert to the worship of idols."</p>
+</blockquote>
+<h3 class="atx" id="c-teori-agensi">c. Teori Agensi</h3>
+<p>Penulis menganalisis relasi kuasa dalam fatwa menggunakan kerangka hubungan prinsipal-agen, yang ia kembangkan dalam bab-bab sebelumnya.</p>
+<p><strong>Contoh 1: Usurpasi Peran Prinsipal</strong></p>
+<blockquote>
+<p>"There is a perfect unity between the will of the interpreter, and the Will of the Principal – whatever the interpreter feels, thinks, desires, or values is imputed to the Principal. Unless the common agents are willing to give their loyalty, commitment, and submission to the special agent, this is a blatant violation of the relation based on diligence and deference between the special agent and those who placed their trust in him."</p>
+</blockquote>
+<p><strong>Contoh 2: Klaim Otentisitas Keagamaan</strong></p>
+<blockquote>
+<p>"Their claim to authoritativeness is derived from the fact that they are acting as special agents deciphering the instructions of the Principal. Their claim to authenticity is largely dependent on the assertion that they are not innovators in religion (mubtadī'ūn fī al-dīn), and that their opinions are representative of the jamā'ah (the critical mass of God-fearing Muslims or orthodoxy)."</p>
+</blockquote>
+<h3 class="atx" id="d-analisis-retorika">d. Analisis Retorika</h3>
+<p>Abou El Fadl menganalisis strategi retorika yang digunakan dalam fatwa untuk membangun otoritas dan mempertahankan klaim pengetahuan.</p>
+<p><strong>Contoh 1: Penggunaan Bid'ah sebagai Alat Retoris</strong></p>
+<blockquote>
+<p>"This dual notion of avoidance of bid'ah (unlawful innovations in religion) and representing the jamā'ah (orthodoxy) is critical to the legitimacy and authoritativeness of the legal opinions of these jurists. Significantly, both concepts are heavily dependent on the classical juristic tradition for their symbolic value. In other words, both derive their symbolic power from Islamic juristic history."</p>
+</blockquote>
+<p><strong>Contoh 2: Retorika "Islam yang Sejati"</strong></p>
+<blockquote>
+<p>"The contradictions and dilemmas are clearly discernable in the responsa discussed in this chapter. The jurists writing these responsa, for example, will favor one or two classical jurists over all others, but the criteria for inclusion or exclusion are never clearly articulated. Furthermore, the writers of the responsa repeatedly assert that they are representing the true and real Islam. As will be seen, they do not claim to represent a process or even the best interpretive efforts, but the actual law of God."</p>
+</blockquote>
+<h3 class="atx" id="e-analisis-gender">e. Analisis Gender</h3>
+<p>Penulis menggunakan perspektif kritis gender untuk mengungkap bagaimana asumsi tentang perempuan mempengaruhi produksi fatwa.</p>
+<p><strong>Contoh 1: Analisis Konsep Fitnah</strong></p>
+<blockquote>
+<p>"It appears that Ibn Jibrīn assumes a general intent on the part of women that is not presented to him in the inquiry posed in the question. This raises the question, what social-based values inform Ibn Jibrīn's response? The answer is that women are a constant source of fitnah (sexual enticement), and so everything related to the functionality of women is seen from that perspective."</p>
+</blockquote>
+<p><strong>Contoh 2: Kritik terhadap Standar Ganda</strong></p>
+<p>Dalam analisis larangan perempuan berkendara, penulis mengidentifikasi standar ganda berdasarkan gender:</p>
+<blockquote>
+<p>"If applied fairly, a methodology guided by the fear of speculative evils would lead to what are plainly absurd results. If we fear that many men from the Arabian Gulf area who travel to Europe and the United States will visit nightclubs, then we should ban men from traveling outside Arabia. If a large number of people sniff glue, then we should ban the use of glue, and if people tend to talk about nonsense, backbite and malign others, then we should ban talking."</p>
+</blockquote>
+<h3 class="atx" id="f-sosiologi-pengetahuan">f. Sosiologi Pengetahuan</h3>
+<p>Abou El Fadl menganalisis bagaimana konteks sosial-politik membentuk produksi pengetahuan hukum dan bagaimana fatwa memperkuat struktur kekuasaan tertentu.</p>
+<p><strong>Contoh 1: Sensitivitas Institusional dalam Fatwa</strong></p>
+<blockquote>
+<p>"Social non-institutional interests are not as weighty or significant as institutional and governmental interests. The expatriate experience with its particular pains is not a part of their sensitivities or consciousness. Consequently, it is fairly easy to dismiss the role of photographs for expatriates who, quite often, cannot afford to visit their families, as a non-necessity. Meanwhile, the photographs of the King of Saudi Arabia, which decorate the C.R.L.O building itself and most other public places, is a necessity."</p>
+</blockquote>
+<p><strong>Contoh 2: Pengutamaan Kepentingan Negara</strong></p>
+<blockquote>
+<p>"This, what may be called, 'institutional sensitivity' is also noticeable in the numerous responsa that have decided it is unlawful for a Muslim to socialize with or befriend a non-Muslim, but that it is lawful for the Saudi government to ally itself with the United States against Iraq."</p>
+</blockquote>
+<h3 class="atx" id="g-analisis-kebijakan">g. Analisis Kebijakan</h3>
+<p>Penulis menganalisis fatwa sebagai instrumen kebijakan sosial, memeriksa asumsi kebijakan yang mendasarinya dan konsekuensi sosialnya.</p>
+<p><strong>Contoh 1: Analisis Penyeimbangan Kepentingan dalam Fatwa</strong></p>
+<blockquote>
+<p>"At the most basic level, the jurists were engaged in an undisclosed balancing process between different legal obligations, and the different interests attached to these legal obligations. Assuming that a daughter does have an obligation to obey her father, is weighed against the fact that a daughter has the right to choose her marital partner."</p>
+</blockquote>
+<p><strong>Contoh 2: Kritik terhadap Pertimbangan Kebijakan yang Tidak Diungkapkan</strong></p>
+<blockquote>
+<p>"Nevertheless what is most despotic about the determinations discussed above is not only the failure to rely on a sound methodology, but even more, is that they are founded upon value-based determinations without being forthright about the policy assessments made. In fact, the authors of these responsa are often explicit about claiming the solemnity of God's law to their side."</p>
+</blockquote>
+<h3 class="atx" id="h-antropologi-hukum">h. Antropologi Hukum</h3>
+<p>Penulis menganalisis bagaimana norma-norma budaya dan struktur sosial mempengaruhi interpretasi hukum.</p>
+<p><strong>Contoh 1: Analisis Norma Budaya dalam Interpretasi Larangan Gambar</strong></p>
+<blockquote>
+<p>"The obvious point here is that the intended suwar or sulab (images and statues) at the time of the Prophet were those that posed a very real risk of becoming objects of worship. So for instance, there is a tradition in which the Prophet saw 'Ā'ishah playing with a doll in the shape of a human being and did not reproach her... Importantly, the interpretive activity of classical jurists reflected the contextual particularity of the prohibition against images."</p>
+</blockquote>
+<p><strong>Contoh 2: Kontekstualisasi Tradisi Clapping</strong></p>
+<blockquote>
+<p>"If Muslim women are allowed to clap in prayer, it cannot follow that the act of clapping is an imitation of the kuffār, unless we are willing to argue that Muslim women are unbelievers. In addition, the C.R.L.O's approach rests on an assumption that Muslim women do not set or do not count in setting Islamic normativities. If Muslim women do something then Muslims, in general, should not do it – if Muslim women clap in prayer, Muslims, in general, should not clap in any other circumstance."</p>
+</blockquote>
+<p>Pendekatan multidisipliner Khaled Abou El Fadl memungkinkannya menganalisis wacana otoritarian dengan kompleksitas yang tidak mungkin dicapai melalui disiplin tunggal. Dengan mengintegrasikan yurisprudensi Islam tradisional dengan teori sosial, analisis teks, dan teori kritis kontemporer, ia mampu mengungkap struktur, mekanisme, dan implikasi dari wacana otoritarian dalam hukum Islam. Ini bukan hanya kritik terhadap posisi hukum tertentu, tetapi analisis mendalam tentang bagaimana otoritas hukum dikonstruksi, dipertahankan, dan direifikasi.</p>
+<p>Pendekatan ini menunjukkan bahwa untuk memahami dan menantang otoritarianisme keagamaan secara efektif, diperlukan kerangka multidisipliner yang mampu menganalisis dimensi tekstual, sosial, politik, dan etis dari produksi pengetahuan keagamaan. Melalui dialog antara berbagai disiplin ilmu, Abou El Fadl memberikan model analisis kritis yang menghormati kompleksitas tradisi Islam sambil tetap teguh dalam komitmennya terhadap nilai-nilai etis.</p>
+<p><strong>Diagram Pendekatan Multidisipliner dalam Bab The Anatomy of Authoritarian Discourse</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/04.%20Pendekatan%20multidisipliner.png"></p>
+<h2 class="atx" id="9-metodologi-sekunder">9. Metodologi Sekunder</h2>
+<p>Selain pendekatan multidisipliner yang utama, Khaled Abou El Fadl menggunakan serangkaian metodologi sekunder yang memperkaya dan memperdalam analisisnya terhadap wacana otoritarian. Metodologi ini berfungsi sebagai alat analitis yang memungkinkannya mengungkap kontradiksi, mensituasikan wacana dalam konteks yang lebih luas, dan menggambarkan konsekuensi praktis dari interpretasi otoritarian. Berikut adalah metodologi sekunder utama yang digunakan penulis dengan contoh-contoh konkret dari teks.</p>
+<h3 class="atx" id="a-kritik-imanen">a. Kritik Imanen</h3>
+<p>Abou El Fadl kerap menggunakan kritik imanen—mengkritik posisi berdasarkan standar dan logika internalnya sendiri—untuk mengungkap ketidakkonsistenan dalam fatwa-fatwa yang dianalisis.</p>
+<p><strong>Contoh 1: Inkonsistensi dalam Larangan terhadap Misrepresentasi</strong></p>
+<p>Penulis mengidentifikasi kontradiksi dalam penerapan prinsip "penipuan" dalam fatwa tentang bra dan fatwa tentang pernikahan misyār:</p>
+<blockquote>
+<p>"C.R.L.O is asked about the legality of what is known in Saudi Arabia as the misyār marriage, pursuant to which a man marries a woman with the intent of divorcing her after a particular period of time, but without disclosing to her his latent intent. A typical scenario would be that a man would go overseas to study. While abroad he would marry a woman with the undisclosed intent to divorce her upon the completion of his studies. Both C.R.L.O and, in separate responsa, Ibn Bāz determine that this marriage is lawful and does not in anyway reproach the male partner for his fraudulent behavior. In fact, C.R.L.O and Ibn Bāz do not even comment on the misrepresentations that are invariably involved in this type of marriage."</p>
+</blockquote>
+<p>Ini kontras langsung dengan fatwa tentang bra:</p>
+<blockquote>
+<p>"He asserts that some women have adopted the habit of wearing support in order to create the impression that they are either young or virgins, and if that is the case then this is a prohibited form of fraud."</p>
+</blockquote>
+<p><strong>Contoh 2: Kontradiksi dalam Penyeimbangan Kepentingan</strong></p>
+<p>Penulis mengkritik pengutamaan kepentingan suami dalam fatwa tentang penyusuan, yang bertentangan dengan prinsip hak setara dalam hubungan seksual yang diakui dalam tradisi yuristik:</p>
+<blockquote>
+<p>"The C.R.L.O jurists do not inquire, and do not seem to think it is relevant whether the wives in these cases find breastfeeding their husbands annoying, distasteful, or unpleasurable. Again, the C.R.L.O jurists ignore prior determinations by classical jurists that women have an equal right to sexual fulfillment, as do their spouses. For instance, some jurists argued that it is reprehensible for a man to climax sexually before his wife, if that denies his wife her pleasure. Even if he does, he must continue to stimulate his wife until she climaxes if that is what she wants."</p>
+</blockquote>
+<h3 class="atx" id="b-permainan-peran-role-play">b. Permainan Peran (Role Play)</h3>
+<p>Penulis menggunakan strategi pengambilan peran untuk memposisikan diri sebagai subjek yang terkena dampak fatwa, mengajukan pertanyaan yang secara langsung mempertanyakan legitimasi keputusan.</p>
+<p><strong>Contoh 1: Sudut Pandang Istri yang Suaminya Terluka</strong></p>
+<blockquote>
+<p>"If we ask either the woman who wanted to visit her injured husband, or the man who wanted to see his wife and child, if they feel betrayed by the special agents' concealment of the counter-determinations of the legal tradition, the response most certainly would be in the affirmative."</p>
+</blockquote>
+<p><strong>Contoh 2: Perspektif Perempuan yang Mendengar Laki-laki di Masjid</strong></p>
+<p>Dalam analisis fatwa tentang suara perempuan sebagai 'awrah, Abou El Fadl memposisikan diri sebagai pihak yang akan dipengaruhi oleh fatwa:</p>
+<blockquote>
+<p>"I must confess that I find that the assertion that if women raise their voices in prayer this could be a source of seduction or fitnah, to be bewildering. It would have been more fitting for C.R.L.O to chastise the men, if such exist, who cannot keep their minds on their prayers instead of becoming aroused by the voice of women in worship."</p>
+</blockquote>
+<h3 class="atx" id="c-analisis-kontrafaktual">c. Analisis Kontrafaktual</h3>
+<p>Abou El Fadl menggunakan skenario hipotetis untuk menguji konsistensi logis dari prinsip-prinsip yang diterapkan dalam fatwa.</p>
+<p><strong>Contoh 1: Kontrafaktual tentang Larangan Perjalanan bagi Laki-laki</strong></p>
+<p>Dalam responnya terhadap fatwa yang melarang perempuan mengemudi, penulis menggunakan kontrafaktual untuk mempertanyakan konsistensi penerapan prinsip sadd al-dharī'ah:</p>
+<blockquote>
+<p>"If applied fairly, a methodology guided by the fear of speculative evils would lead to what are plainly absurd results. If we fear that many men from the Arabian Gulf area who travel to Europe and the United States will visit nightclubs, then we should ban men from traveling outside Arabia. If a large number of people sniff glue, then we should ban the use of glue, and if people tend to talk about nonsense, backbite and malign others, then we should ban talking."</p>
+</blockquote>
+<p><strong>Contoh 2: Kontrafaktual tentang Nuditas dan "Penipuan"</strong></p>
+<blockquote>
+<p>"There is little doubt that fraud is illegal in Islamic law, but who is the owner of the brassiere determination? Notably, Ibn Jibrīn does not cite any particular instructions of the Principal on brassieres or other items of clothing. There is no mention of instructions regarding turbans that make a man look taller, undergarments that make a man look well-endowed, shirts that make a man appear more muscular, or clothing that makes a man look thinner. While fraud, as a principle, is outlawed, the most honest physiological disclosure would be nudity."</p>
+</blockquote>
+<h3 class="atx" id="d-eksplorasi-konsekuensi">d. Eksplorasi Konsekuensi</h3>
+<p>Penulis secara sistematis mengeksplorasi implikasi praktis dari fatwa-fatwa yang dianalisis, menunjukkan dampak sosial dan etis yang lebih luas.</p>
+<p><strong>Contoh 1: Konsekuensi Larangan Fatwa Kunjungan ke Kuburan</strong></p>
+<blockquote>
+<p>"The jurists of C.R.L.O then argue that because of the risk of fitnah, it is better that women do not travel any distance without a maḥram. Significantly, the C.R.L.O jurists present their determinations as the rule of Islamic law without giving any sense of any further complexity."</p>
+</blockquote>
+<p>Konsekuensi praktisnya diimplikasikan: fatwa ini mencegah perempuan mengunjungi kerabat yang sakit atau sekarat, membatasi mobilitas sosial mereka, dan menegaskan kembali subordinasi dalam ruang publik.</p>
+<p><strong>Contoh 2: Konsekuensi Penyusuan Suami</strong></p>
+<blockquote>
+<p>"In two responsa, wives complain that their husbands like to be suckled like babies, a behavior that they apparently find objectionable. The response of the jurists is remarkably dogmatic, and in fact, offensive – they state that a husband has a right to enjoy his wife in any lawful way."</p>
+</blockquote>
+<p>Konsekuensi ini termasuk mendegradasi otonomi tubuh perempuan, mengabaikan keberatan perempuan terhadap praktik seksual tertentu, dan memprioritaskan kepuasan laki-laki dibandingkan kenyamanan perempuan.</p>
+<h3 class="atx" id="e-evaluasi-etis">e. Evaluasi Etis</h3>
+<p>Abou El Fadl tidak hanya menganalisis fatwa dari perspektif yuristik tetapi juga mengevaluasi dimensi etisnya.</p>
+<p><strong>Contoh 1: Penilaian Etis terhadap Fatwa tentang Hubungan Keluarga</strong></p>
+<p>Mengomentari fatwa yang memungkinkan suami mencegah istrinya mengunjungi orangtuanya, penulis menyatakan:</p>
+<blockquote>
+<p>"In another report, the Prophet supported the right of a woman to be visited by her father who was an unbeliever and to offer him protection despite the opposition of the Medina community. This anecdotal evidence is not dispositive of the issue at hand, but it should be incorporated into a systematic analysis of the issue. Fundamentally, once again, we have a conflict between a presumed duty to obey a husband, and a well-established duty to maintain a relationship with one's parents. Balancing the two, the C.R.L.O apparently decided that the possibility of a speculative concern on the part of a husband takes precedence over the interest of a wife in maintaining a meaningful relationship with her family."</p>
+</blockquote>
+<p>Kemudian menambahkan penilaian etis personal:</p>
+<blockquote>
+<p>"This determination, which as explained later I consider immoral, is presented as the rule of Islamic law."</p>
+</blockquote>
+<p><strong>Contoh 2: Evaluasi Etis tentang Penyakit Kulit dan Hijab</strong></p>
+<p>Dalam menganalisis fatwa tentang seorang perempuan yang menderita penyakit kulit, penulis mengevaluasi respons etis yang tepat:</p>
+<blockquote>
+<p>"The C.R.L.O jurists are also asked about a woman who suffers from a skin disease afflicting her head and face. Despite the fact that her doctor advised her not to wear a head or face cover, the C.R.L.O jurists respond that she may remove her covers in front of her husband only! Otherwise, she should not remove her covers – instead, she should be patient and persevere."</p>
+</blockquote>
+<p>Penulis kemudian menilai konsekuensi etisnya:</p>
+<blockquote>
+<p>"This responsum clearly contradicts the well-known legal principle that provides that, 'all unlawful matters become lawful in cases of necessity (al-ḍarūriyyāt tubīḥ al-maḥẓūrāt),' and the Qur'ānic verses stating that God does not wish people to endure hardship."</p>
+</blockquote>
+<h3 class="atx" id="f-analisis-linguistik-historis">f. Analisis Linguistik-Historis</h3>
+<p>Penulis melakukan analisis linguistik historis terhadap istilah-istilah kunci untuk mengungkap konteks asli dan makna yang telah berubah.</p>
+<p><strong>Contoh 1: Analisis Historis Istilah Taṣwīr</strong></p>
+<p>Dalam analisis fatwa tentang fotografi, penulis melakukan investigasi linguistik-historis:</p>
+<blockquote>
+<p>"There are several traditions attributed to the Prophet that condemn or prohibit the act of taṣwīr and suwar (the production of images or statues) but the only similarity between the images and statues of the traditions and photographs is linguistic. Of course, photographs were unknown at the time of the Prophet. In the contemporary age, Arabic speakers co-opted the pre-modern word, taṣwīr, to describe the act of taking photographs, so that the word that referred to a particular historical practice is now used to describe a modern practice."</p>
+</blockquote>
+<p><strong>Contoh 2: Analisis Istilah Zawwārāt</strong></p>
+<p>Dalam fatwa tentang kunjungan perempuan ke kuburan, penulis menganalisis variasi istilah:</p>
+<blockquote>
+<p>"The word taṣlīb is the verb form of the word salīb, which means a worshiped image or statue. Therefore, Christianity was known among pre-modern Muslims as Ṣalībiyyah, or those who worship images and statues (i.e. the cross, and the images of Jesus and the Virgin Mary)."</p>
+</blockquote>
+<p>Dan:</p>
+<blockquote>
+<p>"In addition, there are different versions of the cursing hadīth. One version, which is mentioned above, condemns women who visit graves (zā'irāt al-qubūr), but another, condemns women who frequent the graveyards or those who repeatedly visit cemeteries (zawwārāt al-qubūr). This is significant because it raises the issue of the socio-historical context of the tradition. As is the practice in some countries today, there were women who mourned the dead for a living."</p>
+</blockquote>
+<h3 class="atx" id="g-dialog-hipotetis">g. Dialog Hipotetis</h3>
+<p>Penulis secara kreatif menggunakan dialog hipotetis untuk menggambarkan perspektif atau tanggapan alternatif terhadap fatwa, menggiatkan teks dengan plural suara dan pandangan.</p>
+<p><strong>Contoh 1: Dialog Hipotetis tentang Keputusan dari Sudut Pandang Lain</strong></p>
+<p>Dalam mengkritik fatwa tentang kunjungan ke kuburan, penulis menyiratkan dialog antara pengikut fatwa dan juris klasik:</p>
+<blockquote>
+<p>"To summarize the juristic tradition on this matter, there are three distinct points of view. A minority view held that the visitation of graves by women is always prohibited. The majority, however, held that the visitation of graves was initially prohibited for men and women, and then was permitted both for men and women."</p>
+</blockquote>
+<p><strong>Contoh 2: Dialog antara Pemikiran Juris dan Tradisi Klasik</strong></p>
+<p>Dalam analisis fatwa tentang suara perempuan, Abou El Fadl menghadirkan dialog antara pendapat kontemporer dan tradisi klasik:</p>
+<blockquote>
+<p>"Most significantly, the vast majority of jurists held that a woman's voice is not a 'awrah. Seductive speech, however, whether by men or women, is unlawful if done with improper motives. For instance, a wife or husband may speak seductively to his or her spouse, but not to a neighbor. The vast majority of jurists were sufficiently discerning not to brand the voice of women as invariably seductive, and as worthy of being muted under all circumstances."</p>
+</blockquote>
+<h3 class="atx" id="h-integrasi-wacana-yuristik-dan-analisis-sosial">h. Integrasi Wacana Yuristik dan Analisis Sosial</h3>
+<p>Penulis mengintegrasikan analisis wacana yuristik dengan konteks sosial-historis yang lebih luas.</p>
+<p><strong>Contoh 1: Kontekstualisasi Historis Fatwa tentang Fotografi</strong></p>
+<blockquote>
+<p>"Some early reports indicate that Muslims were aware of Christian practices in which tombstones were decorated with images or statues, which would become revered religious symbols. The obvious point here is that the intended suwar or sulab (images and statues) at the time of the Prophet were those that posed a very real risk of becoming objects of worship."</p>
+</blockquote>
+<p><strong>Contoh 2: Analisis Sosio-Yuristik Fatwa tentang Mengemudi</strong></p>
+<blockquote>
+<p>"The difference between this rather careful and self-restrained methodology and the C.R.L.O jurists' approach I think is self-evident. The C.R.L.O jurists seem to assume that anything that might possibly lead to any degree of evil is to be prohibited. Regardless of the amount of good that driving women could achieve, and regardless of how speculative our fears of possible evils, they believe that women should bear the burden of the sacrifice."</p>
+</blockquote>
+<p>Metodologi sekunder yang digunakan oleh Khaled Abou El Fadl meningkatkan kekuatan analitik dari karya ini dengan beberapa cara penting:</p>
+<ol>
+<li><p><strong>Mengungkap Kontradiksi Internal</strong>: Metodologi seperti kritik imanen dan analisis kontrafaktual memungkinkannya mengungkap kesenjangan dan inkonsistensi dalam wacana otoritarian.</p>
+</li>
+<li><p><strong>Kontekstualisasi Historis</strong>: Analisis linguistik-historis dan integrasi wacana yuristik dengan konteks sosial menempatkan fatwa kontemporer dalam perspektif sejarah yang lebih luas.</p>
+</li>
+<li><p><strong>Memanusiakan Analisis</strong>: Penggunaan permainan peran dan evaluasi etis memberikan dimensi kemanusiaan pada diskusi legal-formal, mengingatkan pembaca tentang dampak nyata dari fatwa terhadap kehidupan individu.</p>
+</li>
+<li><p><strong>Mengaktifkan Perspektif Alternatif</strong>: Dialog hipotetis dan eksplorasi konsekuensi membuka ruang untuk perspektif dan interpretasi alternatif.</p>
+</li>
+<li><p><strong>Memberikan Dimensi Transformatif</strong>: Dengan tidak hanya mengkritik tetapi juga menawarkan analisis konsekuensi dan evaluasi etis, metodologi sekunder ini memberikan dimensi transformatif pada karya ini.</p>
+</li>
+</ol>
+<p>Dengan mengintegrasikan metodologi-metodologi ini dengan pendekatan multidisipliner utamanya, Abou El Fadl menciptakan kritik yang kaya dan kompleks terhadap wacana otoritarian yang tidak hanya mendekonstruksi tetapi juga menyarankan jalur rekonstruktif untuk pemikiran hukum Islam yang lebih pluralistis, etis, dan reflektif.</p>
+<p><strong>Diagram Metodologi Sekunder yang Dipakai dalam Bab The Anatomy of Authoritarian Discourse</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/05.%20Metodologi%20Sekunder.png"></p>
+<p>Kerangka pemikiran Khaled Abou El Fadl dalam "The Anatomy of Authoritarian Discourses" merepresentasikan pendekatan yang canggih dan multidimensi terhadap studi hukum Islam. Dengan mengintegrasikan analisis tekstual, sosiologis, hermeneutis, dan etis, ia mampu membongkar mekanisme wacana otoritarian dan mengidentifikasi pola-pola sistematis yang mendasarinya. Pendekatan ini tidak sekedar menawarkan kritik terhadap posisi hukum tertentu, tetapi menantang cara dasar di mana otoritas hukum dikonstruksi, ditegakkan, dan dilegitimasi dalam wacana Islam kontemporer.</p>
+<h1 class="atx" id="d-alur-penyampaian-dan-struktur-teks-dalam-andquotthe-anatomy-of-authoritarian-discoursesandquot">D. Alur Penyampaian dan Struktur Teks dalam "The Anatomy of Authoritarian Discourses"</h1>
+<p>Bab "The Anatomy of Authoritarian Discourses" memiliki struktur yang dirancang dengan cermat untuk mengembangkan argumen penulis secara bertahap dan meyakinkan. Khaled Abou El Fadl menyusun alur penyampaiannya untuk membangun kritik terhadap wacana otoritarian dalam hukum Islam kontemporer, terutama dalam konteks responsa yang dikeluarkan oleh juris-juris Wahhabi. Berikut adalah analisis mendalam tentang bagaimana alur penyampaian ini distrukturkan untuk mencapai tujuan teks.</p>
+<p>Struktur Bab ini secara umum bisa dilihat secara makro dan mikro. Berikut adalah diagram struktur makro dan mikro dari bab ini.</p>
+<p><strong>Diagram Struktur makro dan Mikro secara umum</strong></p>
+<img data-align="center" width="555" alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/06.%20Alur%20Umum%20Penyampaian%20(Makro%20dan%20Mikro).png" title="">
+
+<h2 class="atx" id="1-struktur-makro-teks">1. Struktur Makro Teks</h2>
+<p>Pada tingkat makro, bab ini terorganisir dalam struktur yang bersifat deduktif-induktif-deduktif, membentuk semacam pergerakan spiral dari konsep umum ke contoh spesifik dan kembali ke prinsip umum dengan pemahaman yang lebih dalam:</p>
+<h3 class="atx" id="a-pembukaan-konseptual-teoretis-hal-348-353">A. Pembukaan Konseptual-Teoretis (hal. 348-353)</h3>
+<p>Penulis membuka bab dengan diagnosis keadaan hukum Islam kontemporer, mendefinisikan klaim utamanya bahwa hukum Islam telah berubah dari proses epistemologis terbuka (<em>fiqh</em>) menjadi serangkaian perintah tetap (<em>aḥkām</em>). Ia menelusuri transformasi historis ini dan menghubungkannya dengan wacana otoritarian.</p>
+<blockquote>
+<p>"As a set of positive commandments (aḥkām), Islamic law is alive and well in the contemporary age... But as an epistemology, process, and methodology of understanding and searching, as a fiqh, Islamic law, for the most part, is dead."</p>
+<p>"Sebagai seperangkat perintah positif (aḥkām), hukum Islam hidup dan berkembang di era kontemporer... Tetapi sebagai epistemologi, proses, dan metodologi pemahaman dan pencarian, sebagai fiqh, hukum Islam, sebagian besar, telah mati."</p>
+</blockquote>
+<p>Bagian ini menetapkan kerangka teoretis dan keprihatinan utama penulis, memposisikan analisis yang akan datang dalam narasi yang lebih luas tentang kemunduran tradisi yuristik Islam.</p>
+<h3 class="atx" id="b-perkenalan-metodologis-dan-fokus-hal-353-360">B. Perkenalan Metodologis dan Fokus (hal. 353-360)</h3>
+<p>Penulis kemudian menyempitkan fokusnya, menjelaskan sumber-sumber yang akan dianalisis (terutama responsa dari C.R.L.O dan juris-juris Wahhabi), kriteria analisis, dan batasan studi. Ia juga memperjelas bahwa fokusnya adalah pada proses interpretif, bukan konten hukum spesifik.</p>
+<blockquote>
+<p>"The examples below all involve a fundamental violation of the logic of special agency, and the contingencies of honesty, diligence, comprehensiveness, self-restraint, and reasonableness."</p>
+<p>"Contoh-contoh di bawah ini semuanya melibatkan pelanggaran fundamental terhadap logika agensi khusus, dan kontingensi kejujuran, ketekunan, komprehensivitas, pengendalian diri, dan kelayakan."</p>
+</blockquote>
+<p>Bagian ini berfungsi sebagai jembatan antara kerangka teoretis dan analisis kasus konkret, mempersiapkan pembaca untuk analisis kritis yang akan datang.</p>
+<h3 class="atx" id="c-analisis-kasus-hal-360-387">C. Analisis Kasus (hal. 360-387)</h3>
+<p>Bagian terbesar dari bab ini didedikasikan untuk analisis kasus konkret yang diorganisir tematik berdasarkan tiga jenis praktik otoritarian:</p>
+<ol>
+<li><strong>Ketidakkonsistenan</strong> (hal. 360-365): Kasus bra, sepatu hak tinggi, dan pernikahan misyār</li>
+<li><strong>Selektivitas Bukti</strong> (hal. 365-377): Kasus kunjungan ke kuburan, perjalanan tanpa mahram, dan tepuk tangan</li>
+<li><strong>Ketidakseimbangan dalam Penyeimbangan Kepentingan</strong> (hal. 377-387): Kasus perempuan mengemudi, penyusuan suami, dan diseksi mayat</li>
+</ol>
+<p>Setiap kasus diurutkan secara logis untuk mengilustrasikan pola-pola tertentu dan membangun argumen kumulatif yang semakin kuat.</p>
+<h3 class="atx" id="d-sintesis-reflektif-hal-387-388">D. Sintesis Reflektif (hal. 387-388)</h3>
+<p>Bagian penutup bab ini menyajikan sintesis reflektif yang menghubungkan kembali contoh-contoh spesifik dengan perhatian konseptual yang lebih luas, menekankan pola sistematis dalam wacana otoritarian dan implikasinya untuk pemikiran hukum Islam. Sintesis ini memiliki beberapa komponen dan fungsi penting:</p>
+<h4 class="atx" id="i-generalisasi-pola-dari-contoh-contoh-spesifik">i. Generalisasi Pola dari Contoh-contoh Spesifik</h4>
+<p>Setelah menganalisis berbagai kasus hukum spesifik, Abou El Fadl melakukan generalisasi untuk mengidentifikasi pola-pola dasar yang mendasari semua contoh. Ia mendemonstrasikan bahwa contoh-contoh tersebut bukan sekedar kasus terisolasi tetapi manifestasi dari struktur wacana otoritarian yang lebih luas:</p>
+<blockquote>
+<p>"I think that it is fair to say that the responsa discussed above are based on impressionistic, and even idiosyncratic, empirical claims, and that they exhibit an extreme tendency to undervaluing the suffering and harm inflicted upon women. In my view, women should not suffer exclusion and restrictions lest men suffer a fleeting moment of temptation."</p>
+<p>"Saya pikir adil untuk mengatakan bahwa responsa yang dibahas di atas didasarkan pada klaim empiris yang impresionistik, bahkan idiosinkratik, dan menunjukkan kecenderungan ekstrem untuk meremehkan penderitaan dan kerugian yang ditimpakan pada perempuan. Dalam pandangan saya, perempuan seharusnya tidak menderita pengucilan dan pembatasan agar laki-laki tidak mengalami momen godaan yang sekejap."</p>
+</blockquote>
+<p>Sintesis ini mengidentifikasi dua fitur umum dari semua kasus yang dianalisis: klaim empiris yang subjektif dan sistematis mendevaluasi kepentingan perempuan dibandingkan kepentingan laki-laki.</p>
+<h4 class="atx" id="ii-artikulasi-konsekuensi-teologis-etis">ii. Artikulasi Konsekuensi Teologis-Etis</h4>
+<p>Pada bagian sintesis, penulis bergerak melampaui analisis doktrinal murni untuk mengartikulasikan konsekuensi teologis dan etis dari wacana otoritarian:</p>
+<blockquote>
+<p>"At a value-based level, I find those men, if they exist, to be rather misguided. At a faith-based level, I cannot believe that God would accommodate those men in this way."</p>
+<p>"Pada tingkat berbasis nilai, saya merasa laki-laki tersebut, jika mereka ada, agak keliru. Pada tingkat berbasis iman, saya tidak dapat percaya bahwa Tuhan akan mengakomodasi laki-laki tersebut dengan cara ini."</p>
+</blockquote>
+<p>Pernyataan reflektif ini mengungkapkan bagaimana otoritarianisme interpretif tidak hanya masalah metodologis tetapi juga merusak inti dari nilai-nilai etis dan teologis Islam. Penulis secara eksplisit membedakan antara pertimbangan berbasis nilai, yang berfokus pada dimensi etis, dan pertimbangan berbasis iman, yang menyangkut implikasi teologis.</p>
+<h4 class="atx" id="iii-identifikasi-pelanggaran-terhadap-lima-kontingensi">iii. Identifikasi Pelanggaran Terhadap Lima Kontingensi</h4>
+<p>Sintesis ini menghubungkan kembali analisis kasus dengan kerangka teoretis tentang "lima kontingensi" yang dibangun dalam bab sebelumnya:</p>
+<blockquote>
+<p>"Unless the common agents are willing to give their loyalty, commitment, and submission to the special agent, this is a blatant violation of the relation based on diligence and deference between the special agent and those who placed their trust in him."</p>
+<p>"Kecuali jika agen umum bersedia memberikan loyalitas, komitmen, dan ketundukan mereka kepada agen khusus, ini adalah pelanggaran terang-terangan terhadap hubungan yang didasarkan pada ketekunan dan penghormatan antara agen khusus dan mereka yang menaruh kepercayaan padanya."</p>
+</blockquote>
+<p>Dalam sintesis ini, penulis secara eksplisit menghubungkan kembali kasus-kasus spesifik dengan kerangka hubungan agen-prinsipal, menunjukkan bagaimana juris-juris yang dianalisis telah melanggar "kontingensi" yang diperlukan untuk interpretasi otoritatif yang sah.</p>
+<h4 class="atx" id="iv-penciptaan-kerangka-evaluatif">iv. Penciptaan Kerangka Evaluatif</h4>
+<p>Penulis menggunakan sintesis untuk menyediakan kerangka evaluatif yang dapat diterapkan di luar kasus-kasus spesifik yang dianalisis dalam bab:</p>
+<blockquote>
+<p>"My point in this chapter is not to argue that the determinations of these jurists are qualitatively wrong, but to explore the dividing line between the authoritative and the authoritarian."</p>
+<p>"Tujuan saya dalam bab ini bukanlah untuk berpendapat bahwa penentuan para juris ini secara kualitatif salah, tetapi untuk mengeksplorasi garis pemisah antara yang otoritatif dan yang otoritarian."</p>
+</blockquote>
+<p>Pernyataan reflektif ini menegaskan kembali tujuan utama bab, mengalihkan fokus dari evaluasi substantif dari fatwa-fatwa spesifik ke identifikasi karakteristik struktural yang membedakan interpretasi otoritatif dari interpretasi otoritarian.</p>
+<h4 class="atx" id="v-eksplorasi-implikasi-sosial-politik">v. Eksplorasi Implikasi Sosial-Politik</h4>
+<p>Sintesis juga mengeksplorasi implikasi sosial-politik yang lebih luas dari pola-pola wacana otoritarian yang telah diidentifikasi:</p>
+<blockquote>
+<p>"I think that it is fair to say that Ibn Fawzān is relying on certain value-based assumptions about the role of medicine, the value of empirical research and experience, the importance of medical doctors in society, an understanding of the physicality of the body, and a particular understanding of dignity that is perhaps consistent with certain social values."</p>
+<p>"Saya rasa adil untuk mengatakan bahwa Ibn Fawzān mengandalkan asumsi berbasis nilai tertentu tentang peran kedokteran, nilai penelitian dan pengalaman empiris, pentingnya dokter dalam masyarakat, pemahaman tentang fisikalitas tubuh, dan pemahaman khusus tentang martabat yang mungkin konsisten dengan nilai-nilai sosial tertentu."</p>
+</blockquote>
+<p>Sintesis ini menunjukkan bagaimana wacana yuristik tidak hanya mencerminkan perdebatan tekstual abstrak tetapi juga diinformasikan oleh dan berimplikasi pada konteks sosial-politik yang lebih luas. Penulis mendemonstrasikan bagaimana asumsi sosial-politik tertentu tertanam dalam wacana interpretif.</p>
+<h4 class="atx" id="vi-pembingkaian-ulang-hubungan-teks-pembaca-penulis">vi. Pembingkaian Ulang Hubungan Teks-Pembaca-Penulis</h4>
+<p>Elemen kunci dari sintesis penulis adalah pembingkaian ulang hubungan antara teks, pembaca (juris), dan penulis (Tuhan):</p>
+<blockquote>
+<p>"Balancing the interests of society in medicine and his own notions of dignity for himself and other Muslims, the balance is weighed in a particular direction. But as we have found so often, the values and the balancing are not disclosed. In fact, the values of the interpreter are equated, completely, to the values of the Principal. There is a perfect unity between the will of the interpreter, and the Will of the Principal – whatever the interpreter feels, thinks, desires, or values is imputed to the Principal."</p>
+<p>"Menyeimbangkan kepentingan masyarakat dalam kedokteran dan gagasannya sendiri tentang martabat bagi dirinya dan Muslim lainnya, keseimbangan tersebut condong ke arah tertentu. Tetapi sebagaimana yang sering kita temukan, nilai-nilai dan proses penyeimbangan tidak diungkapkan. Faktanya, nilai-nilai penafsir disamakan, sepenuhnya, dengan nilai-nilai Prinsipal. Ada kesatuan sempurna antara kehendak penafsir, dan Kehendak Prinsipal – apa pun yang dirasakan, dipikirkan, diinginkan, atau dinilai oleh penafsir dibebankan kepada Prinsipal."</p>
+</blockquote>
+<p>Sintesis ini mengidentifikasi pola fundamental dari otoritarianisme interpretif: pengidentifikasian total kehendak pembaca (juris) dengan kehendak penulis (Tuhan). Dalam analisis ini, Abou El Fadl mengartikulasikan pelanggaran fundamental terhadap hubungan teks-pembaca-penulis yang merupakan inti dari kritiknya.</p>
+<h4 class="atx" id="vii-hubungan-dengan-tradisi-yuristik">vii. Hubungan dengan Tradisi Yuristik</h4>
+<p>Sintesis reflektif juga menetapkan kembali hubungan antara wacana otoritarian kontemporer dan tradisi yuristik yang lebih luas:</p>
+<blockquote>
+<p>"The essential point is that both concepts [sadd al-dharī'ah and maṣāliḥ al-mursalah] are based on empirical policy determinations – for instance, is the digging of the hole likely to cause injury, and are speed limits necessary to avoid accidents? Furthermore, both concepts necessarily require a balancing of interests since every interest promoted will implicate the rights of different parties in various ways."</p>
+<p>"Poin utamanya adalah bahwa kedua konsep [sadd al-dharī'ah dan maṣāliḥ al-mursalah] didasarkan pada penentuan kebijakan empiris – misalnya, apakah penggalian lubang kemungkinan akan menyebabkan cedera, dan apakah batas kecepatan diperlukan untuk menghindari kecelakaan? Selain itu, kedua konsep tersebut memerlukan penyeimbangan kepentingan karena setiap kepentingan yang dipromosikan akan melibatkan hak pihak-pihak yang berbeda dalam berbagai cara."</p>
+</blockquote>
+<p>Dengan kembali ke prinsip-prinsip metodologis tradisional seperti sadd al-dharī'ah (pencegahan sarana menuju kejahatan) dan maṣāliḥ al-mursalah (kepentingan umum), sintesis ini menunjukkan bagaimana juris-juris kontemporer telah menyimpang dari aplikasi yang hati-hati dan seimbang dari prinsip-prinsip ini dalam tradisi yuristik.</p>
+<h4 class="atx" id="viii-pandangan-ke-depan">viii. Pandangan ke Depan</h4>
+<p>Sebagai elemen penutup dari sintesis, penulis menyiratkan jalan ke depan untuk pemikiran hukum Islam:</p>
+<blockquote>
+<p>"Unless the common agents are willing to give their loyalty, commitment, and submission to the special agent, this is a blatant violation of the relation based on diligence and deference between the special agent and those who placed their trust in him."</p>
+<p>"Kecuali jika agen umum bersedia memberikan loyalitas, komitmen, dan ketundukan mereka kepada agen khusus, ini adalah pelanggaran terang-terangan terhadap hubungan yang didasarkan pada ketekunan dan penghormatan antara agen khusus dan mereka yang menaruh kepercayaan padanya."</p>
+</blockquote>
+<p>Dengan mengidentifikasi pelanggaran fundamental terhadap hubungan antara agen khusus dan agen umum, sintesis ini menyiratkan kebutuhan akan model otoritas interpretif alternatif yang menghormati otonomi agen umum dan integritas teks. Meskipun tidak secara eksplisit diuraikan dalam sintesis, implikasinya jelas: pemikiran hukum Islam memerlukan pendekatan yang lebih terbuka, reflektif, dan pluralistik.</p>
+<p>Sintesis reflektif Abou El Fadl tidak hanya mengikat berbagai untaian argumen yang telah ia kembangkan sepanjang bab, tetapi juga menetapkan dasar untuk rekonstruksi pendekatan terhadap hukum Islam yang lebih etis, reflektif, dan teologis. Dengan demikian, ia menunjukkan bahwa kritik terhadap otoritarianisme bukan hanya latihan dekonstruksi tetapi juga proyek rekonstruktif yang menuju ke arah pemulihan dimensi epistemologis, etis, dan dinamis dari tradisi yuristik Islam.</p>
+<p>Uraian di atas tentang struktur makro bab ini dapat diskemakan ke dalam diagram yang lebih rinci seperti berikut.</p>
+<p><strong>Diagram Detail Struktur Makro Bab The Anatomy of Authoritarian discourse</strong></p>
+<img data-align="center" width="517" alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/07.%20Struktur%20Makro%20detail.png" title="">
+
+<h2 class="atx" id="2-struktur-mikro-pola-analisis-kasus">2. Struktur Mikro: Pola Analisis Kasus</h2>
+<p>Pada tingkat mikro, Abou El Fadl menerapkan pola analisis yang konsisten untuk setiap studi kasus yang ia bahas. Pola ini mencerminkan pendekatan metodologis yang hati-hati dan terstruktur:</p>
+<h3 class="atx" id="a-perkenalan-fatwa">A. Perkenalan Fatwa</h3>
+<p>Penulis memulai setiap analisis kasus dengan menyajikan fatwa atau responsa yang relevan, menjelaskan pertanyaan yang diajukan dan jawaban yang diberikan oleh para juris.</p>
+<blockquote>
+<p>"In a straightforward fashion, Shaykh Ibn Jibrīn is asked whether the wearing of brassieres is permissible under Islamic law. Ibn Jibrīns response is equally straightforward..."</p>
+<p>"Dengan cara yang lugas, Syaikh Ibn Jibrīn ditanya apakah mengenakan bra diperbolehkan dalam hukum Islam. Respons Ibn Jibrīn sama lugasnya..."</p>
+</blockquote>
+<p>Perkenalan ini memberikan konteks yang diperlukan dan memastikan pembaca memahami masalah hukum yang dibahas.</p>
+<h3 class="atx" id="b-identifikasi-argumentasi-dan-bukti">B. Identifikasi Argumentasi dan Bukti</h3>
+<p>Penulis kemudian mengidentifikasi dasar bukti dan logika argumentatif yang digunakan dalam responsa, sering mengutip sumber-sumber tekstual yang disebut oleh para juris.</p>
+<blockquote>
+<p>"Among the reasons offered for the prohibition are that high heels might be unhealthy, they might be dangerous because they may cause a woman to trip and fall, high heels are fraudulent because they make a woman appear taller than her true height, and high heels cause fitnah because they emphasize a woman's thighs."</p>
+<p>"Di antara alasan yang ditawarkan untuk larangan ini adalah bahwa sepatu hak tinggi mungkin tidak sehat, mungkin berbahaya karena dapat menyebabkan seorang perempuan tersandung dan jatuh, sepatu hak tinggi bersifat menipu karena membuat seorang perempuan tampak lebih tinggi dari tinggi sebenarnya, dan sepatu hak tinggi menyebabkan fitnah karena menekankan paha perempuan."</p>
+</blockquote>
+<p>Langkah ini memungkinkan penulis untuk menganalisis kekuatan dan kelemahan argumen berdasarkan standar yuristik tradisional.</p>
+<h3 class="atx" id="c-komparasi-dengan-tradisi-yuristik">C. Komparasi dengan Tradisi Yuristik</h3>
+<p>Sebuah pola kunci dalam analisis Abou El Fadl adalah membandingkan fatwa kontemporer dengan tradisi yuristik Islam yang lebih luas, sering menunjukkan pandangan alternatif yang telah disilangkan oleh para juris modern.</p>
+<blockquote>
+<p>"To summarize the juristic tradition on this matter, there are three distinct points of view. A minority view held that the visitation of graves by women is always prohibited. The majority, however, held that the visitation of graves was initially prohibited for men and women, and then was permitted both for men and women."</p>
+<p>"Untuk merangkum tradisi yuristik dalam hal ini, ada tiga sudut pandang yang berbeda. Pandangan minoritas menyatakan bahwa kunjungan perempuan ke kuburan selalu dilarang. Namun, mayoritas berpendapat bahwa kunjungan ke kuburan pada awalnya dilarang bagi laki-laki dan perempuan, dan kemudian diperbolehkan bagi keduanya, laki-laki dan perempuan."</p>
+</blockquote>
+<p>Komparasi ini mengungkap selektivitas dan kecenderungan para juris modern untuk menyajikan posisi mereka sebagai satu-satunya posisi yang valid dalam tradisi.</p>
+<h3 class="atx" id="d-kritik-metodologis">D. Kritik Metodologis</h3>
+<p>Setelah mengungkap konteks yang lebih luas, penulis melakukan kritik metodologis terhadap responsa, mengidentifikasi kesenjangan logis, asumsi nilai yang tidak diungkapkan, dan ketidakkonsistenan internal.</p>
+<blockquote>
+<p>"The difference between this rather careful and self-restrained methodology and the C.R.L.O jurists' approach I think is self-evident. The C.R.L.O jurists seem to assume that anything that might possibly lead to any degree of evil is to be prohibited."</p>
+<p>"Perbedaan antara metodologi yang cukup hati-hati dan mengendalikan diri ini dengan pendekatan para juris C.R.L.O menurut saya sangat jelas. Para juris C.R.L.O tampaknya berasumsi bahwa apa pun yang mungkin dapat mengarah pada tingkat kejahatan apa pun harus dilarang."</p>
+</blockquote>
+<p>Kritik ini biasanya berkaitan dengan "lima kontingensi" yang ia jelaskan di bab sebelumnya: kejujuran, pengendalian diri, ketekunan, komprehensivitas, dan kelayakan.</p>
+<h3 class="atx" id="e-identifikasi-pola-otoritarian">E. Identifikasi Pola Otoritarian</h3>
+<p>Akhirnya, penulis menghubungkan kembali analisis spesifik dengan tema yang lebih luas tentang otoritarianisme, menunjukkan bagaimana kasus tersebut mencerminkan kesenjangan sistematis antara fatwa kontemporer dan tradisi yuristik Islam yang lebih luas.</p>
+<blockquote>
+<p>"There is a perfect unity between the will of the interpreter, and the Will of the Principal – whatever the interpreter feels, thinks, desires, or values is imputed to the Principal."</p>
+<p>"Ada kesatuan sempurna antara kehendak penafsir dan Kehendak Prinsipal – apa pun yang dirasakan, dipikirkan, diinginkan, atau dinilai oleh penafsir dibebankan kepada Prinsipal."</p>
+</blockquote>
+<p>Langkah ini memperkuat argumen keseluruhan penulis melalui akumulasi pola yang konsisten dalam berbagai kasus.</p>
+<p>Struktur Mikro bab ini bisa diskemakan dalam diagram seperti berikut ini.</p>
+<p><strong>Diagram Detail Struktur  Mikro Bab The Anatomy of Authoritarian Discourse</strong></p>
+<img width="455" data-align="center" alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/08.%20Struktur%20Mikro%20Detail.png" title="">
+
+<h2 class="atx" id="3-strategi-retoris">3. Strategi Retoris</h2>
+<p>Abou El Fadl menerapkan beberapa strategi retoris yang memperkuat alur argumentasinya:</p>
+<h3 class="atx" id="a-perkembangan-tematik-kompleksitas-meningkat">A. Perkembangan Tematik Kompleksitas Meningkat</h3>
+<p>Urutan kasus diatur sedemikian rupa sehingga bergerak dari isu-isu yang relatif sederhana (bra, sepatu hak tinggi) ke masalah yang lebih kompleks dan konsekuensial (kunjungan ke kuburan, perjalanan, perempuan mengemudi). Strategi ini memungkinkan pembaca untuk mengembangkan pemahaman yang semakin kompleks tentang pola-pola otoritarian.</p>
+<blockquote>
+<p>"We will start with a discussion on some of the less legally demanding topics and progress to more complex issues."</p>
+<p>"Kita akan mulai dengan diskusi tentang beberapa topik yang kurang menuntut secara hukum dan beralih ke masalah yang lebih kompleks."</p>
+</blockquote>
+<p>Perkembangan tematik ini membangun pemahaman inkremental dan membuat argumen yang lebih kompleks lebih mudah diakses.</p>
+<h3 class="atx" id="b-penggunaan-suara-personal">B. Penggunaan Suara Personal</h3>
+<p>Penulis terkadang beralih ke suara personal yang lebih langsung untuk menekankan poin atau mengungkapkan evaluasi etis terhadap praktik yang ia analisis:</p>
+<blockquote>
+<p>"I must confess that I find that the assertion that if women raise their voices in prayer this could be a source of seduction or fitnah, to be bewildering."</p>
+<p>"Saya harus mengakui bahwa saya merasa bahwa pernyataan bahwa jika perempuan mengeraskan suara mereka dalam shalat ini bisa menjadi sumber godaan atau fitnah, adalah membingungkan."</p>
+</blockquote>
+<p>Strategi retoris ini memperkuat keterlibatan pembaca dan membedakan antara analisis berdasarkan bukti dan evaluasi etis.</p>
+<h3 class="atx" id="c-antisipasi-kontra-argumen">C. Antisipasi Kontra-argumen</h3>
+<p>Penulis secara teratur mengantisipasi kontra-argumen potensial, mempertimbangkan interpretasi alternatif dari bukti atau penjelasan alternatif untuk posisi juris:</p>
+<blockquote>
+<p>"Perhaps the jurists have reached a faith-based conclusion that the Principal does not tolerate any form of misrepresentation, whomever commits it and wherever it is committed and, therefore, our suspicions regarding their motives and assumptions are unwarranted."</p>
+<p>"Mungkin para juris telah mencapai kesimpulan berbasis iman bahwa Prinsipal tidak mentolerir segala bentuk misrepresentasi, siapa pun yang melakukannya dan di mana pun dilakukan dan, oleh karena itu, kecurigaan kita mengenai motif dan asumsi mereka tidak beralasan."</p>
+</blockquote>
+<p>Strategi ini memperkuat ketelitian argumentasinya dan membangun kredibilitas melalui keterlibatan serius dengan posisi yang ia kritik.</p>
+<h3 class="atx" id="d-repetisi-terstruktur">D. Repetisi Terstruktur</h3>
+<p>Abou El Fadl menggunakan repetisi terstruktur dari frasa-frasa kunci dan argumen untuk memperkuat poin-poin utamanya. Misalnya, ia secara konsisten merujuk kembali ke konsep fitnah sebagai asumsi yang mendasari banyak fatwa tentang perempuan.</p>
+<blockquote>
+<p>"The answer is that women are a constant source of fitnah (sexual enticement), and so everything related to the functionality of women is seen from that perspective."</p>
+<p>"Jawabannya adalah bahwa perempuan adalah sumber fitnah (godaan seksual) yang konstan, sehingga segala hal yang terkait dengan fungsionalitas perempuan dilihat dari perspektif itu."</p>
+</blockquote>
+<p>Pola repetisi ini membantu mengidentifikasi dan menekankan lensa konseptual yang mendominasi fatwa-fatwa yang dianalisis.</p>
+<h3 class="atx" id="e-analogi-dan-kontrafaktual">E. Analogi dan Kontrafaktual</h3>
+<p>Penulis sering menggunakan analogi dan skenario kontrafaktual untuk menguji konsistensi logis dari argumen juris dan mengungkap bias yang mendasari:</p>
+<blockquote>
+<p>"If applied fairly, a methodology guided by the fear of speculative evils would lead to what are plainly absurd results. If we fear that many men from the Arabian Gulf area who travel to Europe and the United States will visit nightclubs, then we should ban men from traveling outside Arabia."</p>
+<p>"Jika diterapkan secara adil, metodologi yang dipandu oleh ketakutan akan kejahatan spekulatif akan mengarah pada hasil yang jelas-jelas absurd. Jika kita takut bahwa banyak pria dari daerah Teluk Arab yang bepergian ke Eropa dan Amerika Serikat akan mengunjungi klub malam, maka kita harus melarang pria bepergian ke luar Arabia."</p>
+</blockquote>
+<p>Strategi ini membantu pembaca mengevaluasi prinsip-prinsip umum di balik fatwa tertentu dan melihat ketidakkonsistenan dalam aplikasinya.</p>
+<p><strong>Diagram Strategi Retoris Bab The Anatomy of Authoritarian Discourse</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/09.%20Strategi%20retoris.png"></p>
+<h2 class="atx" id="4-teknik-pembingkaian">4. Teknik Pembingkaian</h2>
+<p>Cara Abou El Fadl membingkai analisisnya juga berkontribusi pada efektivitas argumentasinya:</p>
+<h3 class="atx" id="a-pembingkaian-historis-komparatif">A. Pembingkaian Historis-Komparatif</h3>
+<p>Penulis secara konsisten membingkai fatwa kontemporer terhadap latar belakang tradisi yuristik klasik yang lebih luas, menciptakan kontras yang jelas:</p>
+<blockquote>
+<p>"Importantly, the interpretive activity of classical jurists reflected the contextual particularity of the prohibition against images. Early juristic interpretations tended to focus on the dangers that images or statues posed to the Islamic message, and their determinations aimed at alleviating these very practical concerns."</p>
+<p>"Yang penting, aktivitas interpretatif para juris klasik mencerminkan kekhususan kontekstual dari larangan terhadap gambar. Interpretasi yuristik awal cenderung berfokus pada bahaya yang ditimbulkan gambar atau patung terhadap pesan Islam, dan penentuan mereka bertujuan untuk meringankan kekhawatiran praktis ini."</p>
+</blockquote>
+<p>Pembingkaian ini memungkinkan penulis untuk menunjukkan kemunduran dari tradisi hukum Islam yang dinamis dan kontekstual menjadi wacana yang kaku dan dekontekstualisasi.</p>
+<h3 class="atx" id="b-pembingkaian-gender">B. Pembingkaian Gender</h3>
+<p>Isu-isu yang dipilih dan cara penulis menganalisisnya dengan sengaja menyoroti dimensi gender dari fatwa-fatwa, mengungkap bagaimana konstruksi gender membentuk wacana hukum:</p>
+<blockquote>
+<p>"In most situations in which it is necessary to balance between the rights, interests, and privileges of men against those of women, the above-mentioned authors consistently and invariably favor men. This is often done without an explicit acknowledgment of the very act of balancing."</p>
+<p>"Dalam kebanyakan situasi di mana perlu menyeimbangkan antara hak, kepentingan, dan hak istimewa laki-laki terhadap perempuan, penulis-penulis yang disebutkan di atas secara konsisten dan selalu mengutamakan laki-laki. Ini sering dilakukan tanpa pengakuan eksplisit tentang tindakan penyeimbangan itu sendiri."</p>
+</blockquote>
+<p>Pembingkaian ini memungkinkan penulis untuk mengidentifikasi pola sistematis diskriminasi gender dalam fatwa-fatwa tersebut.</p>
+<h3 class="atx" id="c-pembingkaian-agensi">C. Pembingkaian Agensi</h3>
+<p>Alur penyampaian terus-menerus kembali ke pertanyaan tentang hubungan agen-prinsipal yang merupakan inti dari kerangka teoretisnya:</p>
+<blockquote>
+<p>"The jurists' claim to authoritativeness is derived from the fact that they are acting as special agents deciphering the instructions of the Principal."</p>
+<p>"Klaim para juris atas otoritas berasal dari fakta bahwa mereka bertindak sebagai agen khusus yang memecahkan kode instruksi Prinsipal."</p>
+</blockquote>
+<p>Pembingkaian ini memberikan kerangka konsisten untuk mengevaluasi legitimasi klaim interpretif dan mengidentifikasi wacana otoritarian.</p>
+<h3 class="atx" id="d-pembingkaian-proses-vs-hasil">D. Pembingkaian Proses vs. Hasil</h3>
+<p>Penulis secara konsisten membingkai analisisnya dengan membedakan antara hukum Islam sebagai metodologi proses (<em>fiqh</em>) dan sebagai kumpulan hasil tetap (<em>aḥkām</em>):</p>
+<blockquote>
+<p>"Contemporary applications of Islamic law tend to treat the law as a settled, constant, and closed set of rules (aḥkām), which are to be implemented without much possibility for development or variation. Put differently, Islamic law exists in the present age as a set of aḥkām, and not as a process of fiqh."</p>
+<p>"Penerapan hukum Islam kontemporer cenderung memperlakukan hukum sebagai seperangkat aturan yang sudah mapan, konstan, dan tertutup (aḥkām), yang harus diterapkan tanpa banyak kemungkinan untuk pengembangan atau variasi. Dengan kata lain, hukum Islam ada di masa sekarang sebagai seperangkat aḥkām, dan bukan sebagai proses fiqh."</p>
+</blockquote>
+<p>Pembingkaian ini menekankan transformasi epistemologis yang merupakan inti dari kritik penulis.</p>
+<p><strong>Diagram Teknik Pembingkaian (Framing) dalam Bab The Anatomy of Authoritarian Discourse</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/10.%20teknik%20framing.png"></p>
+<h2 class="atx" id="5-pola-pengulangan-yang-diperluas">5. Pola Pengulangan yang Diperluas</h2>
+<p>Alur penyampaian keseluruhan mengikuti pola pengulangan yang diperluas, di mana tema-tema utama diperkenalkan, diilustrasikan, dan diperkuat sepanjang teks:</p>
+<h3 class="atx" id="a-perkenalan-tema">A. Perkenalan Tema</h3>
+<p>Tema-tema utama seperti sensitivitas institusional, konstruksi perempuan sebagai sumber fitnah, dan ketidakkonsistenan dalam penerapan prinsip-prinsip hukum diperkenalkan di bagian awal.</p>
+<h3 class="atx" id="b-ilustrasi-melalui-contoh">B. Ilustrasi Melalui Contoh</h3>
+<p>Masing-masing tema kemudian diilustrasikan melalui berbagai contoh konkret yang menunjukkan manifestasi tema dalam konteks yang berbeda.</p>
+<h3 class="atx" id="c-pengembangan-tematik">C. Pengembangan Tematik</h3>
+<p>Seiring dengan perkembangan bab, tema-tema dikembangkan dan dihubungkan satu sama lain, menunjukkan bagaimana mereka terintegrasi dalam wacana otoritarian yang lebih luas.</p>
+<h3 class="atx" id="d-penegasan-ulang-dengan-wawasan-yang-diperdalam">D. Penegasan Ulang dengan Wawasan yang Diperdalam</h3>
+<p>Akhirnya, tema-tema utama ditegaskan kembali dengan pemahaman yang lebih dalam yang muncul dari analisis kumulatif dari berbagai kasus.</p>
+<h2 class="atx" id="6-integrasi-analisis-tekstual-dan-kontekstual">6. Integrasi Analisis Tekstual dan Kontekstual</h2>
+<p>Alur penyampaian Abou El Fadl secara efektif mengintegrasikan analisis tekstual tentang fatwa-fatwa spesifik dengan kontekstualisasi sosial, historis, dan institusional yang lebih luas. Pendekatan ini memungkinkannya untuk menunjukkan bagaimana wacana yuristik tidak hanya merupakan masalah interpretasi tekstual tetapi juga mewujudkan dan memperkuat struktur kekuasaan sosial tertentu.</p>
+<p>Contoh integrasi ini terlihat dalam analisisnya tentang fatwa larangan fotografi:</p>
+<blockquote>
+<p>"Social non-institutional interests are not as weighty or significant as institutional and governmental interests. The expatriate experience with its particular pains is not a part of their sensitivities or consciousness. Consequently, it is fairly easy to dismiss the role of photographs for expatriates who, quite often, cannot afford to visit their families, as a non-necessity. Meanwhile, the photographs of the King of Saudi Arabia, which decorate the C.R.L.O building itself and most other public places, is a necessity."</p>
+<p>"Kepentingan sosial non-institusional tidak seberat atau signifikan seperti kepentingan institusional dan pemerintah. Pengalaman ekspatriat dengan rasa sakit khususnya bukan bagian dari sensitivitas atau kesadaran mereka. Akibatnya, cukup mudah untuk mengabaikan peran foto bagi ekspatriat yang, seringkali, tidak mampu mengunjungi keluarga mereka, sebagai sesuatu yang tidak perlu. Sementara itu, foto-foto Raja Arab Saudi, yang menghiasi gedung C.R.L.O sendiri dan kebanyakan tempat umum lainnya, adalah suatu keharusan."</p>
+</blockquote>
+<p>Analisis ini menghubungkan penafsiran tekstual spesifik (larangan gambar) dengan konteks sosial dan institusional yang lebih luas (struktur kekuasaan negara Saudi).</p>
+<h2 class="atx" id="7-narasi-bergerak">7. Narasi Bergerak</h2>
+<p>Secara keseluruhan, alur penyampaian menciptakan narasi bergerak yang menggerakkan pembaca dari keprihatinan teoretis ke analisis konkret dan kembali ke implikasi teoretis. Gerakan naratif ini memperkuat argumen penulis dengan:</p>
+<h3 class="atx" id="a-membangun-pemahaman-inkremental">A. Membangun Pemahaman Inkremental</h3>
+<p>Analisis bergerak dari contoh ke contoh dengan cara yang membangun pemahaman yang semakin kompleks tentang fenomena otoritarianisme dalam hukum Islam kontemporer.</p>
+<h3 class="atx" id="b-demonstrasi-pola-sistematis">B. Demonstrasi Pola Sistematis</h3>
+<p>Alur penyampaian bertujuan untuk menunjukkan bahwa contoh-contoh yang dianalisis bukan anomali terisolasi tetapi bagian dari pola sistematis yang mencerminkan transformasi fundamental dalam wacana hukum Islam.</p>
+<h3 class="atx" id="c-memfasilitasi-pembacaan-saling-terinformasikan">C. Memfasilitasi Pembacaan Saling Terinformasikan</h3>
+<p>Struktur alur memungkinkan pembaca untuk membaca contoh-contoh sebelumnya dan selanjutnya saling memberi informasi, menciptakan jaringan asosiatif yang memperkuat argumen keseluruhan.</p>
+<h3 class="atx" id="d-membimbing-menuju-kesimpulan">D. Membimbing Menuju Kesimpulan</h3>
+<p>Alur naratif mengarahkan pembaca ke kesimpulan yang tampak tak terhindarkan tentang sifat otoritarian dari wacana hukum yang sedang diteliti.</p>
+<p><strong>Diagram integrasi narasi dalam Bab The Anatomy of Authoritarian Discourse</strong></p>
+<p><img alt="" src="file:///G:/My%20Drive/06.%20Proyek%20Pribadi/Kuliah%20Devi/Tugas-tugas/Prof.%20Amin%20Abdullah/NIA-The%20Anatomy%20of%20Authoritarian%20Discourse/Diagram/11.%20Integrasi%20Narasi.png"></p>
+<h2 class="atx" id="kesimpulan">Kesimpulan</h2>
+<p>Alur penyampaian dalam "The Anatomy of Authoritarian Discourses" distrukturkan dengan cermat untuk mengembangkan argumen kompleks tentang transformasi wacana hukum Islam dari tradisi interpretif yang terbuka dan beragam menjadi bentuk discourse yang kaku dan otoritarian. Melalui penggunaan struktur makro yang koheren, pola analisis mikro yang konsisten, strategi retoris yang efektif, teknik pembingkaian yang cermat, dan narasi bergerak, Abou El Fadl membangun kritik yang meyakinkan terhadap wacana otoritarian dalam hukum Islam kontemporer.</p>
+<p>Keberhasilan struktur alur penyampaian ini terletak pada kemampuannya untuk menyeimbangkan analisis doktrinal mendalam dengan implikasi sosial dan etis yang lebih luas, dan untuk menunjukkan bagaimana wacana hukum tidak hanya mencerminkan tetapi juga memperkuat struktur kekuasaan sosial dan gender. Dengan demikian, struktur alur penyampaian itu sendiri menjadi contoh dari jenis analisis hukum Islam yang dituju oleh penulis—satu yang sensitif terhadap kompleksitas tradisi, pluralitas interpretasi, dan dimensi sosial-politik dari produksi pengetahuan hukum.</p>
+</article>
+</body>
+</html>
