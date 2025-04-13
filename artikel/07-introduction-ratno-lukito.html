@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+/*# sourceURL=webpack://./node_modules/github-markdown-css/github-markdown.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9naXRodWItbWFya2Rvd24tY3NzL2dpdGh1Yi1tYXJrZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBMEI7RUFDMUIsMkRBQXF0RTtBQUN2dEU7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTs7Ozs7O0VBTUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7O0FBRUE7Ozs7OztFQU1FLHFCQUFxQjtBQUN2Qjs7QUFFQTs7Ozs7O0VBTUUsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLDhCQUE4QjtFQUM5QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGtJQUFrSTtFQUNsSSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7Ozs7OztFQU9FLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7OztFQUdFLGNBQWM7RUFDZCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFD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 */
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*# sourceURL=webpack://./node_modules/prismjs/themes/prism.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9wcmlzbWpzL3RoZW1lcy9wcmlzbS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7RUFJRTs7QUFFRjs7Q0FFQyxZQUFZO0NBQ1osZ0JBQWdCO0NBQ2hCLHdCQUF3QjtDQUN4QixzRUFBc0U7Q0FDdEUsY0FBYztDQUNkLGdCQUFnQjtDQUNoQixnQkFBZ0I7Q0FDaEIsb0JBQW9CO0NBQ3BCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsZ0JBQWdCOztDQUVoQixnQkFBZ0I7Q0FDaEIsY0FBYztDQUNkLFdBQVc7O0NBRVgscUJBQXFCO0NBQ3JCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsYUFBYTtBQUNkOztBQUVBOztDQUVDLGlCQUFpQjtDQUNqQixtQkFBbUI7QUFDcEI7O0FBRUE7O0NBRUMsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDOztFQUVDLGlCQUFpQjtDQUNsQjtBQUNEOztBQUVBLGdCQUFnQjtBQUNoQjtDQUNDLFlBQVk7Q0FDWixjQUFjO0NBQ2QsY0FBYztBQUNmOztBQUVBOztDQUVDLG1CQUFtQjtBQUNwQjs7QUFFQSxnQkFBZ0I7QUFDaEI7Q0FDQyxhQUFhO0NBQ2IsbUJBQW1CO0NBQ25CLG1CQUFtQjtBQUNwQjs7QUFFQTs7OztDQUlDLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTs7Ozs7OztDQU9DLFdBQVc7QUFDWjs7QUFFQTs7Ozs7O0NBTUMsV0FBVztBQUNaOztBQUVBOzs7OztDQUtDLGNBQWM7Q0FDZCxvRUFBb0U7Q0FDcEUsaUNBQWlDO0FBQ2xDOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsY0FBYztBQUNmOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxZQUFZO0FBQ2IiLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+
+/*# sourceURL=webpack://./src/muya/lib/assets/styles/exportStyle.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9tdXlhL2xpYi9hc3NldHMvc3R5bGVzL2V4cG9ydFN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFNBQVM7RUFDVCxVQUFVO0VBQ1YscUJBQXFCO0FBQ3ZCOztBQUVBOztFQUVFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBOzs7RUFHRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxPQUFPO0VBQ1AsY0FBYztFQUNkLGNBQWM7RUFDZCwrQkFBK0I7QUFDakMiLCJzb3VyY2VSb290IjoiIn0= */</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <article class="markdown-body"><h1 class="atx" id="struktur-dasar--bab-introduction">Struktur Dasar  Bab Introduction</h1>
+<h2 class="atx" id="1-struktur-pembahasan-bab-01">1. Struktur Pembahasan Bab 01</h2>
+<p>Bab 01 dari buku <em>Legal Pluralism in Indonesia</em> oleh Ratno Lukito berjudul "Introduction" memiliki struktur pembahasan sebagai berikut:</p>
+<ol>
+<li><p><strong>The discourse of law and society</strong></p>
+<ul>
+<li><p>Hubungan historis antara hukum dan pembentukan negara</p>
+</li>
+<li><p>Kritik terhadap pendekatan legalisme modern yang terlalu instrumental</p>
+</li>
+<li><p>Pendekatan baru: hukum sebagai relasi timbal balik dengan masyarakat</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Modern legalism and the fact of pluralism in Indonesia</strong></p>
+<ul>
+<li><p>Warisan kolonial dan masuknya doktrin modernisme</p>
+</li>
+<li><p>Karakteristik hukum modern (Galanter): uniformitas, transaksional, universalitas, hierarkis, birokratis, rasional, profesional, teknikal, dan dapat diubah</p>
+</li>
+<li><p>Problem legal centralism dan tantangan dari pluralisme hukum lokal (adat dan agama)</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Theoretical approach</strong></p>
+<ul>
+<li><p>Pendekatan tiga aspek (teoretis, deskriptif, konflik/grievance)</p>
+</li>
+<li><p>Teori legal pluralism menurut Masaji Chiba: tiga lapis hukum (resmi, tidak resmi, postulat hukum)</p>
+</li>
+<li><p>Konsep postulat hukum nasional (national legal postulate)</p>
+</li>
+<li><p>Tiga dikotomi hukum Chiba: resmi vs tidak resmi, aturan positif vs postulat hukum, hukum lokal vs hukum transplan</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Significance and scope of the study</strong></p>
+<ul>
+<li><p>Perkembangan studi pluralisme hukum sejak awal abad 20</p>
+</li>
+<li><p>Pendekatan klasik vs pendekatan baru</p>
+</li>
+<li><p>Ruang lingkup studi: dimensi historis dan yuridis dari pluralisme hukum di Indonesia</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 class="atx" id="2-pemetaan-gagasan">2. Pemetaan Gagasan</h2>
+<p>Berikut adalah pemetaan sistematis dari gagasan utama dalam bab ini:</p>
+<ul>
+<li><p><strong>Relasi Hukum dan Masyarakat</strong>:</p>
+<ul>
+<li><p>Hukum bukan hanya alat rekayasa sosial tapi juga hasil dari proses sosial dan kultural</p>
+</li>
+<li><p>Hukum dan norma sosial memiliki hubungan saling membentuk</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Kontradiksi antara Legalisme Modern dan Pluralisme Hukum</strong>:</p>
+<ul>
+<li><p>Legalisme modern menekankan pada hukum negara sebagai satu-satunya hukum yang sah</p>
+</li>
+<li><p>Realitas masyarakat Indonesia mencerminkan pluralisme hukum: adat, agama, dan hukum negara</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Kritik terhadap Positivisme Hukum</strong>:</p>
+<ul>
+<li><p>Legal positivism mengabaikan hukum tidak resmi</p>
+</li>
+<li><p>Pandangan alternatif melihat hukum sebagai entitas polisentris</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Kerangka Teoretis Legal Pluralism</strong>:</p>
+<ul>
+<li><p>Teori Masaji Chiba digunakan sebagai dasar: tiga lapisan hukum</p>
+</li>
+<li><p>Postulat hukum nasional berfungsi sebagai perekat dan penyaring interaksi hukum</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Tujuan Studi</strong>:</p>
+<ul>
+<li><p>Menelaah dinamika interaksi antara hukum negara dan hukum non-negara</p>
+</li>
+<li><p>Memahami pluralisme hukum Indonesia melalui dimensi historis dan yuridis</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="atx" id="3-fokus-masalah">3. Fokus Masalah</h2>
+<p>Fokus utama bab ini adalah:</p>
+<blockquote>
+<p>"Bagaimana realitas pluralisme hukum di Indonesia mempersoalkan dominasi legalisme modern yang bersifat sentralistik dan positivistik?"</p>
+</blockquote>
+<p>Bab ini menggambarkan konflik antara upaya unifikasi hukum oleh negara pascakolonial dan kenyataan keberagaman sistem hukum yang hidup dalam masyarakat (adat dan agama).</p>
+<h2 class="atx" id="4-pertanyaan-pertanyaan-dan-jawabannya">4. Pertanyaan-Pertanyaan dan Jawabannya</h2>
+<p>Berikut adalah beberapa pertanyaan yang diajukan secara eksplisit maupun implisit dalam bab ini, beserta jawabannya:</p>
+<ol>
+<li><p><strong>Apakah hukum hanya produk negara?</strong></p>
+<ul>
+<li><em>Jawaban</em>: Tidak. Hukum juga terbentuk dari proses sosial, kultural, dan religius. Pandangan polisentris memperluas definisi hukum di luar produk negara.</li>
+</ul>
+</li>
+<li><p><strong>Mengapa legalisme modern sulit diterapkan secara efektif di Indonesia?</strong></p>
+<ul>
+<li><em>Jawaban</em>: Karena pluralisme hukum yang sangat kuat dan berakar dari tradisi adat serta agama yang hidup di masyarakat.</li>
+</ul>
+</li>
+<li><p><strong>Bagaimana teori legal pluralism membantu memahami hukum di Indonesia?</strong></p>
+<ul>
+<li><em>Jawaban</em>: Dengan melihat adanya hukum resmi dan tidak resmi yang hidup berdampingan, serta adanya postulat hukum nasional yang menghubungkan keduanya.</li>
+</ul>
+</li>
+<li><p><strong>Apa fungsi postulat hukum nasional dalam kerangka pluralisme hukum?</strong></p>
+<ul>
+<li><em>Jawaban</em>: Sebagai nilai dasar yang menentukan apakah suatu norma dari hukum non-negara dapat diterima dalam sistem hukum negara.</li>
+</ul>
+</li>
+<li><p><strong>Bagaimana pendekatan studi ini dilakukan?</strong></p>
+<ul>
+<li><em>Jawaban</em>: Menggunakan pendekatan historis dan yuridis, dengan fokus pada konflik hukum dan upaya resolusinya dalam sistem hukum Indonesia.</li>
+</ul>
+</li>
+</ol>
+<h1 class="atx" id="analisis-mendalam-bab--introduction">Analisis Mendalam Bab  Introduction</h1>
+<h2 class="atx" id="a-penegasan-konteks-dan-tujuan-bab">A. Penegasan Konteks dan Tujuan Bab</h2>
+<p>Bab pendahuluan dalam buku <em>Legal Pluralism in Indonesia</em> oleh Ratno Lukito tidak sekadar memberikan pembuka formal, tetapi membangun kerangka konseptual dan epistemologis untuk keseluruhan buku. Lukito membuka diskusi dengan problematisasi hubungan antara hukum dan masyarakat di tengah hegemoni positivisme hukum yang dominan dalam sistem hukum modern, khususnya warisan kolonial di Indonesia.</p>
+<h2 class="atx" id="b-kritik-terhadap-legalisme-modern-dan-positivisme">B. Kritik terhadap Legalisme Modern dan Positivisme</h2>
+<h3 class="atx" id="1-legal-positivism-sebagai-ideologi-negara-modern">1. Legal Positivism sebagai Ideologi Negara Modern</h3>
+<p>Lukito secara kritis menyajikan legalisme modern sebagai konstruksi hukum negara-bangsa modern yang bercirikan sentralisme, uniformitas, dan eksklusivitas. Asumsinya adalah bahwa hukum hanya sah jika dikeluarkan oleh negara. Pandangan ini:</p>
+<ul>
+<li><p>Memarjinalkan norma-norma sosial yang hidup (living law), seperti hukum adat dan hukum agama.</p>
+</li>
+<li><p>Mengabaikan kenyataan sosial di mana berbagai sistem hukum hidup berdampingan.</p>
+</li>
+<li><p>Mengasumsikan hukum sebagai alat kontrol, bukan hasil interaksi sosial.</p>
+</li>
+</ul>
+<h3 class="atx" id="2-hukum-sebagai-proyek-modernitas-kolonial">2. Hukum sebagai Proyek Modernitas Kolonial</h3>
+<p>Indonesia pascakolonial tidak bisa dilepaskan dari warisan sistem hukum Belanda yang menerapkan sistem hukum sipil modern. Proyek unifikasi dan kodifikasi hukum di Indonesia mewarisi:</p>
+<ul>
+<li><p>Pola pikir legal sentralistik.</p>
+</li>
+<li><p>Kepercayaan bahwa hukum negara harus menjadi satu-satunya sumber norma.</p>
+</li>
+<li><p>Pandangan bahwa pluralisme hukum adalah halangan terhadap pembangunan nasional.</p>
+</li>
+</ul>
+<h3 class="atx" id="3-kenyataan-pluralisme-hukum-di-indonesia">3. Kenyataan Pluralisme Hukum di Indonesia</h3>
+<p>Lukito membenturkan ide hukum unifikatif dengan realitas pluralisme hukum di Indonesia yang mencakup:</p>
+<ul>
+<li><p>Hukum adat yang bersifat komunal.</p>
+</li>
+<li><p>Hukum Islam yang bersifat religius dan normatif.</p>
+</li>
+<li><p>Hukum negara yang sekuler dan legal-formalistik.
+Pluralisme ini bukan anomali, melainkan karakter inheren masyarakat Indonesia.</p>
+</li>
+</ul>
+<h2 class="atx" id="c-posisi-teoretis-pluralisme-hukum-dan-kerangka-masaji-chiba">C. Posisi Teoretis: Pluralisme Hukum dan Kerangka Masaji Chiba</h2>
+<h3 class="atx" id="1-tiga-lapisan-hukum">1. Tiga Lapisan Hukum</h3>
+<p>Lukito mengadopsi teori Masaji Chiba yang memetakan sistem hukum dalam tiga lapis:</p>
+<ul>
+<li><p><strong>Hukum resmi (official law)</strong>: produk negara.</p>
+</li>
+<li><p><strong>Hukum tidak resmi (unofficial law)</strong>: norma adat, agama, dan lokalitas lain.</p>
+</li>
+<li><p><strong>Postulat hukum (legal postulates)</strong>: nilai dasar yang menjadi penghubung dan penyaring.</p>
+</li>
+</ul>
+<h3 class="atx" id="2-postulat-hukum-nasional">2. Postulat Hukum Nasional</h3>
+<p>Konsep penting dalam bab ini adalah <em>national legal postulate</em> yaitu nilai dan prinsip ideologis yang dipakai negara dalam menerima atau menolak norma-norma non-negara.</p>
+<ul>
+<li><p>Contoh: jika hukum adat sejalan dengan nilai persatuan dan keadilan negara, maka ia lebih mungkin diakomodasi.</p>
+</li>
+<li><p>Postulat ini bukan sekadar yuridis, tapi juga politis dan ideologis.</p>
+</li>
+</ul>
+<h3 class="atx" id="3-tiga-dikotomi-hukum">3. Tiga Dikotomi Hukum</h3>
+<p>Chiba juga mengajukan tiga dikotomi yang digunakan Lukito untuk membaca kompleksitas hukum di Indonesia:</p>
+<ul>
+<li><p>Hukum resmi vs tidak resmi.</p>
+</li>
+<li><p>Aturan positif vs postulat hukum.</p>
+</li>
+<li><p>Hukum lokal vs hukum transplan (warisan kolonial).</p>
+</li>
+</ul>
+<h2 class="atx" id="d-strategi-analisis-dan-pendekatan-studi">D. Strategi Analisis dan Pendekatan Studi</h2>
+<p>Lukito tidak berhenti pada kerangka teoretis tetapi juga menyampaikan strategi metodologis:</p>
+<ul>
+<li><p>Menggabungkan pendekatan teoretis, deskriptif, dan eksploratif terhadap konflik hukum.</p>
+</li>
+<li><p>Menyoroti proses interaksi, kompromi, dan konflik antara norma negara dan non-negara.</p>
+</li>
+<li><p>Studi ini bersifat historis-yuridis, mengkaji dinamika pluralisme hukum dalam konteks sejarah Indonesia.</p>
+</li>
+</ul>
+<h2 class="atx" id="e-implikasi-dan-orientasi-studi">E. Implikasi dan Orientasi Studi</h2>
+<h3 class="atx" id="1-kritik-terhadap-monisme-hukum">1. Kritik terhadap Monisme Hukum</h3>
+<p>Bab ini secara keseluruhan menolak pendekatan monistik terhadap hukum (legal centralism) dan justifikasi ideologis dari hukum nasional yang mengklaim sebagai satu-satunya sumber hukum yang sah.</p>
+<h3 class="atx" id="2-alternatif-pluralisme-terstruktur">2. Alternatif: Pluralisme Terstruktur</h3>
+<p>Lukito tidak sekadar mengafirmasi pluralisme hukum, tetapi mendorong suatu bentuk <em>pluralisme terstruktur</em> yang mampu mengakomodasi norma adat dan agama melalui jembatan berupa postulat hukum nasional.</p>
+<h3 class="atx" id="3-penegasan-isu-utama-buku">3. Penegasan Isu Utama Buku</h3>
+<p>Bab ini menyatakan bahwa isu utama dalam studi hukum Indonesia adalah bagaimana negara mengelola pluralitas hukum di tengah tekanan untuk unifikasi dan nasionalisasi hukum.</p>
+<h2 class="atx" id="f-simpulan">F. Simpulan</h2>
+<p>Bab ini membuka fondasi konseptual yang penting untuk memahami seluruh bangunan argumen dalam buku ini. Dengan menantang asumsi dasar positivisme hukum dan legalisme modern, serta menawarkan pendekatan pluralisme hukum berbasis Chiba, Lukito meletakkan basis kuat untuk melihat hukum Indonesia sebagai entitas yang dinamis, kompleks, dan terikat pada realitas sosiokultural masyarakatnya.</p>
+<blockquote>
+<p>"Legal pluralism in Indonesia is not a deviation from modernity, but rather its contextual manifestation."</p>
+</blockquote>
+<hr>
+<h1 class="atx" id="bab-konsep-konsep-utama-dalam-bab-introduction"><strong>Bab Konsep-konsep Utama dalam Bab Introduction</strong></h1>
+<h2 class="atx" id="tabel-konsep-konsep-penting">Tabel Konsep-Konsep Penting</h2>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>Konsep (Inggris - Indonesia)</th>
+<th>Deskripsi Singkat</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><strong>Legal Pluralism – Pluralisme Hukum</strong></td>
+<td>Keberadaan lebih dari satu sistem hukum dalam satu masyarakat: hukum negara, hukum adat, dan hukum agama.</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Modern Legalism – Legalisme Modern</strong></td>
+<td>Paradigma hukum modern yang menekankan sentralisme, kodifikasi, dan hukum negara sebagai otoritas tunggal.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Legal Centralism – Sentralisme Hukum</strong></td>
+<td>Pandangan bahwa hanya hukum negara yang sah dan mengikat; hukum lain dianggap tidak sah.</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Instrumentalism – Instrumentalisme</strong></td>
+<td>Pandangan yang melihat hukum sebagai alat negara untuk mencapai tujuan sosial dan politik.</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Legal Positivism – Positivisme Hukum</strong></td>
+<td>Teori yang menganggap hukum sah hanya jika dibuat oleh lembaga negara yang berwenang.</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Law and Society – Hukum dan Masyarakat</strong></td>
+<td>Pandangan bahwa hukum adalah bagian tak terpisahkan dari struktur sosial dan budaya masyarakat.</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Polycentric Law – Hukum Polisentris</strong></td>
+<td>Gagasan bahwa hukum bisa berasal dari banyak sumber otoritas, tidak hanya dari negara.</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>National Legal Postulate – Postulat Hukum Nasional</strong></td>
+<td>Prinsip nilai dasar yang dijadikan negara untuk menilai dan menyaring norma dari hukum non-negara.</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Three-Layered Law – Hukum Tiga Lapisan</strong></td>
+<td>Konsep Chiba: (a) hukum resmi, (b) hukum tidak resmi, (c) postulat hukum.</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Three Dichotomies – Tiga Dikotomi Hukum</strong></td>
+<td>Konsep Chiba: (a) resmi vs tidak resmi, (b) aturan positif vs nilai hukum, (c) hukum lokal vs hukum transplan.</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>Interlegal Conflict – Konflik Antarhukum</strong></td>
+<td>Ketegangan antara berbagai sistem hukum (negara, adat, agama) dalam masyarakat.</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>Historical-Juridical Approach – Pendekatan Historis-Yuridis</strong></td>
+<td>Metode analisis hukum yang menggabungkan kajian sejarah dan norma hukum.</td>
+</tr>
+<tr>
+<td>13</td>
+<td><strong>Identity Postulate – Postulat Identitas</strong></td>
+<td>Prinsip yang memungkinkan masyarakat mempertahankan identitas hukumnya dalam kondisi plural.</td>
+</tr>
+<tr>
+<td>14</td>
+<td><strong>Voluntary Acceptance – Penerimaan Sukarela</strong></td>
+<td>Konsep bahwa hukum negara diterima oleh masyarakat secara sukarela dan bukan paksaan.</td>
+</tr>
+<tr>
+<td>15</td>
+<td><strong>Recognition of Unofficial Law – Pengakuan terhadap Hukum Tak Resmi</strong></td>
+<td>Proses negara dalam mengakui dan mengadopsi hukum adat atau agama ke dalam hukum nasional.</td>
+</tr>
+<tr>
+<td>16</td>
+<td><strong>Nation-Building through Law – Pembentukan Bangsa melalui Hukum</strong></td>
+<td>Gagasan bahwa hukum menjadi instrumen utama dalam membentuk identitas dan struktur negara bangsa.</td>
+</tr>
+</tbody></table>
+<h2 class="atx" id="pengantar"><strong>Pengantar</strong></h2>
+<p>Bab <em>Introduction</em> dari buku Ratno Lukito ini berfungsi sebagai fondasi teoritis dan konseptual bagi pembahasan pluralisme hukum di Indonesia. Bab ini menguraikan sejumlah konsep kunci yang diperlukan untuk memahami bagaimana interaksi dan dinamika antara hukum negara dan hukum masyarakat (adat dan agama) berlangsung dalam konteks Indonesia. </p>
+<hr>
+<h2 class="atx" id="analisis-mendalam-keterkaitan-konsep-konsep-dalam-bab-01"><strong>Analisis Mendalam: Keterkaitan Konsep-Konsep dalam Bab 01</strong></h2>
+<h3 class="atx" id="1-pluralisme-hukum-legal-pluralism-sebagai-konsep-sentral">1. <strong>Pluralisme Hukum (Legal Pluralism)</strong> sebagai Konsep Sentral</h3>
+<p>Pluralisme hukum menjadi titik sentral seluruh konsep yang dibahas oleh Lukito. Konsep ini menggambarkan kondisi keberadaan hukum adat, agama, dan hukum negara yang berdampingan dalam suatu masyarakat. Di Indonesia, kondisi ini menghasilkan dinamika hukum yang kompleks di mana sistem hukum yang berbeda bertemu, berinteraksi, bahkan saling bersaing.</p>
+<h3 class="atx" id="2-legalisme-modern-modern-legalism-dan-sentralisme-hukum-legal-centralism">2. <strong>Legalisme Modern (Modern Legalism)</strong> dan <strong>Sentralisme Hukum (Legal Centralism)</strong></h3>
+<p>Legalisme modern—yang menempatkan hukum sebagai produk negara yang sentralistik dan terstruktur—merupakan antitesis dari pluralisme hukum. Konsep ini berakar kuat dalam <strong>positivisme hukum (legal positivism)</strong> yang melihat hukum secara ketat sebagai produk negara yang dibuat melalui prosedur formal oleh otoritas yang sah. Kedua konsep ini berkelindan karena legalisme modern mengandalkan positivisme hukum untuk menjamin kepastian, prediktabilitas, dan kontrol negara atas masyarakat.</p>
+<h3 class="atx" id="3-instrumentalisme-instrumentalism-sebagai-perpanjangan-legalisme-modern">3. <strong>Instrumentalisme (Instrumentalism)</strong> sebagai Perpanjangan Legalisme Modern</h3>
+<p>Instrumentalisme adalah wujud praktis dari legalisme modern. Negara menggunakan hukum sebagai instrumen rekayasa sosial, politik, dan ekonomi. Akibatnya, pluralisme hukum (adat dan agama) sering terabaikan. Hukum negara dianggap sebagai satu-satunya hukum resmi, sementara hukum masyarakat dianggap sekunder, inferior, atau tidak sah.</p>
+<h3 class="atx" id="4-hukum-dan-masyarakat-law-and-society-sebagai-perspektif-baru">4. <strong>Hukum dan Masyarakat (Law and Society)</strong> sebagai Perspektif Baru</h3>
+<p>Konsep ini menjadi kritik sekaligus alternatif terhadap pandangan positivistik. Pendekatan ini menekankan hubungan timbal balik antara hukum dengan realitas sosial, politik, ekonomi, dan budaya. Hukum tidak hanya produk kekuasaan negara tetapi juga produk dari interaksi sosial dan kultur masyarakat.</p>
+<h3 class="atx" id="5-hukum-polisentris-polycentric-law-sebagai-kritik-terhadap-positivisme">5. <strong>Hukum Polisentris (Polycentric Law)</strong> sebagai Kritik Terhadap Positivisme</h3>
+<p>Hukum polisentris adalah konsep lanjutan dari "hukum dan masyarakat". Ia mengkritik positivisme hukum yang terlalu sentralistik, dengan menegaskan bahwa hukum lahir dari banyak sumber otoritas (negara, agama, adat, komunitas). Konsep ini memperjelas realitas bahwa masyarakat memiliki otoritas hukum sendiri yang berjalan bersamaan dengan hukum negara.</p>
+<h3 class="atx" id="6-postulat-hukum-nasional-national-legal-postulate-sebagai-mekanisme-integrasi">6. <strong>Postulat Hukum Nasional (National Legal Postulate)</strong> sebagai Mekanisme Integrasi</h3>
+<p>Dalam konteks pluralisme hukum yang kuat, postulat hukum nasional muncul sebagai alat negara untuk menyeleksi nilai dan norma hukum mana yang dapat diterima dan diintegrasikan ke dalam hukum nasional. Postulat ini menjadi jembatan penting antara hukum resmi (negara) dengan hukum tidak resmi (adat/agama).</p>
+<h3 class="atx" id="7-hukum-tiga-lapisan-three-layered-law-dari-masaji-chiba">7. <strong>Hukum Tiga Lapisan (Three-Layered Law)</strong> dari Masaji Chiba</h3>
+<p>Masaji Chiba menawarkan kerangka analisis hukum plural yang sangat berguna dalam konteks Indonesia. Chiba mengidentifikasi tiga lapisan hukum:</p>
+<ul>
+<li><p><strong>Hukum resmi (official law)</strong>: hukum produk negara.</p>
+</li>
+<li><p><strong>Hukum tidak resmi (unofficial law)</strong>: hukum masyarakat (adat, agama).</p>
+</li>
+<li><p><strong>Postulat hukum (legal postulates)</strong>: nilai dasar masyarakat yang mendasari dan menentukan hubungan antara hukum resmi dan tidak resmi.</p>
+</li>
+</ul>
+<h3 class="atx" id="8-tiga-dikotomi-hukum-three-dichotomies-dari-chiba">8. <strong>Tiga Dikotomi Hukum (Three Dichotomies)</strong> dari Chiba</h3>
+<p>Masaji Chiba juga memberikan tiga dikotomi analisis tambahan yang membantu memahami hubungan kompleks antara sistem hukum di Indonesia:</p>
+<ul>
+<li><p>Hukum resmi vs. tidak resmi.</p>
+</li>
+<li><p>Aturan positif vs. nilai hukum (postulat hukum).</p>
+</li>
+<li><p>Hukum lokal vs. hukum transplan (hukum yang diimpor dari luar).</p>
+</li>
+</ul>
+<p>Dikotomi ini berguna untuk memahami ketegangan dan interaksi antar sistem hukum di Indonesia.</p>
+<h3 class="atx" id="9-konflik-antarhukum-interlegal-conflict-sebagai-implikasi-dari-pluralisme">9. <strong>Konflik Antarhukum (Interlegal Conflict)</strong> sebagai Implikasi dari Pluralisme</h3>
+<p>Dalam masyarakat plural, interaksi antar sistem hukum kerap menimbulkan konflik. Konflik antarhukum ini menjadi salah satu isu sentral yang diangkat oleh Lukito. Negara dan masyarakat sering berhadapan dalam sengketa yang disebabkan oleh perbedaan sistem hukum yang dianut.</p>
+<h3 class="atx" id="10-pendekatan-historis-yuridis-historical-juridical-approach-sebagai-metode-analisis">10. <strong>Pendekatan Historis-Yuridis (Historical-Juridical Approach)</strong> sebagai Metode Analisis</h3>
+<p>Untuk memahami bagaimana pluralisme hukum berkembang dan diatasi, pendekatan historis-yuridis diperlukan. Pendekatan ini memadukan analisis sejarah perkembangan hukum di Indonesia dengan analisis normatif hukum positif saat ini.</p>
+<h3 class="atx" id="11-postulat-identitas-identity-postulate-dalam-strategi-adaptasi-hukum">11. <strong>Postulat Identitas (Identity Postulate)</strong> dalam Strategi Adaptasi Hukum</h3>
+<p>Postulat identitas memungkinkan masyarakat mempertahankan identitas normatifnya dalam lingkungan plural. Ia membantu masyarakat untuk memilih secara fleksibel hukum mana yang akan mereka gunakan atau terima dalam interaksinya dengan hukum negara.</p>
+<h3 class="atx" id="12-penerimaan-sukarela-voluntary-acceptance-sebagai-strategi-adaptasi">12. <strong>Penerimaan Sukarela (Voluntary Acceptance)</strong> sebagai Strategi Adaptasi</h3>
+<p>Penerimaan sukarela mencerminkan situasi di mana masyarakat menerima hukum negara secara sukarela tanpa paksaan. Dalam konteks pluralisme hukum, konsep ini merupakan bentuk kompromi dan negosiasi antara hukum negara dan hukum non-negara.</p>
+<h3 class="atx" id="13-pengakuan-hukum-tidak-resmi-recognition-of-unofficial-law-oleh-negara">13. <strong>Pengakuan Hukum Tidak Resmi (Recognition of Unofficial Law)</strong> oleh Negara</h3>
+<p>Pengakuan hukum tidak resmi merupakan bentuk pragmatis negara dalam mengatasi pluralisme hukum. Melalui proses ini, negara mengintegrasikan beberapa hukum adat dan agama ke dalam sistem nasional, dengan tetap mempertahankan dominasi hukum negara.</p>
+<h3 class="atx" id="14-pembentukan-bangsa-melalui-hukum-nation-building-through-law">14. <strong>Pembentukan Bangsa Melalui Hukum (Nation-Building through Law)</strong></h3>
+<p>Hukum menjadi alat utama dalam proses pembentukan bangsa. Konsep ini menjelaskan mengapa negara cenderung menggunakan hukum secara instrumental dan sentralistik, untuk mengatur, mengintegrasikan, dan menyatukan masyarakat dalam satu sistem hukum nasional yang tunggal.</p>
+<h3 class="atx" id="15-andamp-16-keterhubungan-secara-keseluruhan-dan-implikasinya">15. &amp; 16. <strong>Keterhubungan Secara Keseluruhan dan Implikasinya</strong></h3>
+<ul>
+<li><p>Keseluruhan konsep ini menggambarkan keterkaitan kompleks yang merefleksikan realitas hukum di Indonesia, di mana pluralisme, sentralisme hukum, instrumentalisme, dan negosiasi antara negara dan masyarakat berlangsung secara bersamaan.</p>
+</li>
+<li><p>Negara berusaha menyeimbangkan antara menjaga stabilitas dan integrasi sosial melalui postulat hukum nasional, pengakuan terbatas terhadap hukum masyarakat, sekaligus tetap mempertahankan dominasi hukum negara sebagai fondasi nation-building.</p>
+</li>
+<li><p>Di sisi lain, masyarakat secara strategis menggunakan identity postulate dan voluntary acceptance untuk tetap menjaga identitas hukum dan kulturnya dalam interaksi dengan hukum negara.</p>
+</li>
+</ul>
+<hr>
+<p>Berikut ini adalah elaborasi mendalam tentang kerangka teori yang digunakan oleh Ratno Lukito dalam bab Introduction dari buku <em>Legal Pluralism in Indonesia</em>, dilengkapi dengan kutipan dwibahasa (Inggris dan Indonesia) yang relevan dari teks asli.</p>
+<hr>
+<h1 class="atx" id="kerangka-teori-dalam-bab-andquotintroductionandquot"><strong>Kerangka Teori dalam Bab "Introduction"</strong></h1>
+<p>Bab ini secara eksplisit membangun kerangka teoritisnya dengan mengacu pada pemikiran Masaji Chiba, seorang ahli yang terkenal karena kontribusinya dalam kajian pluralisme hukum. Chiba mengembangkan kerangka konseptual mengenai hukum yang disebutnya sebagai *"three-layered law"* (hukum tiga lapisan) serta *"three dichotomies of law"* (tiga dikotomi hukum).</p>
+<h2 class="atx" id="three-layered-law--hukum-tiga-lapisan-masaji-chiba"><strong>Three-Layered Law – Hukum Tiga Lapisan (Masaji Chiba)</strong></h2>
+<p>Chiba mengidentifikasi adanya tiga lapisan dalam realitas hukum dalam suatu masyarakat plural, yaitu:</p>
+<ol>
+<li><p><strong>Official Law (Hukum Resmi)</strong><br>Hukum ini adalah produk resmi negara, memiliki legitimasi formal dan diakui oleh otoritas negara secara eksplisit. Dalam konteks Indonesia, contohnya KUHP, KUH Perdata, atau UU Perkawinan.</p>
+</li>
+<li><p><strong>Unofficial Law (Hukum Tidak Resmi)</strong><br>Hukum ini tidak resmi disahkan oleh negara namun tetap dipraktikkan secara efektif oleh kelompok-kelompok dalam masyarakat, contohnya hukum adat, hukum Islam dalam aspek tertentu yang tidak secara penuh diakui negara, atau norma-norma lokal yang hidup di komunitas.</p>
+</li>
+<li><p><strong>Legal Postulate (Postulat Hukum)</strong><br>Postulat hukum merupakan sistem nilai atau prinsip dasar yang menjadi fondasi filosofis serta pembenaran bagi hukum resmi maupun tidak resmi. Ia menentukan hubungan antar berbagai sistem hukum tersebut. Postulat ini terdiri atas ide-ide hukum yang mapan, ajaran agama, norma sosial-budaya, serta ideologi politik yang sering berkaitan erat dengan kebijakan ekonomi dan sosial.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Kutipan Dwibahasa:</strong><br><strong>EN:</strong> “A legal postulate is 'constituted of established legal ideas, religious precepts and teachings, social and cultural postulates related to fundamental social structure, or political ideologies often closely connected with economic policies.'”<br><strong>ID:</strong> "Postulat hukum terdiri dari gagasan hukum yang mapan, perintah dan ajaran agama, norma sosial dan budaya yang berkaitan dengan struktur sosial mendasar, atau ideologi politik yang seringkali erat kaitannya dengan kebijakan ekonomi."</p>
+</blockquote>
+<p>Lebih lanjut, Chiba mengembangkan konsep tambahan yang disebut <strong>Identity Postulate (Postulat Identitas)</strong>, yakni postulat khusus yang memungkinkan individu atau masyarakat menjaga identitas kulturalnya melalui pilihan fleksibel antara hukum resmi atau hukum tidak resmi sesuai kebutuhan situasi tertentu tanpa kehilangan identitas mereka.</p>
+<blockquote>
+<p><strong>Kutipan Dwibahasa (Identity Postulate):</strong><br><strong>EN:</strong> "Identity postulate enables people 'to maintain their cultural identity in law,' since it is through this postulate that people are able to 'choose official or unofficial law alternatively so as to adapt themselves to changing circumstances while maintaining their individuality and identity.'"<br><strong>ID:</strong> "Postulat identitas memungkinkan orang 'mempertahankan identitas kulturalnya dalam hukum,' karena melalui postulat ini orang dapat 'memilih secara alternatif antara hukum resmi atau tidak resmi sehingga dapat menyesuaikan diri terhadap perubahan situasi tanpa kehilangan individualitas dan identitasnya.'"</p>
+</blockquote>
+<h2 class="atx" id="three-dichotomies-of-law--tiga-dikotomi-hukum-masaji-chiba"><strong>Three Dichotomies of Law – Tiga Dikotomi Hukum (Masaji Chiba)</strong></h2>
+<p>Chiba juga memperkenalkan tiga dikotomi untuk menganalisis secara lebih detail bagaimana interaksi dan konflik antar sistem hukum berlangsung:</p>
+<ol>
+<li><p><strong>Official Law vs. Unofficial Law (Hukum Resmi vs. Tidak Resmi)</strong><br>Merujuk pada konflik antara hukum yang dilegitimasi negara dengan hukum yang berkembang secara sosial tanpa pengakuan resmi negara.</p>
+</li>
+<li><p><strong>Legal Rules vs. Legal Postulates (Aturan Positif vs. Postulat Hukum)</strong><br>Dikotomi ini menunjukkan ketegangan antara hukum dalam bentuk aturan-aturan positif yang formal dan eksplisit dengan prinsip-prinsip dasar yang tidak tertulis tetapi sangat kuat mempengaruhi interpretasi dan penerapan hukum.</p>
+</li>
+<li><p><strong>Indigenous Law vs. Transplanted Law (Hukum Lokal vs. Hukum Transplan)</strong><br>Mengacu pada perbedaan antara hukum asli yang tumbuh dari dalam masyarakat (misalnya hukum adat) dengan hukum yang diimpor atau diadopsi dari sistem hukum asing (misalnya hukum kolonial Belanda).</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Kutipan Dwibahasa (Three Dichotomies):</strong><br><strong>EN:</strong> "The first dichotomy comprises official vs. unofficial law. The second is the dichotomy between positive rules/legal rules and legal postulates, while the third one is the contrast between indigenous law and transplanted law."<br><strong>ID:</strong> "Dikotomi pertama meliputi hukum resmi vs. tidak resmi. Yang kedua adalah dikotomi antara aturan positif/aturan hukum dengan postulat hukum, sementara yang ketiga merupakan kontras antara hukum asli dengan hukum transplan."</p>
+</blockquote>
+<h2 class="atx" id="hubungan-teori-chiba-dengan-konteks-indonesia-menurut-lukito"><strong>Hubungan Teori Chiba dengan Konteks Indonesia Menurut Lukito</strong></h2>
+<p>Ratno Lukito secara jelas menghubungkan teori Chiba ini dengan realitas pluralisme hukum di Indonesia. Menurut Lukito, teori Chiba memungkinkan analisis mendalam terhadap bagaimana hukum-hukum yang beragam tersebut saling berinteraksi dalam sejarah panjang hukum Indonesia. Lukito menggunakan pendekatan historis dan yuridis untuk menjelaskan bagaimana konflik dan resolusi yang muncul akibat pluralisme hukum berlangsung, dan bagaimana negara Indonesia menggunakan "postulat hukum nasional" sebagai filter dalam menerima atau menolak masuknya norma-norma dari sistem hukum non-negara ke dalam sistem nasional.</p>
+<blockquote>
+<p><strong>Kutipan Dwibahasa (National Legal Postulate):</strong><br><strong>EN:</strong> "In the political process of creating law, whether or not certain normative orderings contained in adat, Islamic, or civil law traditions can be accepted as an official state law will depend greatly on their conformity to the postulate."<br><strong>ID:</strong> "Dalam proses politik pembuatan hukum, apakah tatanan normatif tertentu yang terdapat dalam adat, Islam, atau tradisi hukum sipil dapat diterima sebagai hukum negara resmi sangat tergantung pada kesesuaiannya dengan postulat tersebut."</p>
+</blockquote>
+<hr>
+<h2 class="atx" id="kesimpulan"><strong>Kesimpulan</strong></h2>
+<p>Dengan mengadaptasi pemikiran Masaji Chiba, Ratno Lukito berhasil mengembangkan kerangka teori yang kuat untuk menjelaskan fenomena pluralisme hukum di Indonesia. Melalui kerangka ini, kita dapat memahami lebih jelas bagaimana pluralisme hukum beroperasi, sekaligus bagaimana negara secara pragmatis menghadapi tantangan dalam mengintegrasikan hukum resmi dan hukum tidak resmi melalui berbagai mekanisme sosial, politik, dan hukum.</p>
+<hr>
+<h1 class="atx" id="metodologi-dalam-bab-andquotintroductionandquot"><strong>Metodologi dalam Bab "Introduction"</strong></h1>
+<p>Dalam bab <em>Introduction</em>, Ratno Lukito menjelaskan secara eksplisit metodologi yang digunakan dalam kajian pluralisme hukum di Indonesia. Metodologi ini menggabungkan pendekatan historis dengan pendekatan yuridis, serta memperkenalkan pendekatan baru yang disebut "pendekatan yudisial" (judicial approach). Berikut adalah elaborasi lebih lanjut:</p>
+<h2 class="atx" id="pendekatan-historis-yuridis-historical-juridical-approach"><strong>Pendekatan Historis-Yuridis (Historical-Juridical Approach)</strong></h2>
+<p>Metodologi utama yang digunakan Lukito adalah pendekatan historis-yuridis. Pendekatan ini bertujuan untuk memahami pluralisme hukum tidak hanya sebagai fenomena yang ada pada satu waktu tertentu, tetapi sebagai fenomena yang berkembang secara dinamis dari perspektif sejarah perkembangan hukum di Indonesia. Pendekatan ini melihat bagaimana interaksi dan konflik hukum terjadi secara historis serta bagaimana resolusinya berkembang dalam konteks negara bangsa yang terus berubah.</p>
+<blockquote>
+<p><strong>Kutipan Dwibahasa (Historical-Juridical Approach):</strong><br><strong>EN:</strong> "The approach used in this study is historical in character, as the phenomenon of plural normativity in the Indonesian legal system is examined from the perspective of the history of its legal development."<br><strong>ID:</strong> "Pendekatan yang digunakan dalam studi ini bersifat historis, karena fenomena normativitas plural dalam sistem hukum Indonesia dikaji dari perspektif sejarah perkembangan hukumnya."</p>
+</blockquote>
+<p>Pendekatan historis ini dianggap penting, khususnya ketika membahas aspek politik dari pluralisme hukum di Indonesia. Dengan pendekatan ini, Lukito berusaha menjelaskan bagaimana konsep "Hukum Nasional" berkembang secara historis dan bagaimana hubungan antara hukum negara dan hukum adat serta agama terbentuk dalam kurun waktu tertentu.</p>
+<h2 class="atx" id="pendekatan-yudisial-judicial-approach"><strong>Pendekatan Yudisial (Judicial Approach)</strong></h2>
+<p>Selain pendekatan historis-yuridis, Lukito memperkenalkan pendekatan yang disebut "pendekatan yudisial" sebagai bagian inovatif dari metodologinya. Pendekatan ini memberikan perhatian khusus pada aspek yuridis, terutama mengenai pola konflik hukum yang konkret serta mekanisme resolusinya dalam kasus-kasus nyata di pengadilan.</p>
+<p>Pendekatan yudisial dianggap baru karena menempatkan fokus pada pola-pola interaksi yang nyata antar sistem hukum dalam konteks resolusi kasus-kasus hukum di pengadilan. Ini berbeda dengan pendekatan klasik yang biasanya melihat pluralisme hukum sekadar sebagai fakta sosiologis atau antropologis yang statis pada waktu tertentu.</p>
+<blockquote>
+<p><strong>Kutipan Dwibahasa (Judicial Approach):</strong><br><strong>EN:</strong> "The juridical aspects involved in the discussion of legal conflict and resolution will help clarify, what we may call, the 'judicial approach' to legal pluralism. The latter is in fact a new approach to the study of this subject since the phenomenon of pluralism is not merely viewed on the basis of facts existing in a certain time or place but more from the patterns of conflict and resolution in specific legal issues showing the dynamic interactions between different legal orders."<br><strong>ID:</strong> "Aspek-aspek yuridis dalam pembahasan konflik dan resolusi hukum akan membantu memperjelas apa yang dapat kita sebut sebagai 'pendekatan yudisial' terhadap pluralisme hukum. Pendekatan ini sesungguhnya adalah pendekatan baru dalam studi subjek ini, karena fenomena pluralisme tidak hanya dilihat berdasarkan fakta-fakta yang ada pada waktu atau tempat tertentu saja, tetapi lebih pada pola konflik dan resolusi dalam isu-isu hukum spesifik yang menunjukkan interaksi dinamis antara berbagai tatanan hukum yang berbeda."</p>
+</blockquote>
+<h2 class="atx" id="integrasi-tiga-aspek-kajian-teoretis-deskriptif-konflik"><strong>Integrasi Tiga Aspek Kajian (Teoretis, Deskriptif, Konflik)</strong></h2>
+<p>Selain dua pendekatan utama di atas, Lukito juga menegaskan bahwa kajiannya mengintegrasikan tiga aspek analisis hukum yang dikenal dalam tradisi ilmu hukum dan antropologi, yaitu:</p>
+<ol>
+<li><p><strong>Aspek Teoretis:</strong> Membangun kerangka teori untuk mengatur dan mengontrol perilaku hukum dalam masyarakat plural.</p>
+</li>
+<li><p><strong>Aspek Deskriptif:</strong> Menggambarkan pola hukum yang secara praktis muncul dalam masyarakat.</p>
+</li>
+<li><p><strong>Aspek Konflik (Grievance):</strong> Meneliti konflik hukum konkret yang timbul akibat interaksi antar hukum yang berbeda (negara, adat, agama), serta bagaimana mekanisme resolusi konflik tersebut dijalankan dalam praktik hukum sehari-hari.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Kutipan Dwibahasa (Tiga Aspek Kajian):</strong><br><strong>EN:</strong> "Generally, Western scholars studying the legal phenomenon of a given culture have approached the subject from three aspects. The first aspect constitutes a theoretical dimension in that it seeks to establish rules for channeling and controlling behavior. The second aspect is descriptive, which mainly concerns the practical legal dimension of the phenomenon since it explores the pattern according to which the behavior actually occurs. The third aspect involves a search for disputes, grievances, conflicts, etc."<br><strong>ID:</strong> "Secara umum, para sarjana Barat yang mempelajari fenomena hukum dari suatu budaya tertentu telah mendekati subjek tersebut dari tiga aspek. Aspek pertama adalah dimensi teoretis yang berusaha menetapkan aturan untuk menyalurkan dan mengontrol perilaku. Aspek kedua adalah deskriptif, yang utamanya berkaitan dengan dimensi hukum praktis dari fenomena tersebut karena mengeksplorasi pola bagaimana perilaku tersebut benar-benar terjadi. Aspek ketiga melibatkan pencarian sengketa, keluhan, konflik, dan sebagainya."</p>
+</blockquote>
+<p>Dalam buku ini, Lukito berusaha memadukan ketiga aspek tersebut secara bersamaan sehingga memberikan gambaran yang komprehensif tentang pluralisme hukum di Indonesia, terutama bagaimana interaksi dan konflik antar berbagai sistem hukum (adat, agama, negara) berlangsung dan diselesaikan dalam konteks negara modern Indonesia.</p>
+<hr>
+<h2 class="atx" id="kesimpulan-metodologi-lukito"><strong>Kesimpulan Metodologi Lukito</strong></h2>
+<p>Dengan memadukan pendekatan historis-yuridis dan pendekatan yudisial serta ketiga aspek analisis hukum (teoretis, deskriptif, konflik), Lukito berhasil memberikan analisis yang utuh dan mendalam tentang dinamika pluralisme hukum di Indonesia, khususnya dalam interaksi antara hukum negara dan hukum non-negara.</p>
+<p>Ya, dalam bab <em>Introduction</em>, Ratno Lukito secara eksplisit menjelaskan sistematika buku yang disusun ke dalam dua bagian besar (Part I dan Part II), dengan total lima bab secara keseluruhan. Berikut ini sistematika bab demi bab yang diuraikan oleh Lukito dalam bab pengantar tersebut:</p>
+<hr>
+<h1 class="atx" id="sistematika-buku-menurut-bab-andquotintroductionandquot"><strong>Sistematika Buku Menurut Bab "Introduction"</strong></h1>
+<p>Menurut Lukito, buku <em>Legal Pluralism in Indonesia</em> disusun dalam dua bagian besar dengan total lima bab:</p>
+<h3 class="atx" id="bagian-i-state-law-versus-popular-law-in-historical-retrospect-hukum-negara-versus-hukum-populer-dalam-retrospeksi-historis"><strong>Bagian I: State Law versus Popular Law in Historical Retrospect (Hukum Negara versus Hukum Populer dalam Retrospeksi Historis)</strong></h3>
+<p>Pada bagian pertama ini, Lukito memfokuskan pembahasan pada fase-fase historis dari perjumpaan berbagai sistem hukum di Indonesia. Bagian ini secara khusus melihat bagaimana tiga tradisi hukum utama—yaitu hukum adat, hukum Islam, dan hukum sipil (warisan kolonial Belanda)—dapat hidup berdampingan. Fokus utama pada bagian ini adalah hubungan antara institusi negara dan tradisi hukum masyarakat yang berada di luar institusi negara.</p>
+<p>Dalam bagian ini, tiga bab panjang menggambarkan tiga fase historis perjumpaan hukum di Indonesia:</p>
+<ul>
+<li><p><strong>Bab 1:</strong> Perjumpaan hukum pada masa kolonial Belanda (the Dutch colonial era).</p>
+</li>
+<li><p><strong>Bab 2:</strong> Perjumpaan hukum pada masa awal negara Indonesia merdeka (the early national era).</p>
+</li>
+<li><p><strong>Bab 3:</strong> Perjumpaan hukum pada era nasional setelah terbentuk rezim yang lebih kuat dan telah memiliki strategi pluralisme hukum yang lebih maju (the later national era).</p>
+</li>
+</ul>
+<p>Pembahasan dalam bagian pertama ini menunjukkan bahwa keberhasilan atau kegagalan dalam menyelesaikan konflik antarhukum sebagian besar ditentukan oleh sistem politik yang diterapkan oleh negara, baik di era kolonial maupun era nasional.</p>
+<blockquote>
+<p><strong>Kutipan Dwibahasa tentang Bagian I:</strong><br><strong>EN:</strong> "Part I will concern itself with the historical phases of the legal encounter in Indonesia. The point that will be analyzed in this part is how the three different legal traditions of adat, Islamic, and civil, in their encounter, were able to coexist."<br><strong>ID:</strong> "Bagian I akan memfokuskan diri pada fase historis dari perjumpaan hukum di Indonesia. Titik yang akan dianalisis dalam bagian ini adalah bagaimana tiga tradisi hukum berbeda, yaitu adat, Islam, dan sipil, dalam perjumpaan mereka dapat hidup berdampingan."</p>
+</blockquote>
+<hr>
+<h3 class="atx" id="bagian-ii-conflicts-of-law-as-a-result-of-pluralism-and-the-states-attempt-at-resolution-konflik-hukum-sebagai-hasil-pluralisme-dan-upaya-negara-dalam-resolusinya"><strong>Bagian II: Conflicts of Law as a Result of Pluralism and the State’s Attempt at Resolution (Konflik Hukum sebagai Hasil Pluralisme dan Upaya Negara dalam Resolusinya)</strong></h3>
+<p>Bagian kedua ini lebih berfokus pada konflik-konflik antarhukum dan upaya penyelesaiannya melalui mekanisme peradilan (pengadilan sipil dan agama). Dalam bagian ini, Lukito menganalisis berbagai kasus konkret hukum interpersonal yang muncul akibat pluralisme hukum. Kasus-kasus tersebut antara lain menyangkut:</p>
+<ul>
+<li><p><strong>Bab 4:</strong> Analisis hukum interpersonal (interpersonal law), termasuk warisan kolonialnya, serta usaha legislatif dalam menyelesaikan konflik antarhukum.</p>
+</li>
+<li><p><strong>Bab 5:</strong> Analisis penyelesaian kasus interpersonal di pengadilan, dengan mengangkat isu-isu seperti perkawinan beda agama (<em>interfaith marriage</em>), warisan beda agama (<em>interfaith inheritance</em>), dan keadilan gender dalam hukum waris (<em>gendered inheritance</em>).</p>
+</li>
+</ul>
+<p>Lukito secara khusus menitikberatkan pada kasus-kasus interpersonal yang aktual untuk menunjukkan bagaimana konflik-konflik substantif antara hukum positif negara, hukum Islam, dan hukum adat dipecahkan oleh hakim di pengadannya. Lukito juga menegaskan bahwa analisis teoritis terkait hukum interpersonal dibutuhkan agar dapat memahami pendekatan negara dalam menangani konflik hukum substantif yang dihasilkan dari pluralisme hukum.</p>
+<blockquote>
+<p><strong>Kutipan Dwibahasa tentang Bagian II:</strong><br><strong>EN:</strong> "Part II will focus more on the conflict and resolution of laws in the courts. As a core subject of this part, a number of interpersonal cases that have been adjudicated in the civil and religious courts will be analyzed to provide examples of how some substantive legal conflicts between statutory law, Islamic law, and adat law presented in the courts were resolved by judges."<br><strong>ID:</strong> "Bagian II akan lebih berfokus pada konflik dan resolusi hukum di pengadilan. Sebagai inti dari bagian ini, sejumlah kasus interpersonal yang telah diputuskan di pengadilan sipil dan agama akan dianalisis untuk memberi contoh bagaimana konflik hukum substantif antara hukum positif negara, hukum Islam, dan hukum adat yang diajukan di pengadilan dapat diselesaikan oleh hakim."</p>
+</blockquote>
+<hr>
+<h3 class="atx" id="bab-penutup-analisis-teoretis-dan-kesimpulan-theoretical-analysis-and-conclusion"><strong>Bab Penutup: Analisis Teoretis dan Kesimpulan (Theoretical Analysis and Conclusion)</strong></h3>
+<p>Di akhir buku, terdapat satu bab singkat yang berisi analisis teoritis dan kesimpulan. Bab ini bertujuan untuk merefleksikan isu-isu penting yang muncul dalam seluruh pembahasan sebelumnya serta implikasinya terhadap pengembangan hukum di masa depan.</p>
+<hr>
+<h2 class="atx" id="kesimpulan-tentang-sistematika-buku"><strong>Kesimpulan tentang Sistematika Buku</strong></h2>
+<p>Melalui uraian ini, jelas bahwa Lukito secara sadar menyusun bukunya dalam struktur yang logis dan sistematis. Bagian pertama lebih bersifat historis-deskriptif, sementara bagian kedua lebih aplikatif dengan menganalisis kasus nyata. Bagian penutup memberikan refleksi teoretis untuk memahami lebih dalam signifikansi temuan-temuan sebelumnya terhadap pengembangan hukum di Indonesia.</p>
+</article>
+</body>
+</html>
