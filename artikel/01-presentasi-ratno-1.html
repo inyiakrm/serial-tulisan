@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluralisme Hukum di Indonesia - Ratno Lukito</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #FFD700;
+            --highlight: #f0f8ff;
+            --note: #fff9c4;
+            --quote: #e3f2fd;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        
+        h1, h2, h3 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: var(--primary);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--secondary);
+        }
+        
+        h2 {
+            margin: 25px 0 15px;
+            padding-left: 10px;
+            border-left: 4px solid var(--secondary);
+        }
+        
+        h3 {
+            margin: 20px 0 10px;
+            color: var(--primary);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        
+        .accordion {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .accordion-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        
+        .accordion-header:hover {
+            background-color: #0f2a4a;
+        }
+        
+        .accordion-header.active {
+            background-color: #0f2a4a;
+        }
+        
+        .accordion-content {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+        }
+        
+        .accordion-content.show {
+            padding: 20px;
+            max-height: 5000px;
+        }
+        
+        .sub-accordion {
+            margin: 15px 0;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+        
+        .sub-accordion-header {
+            background-color: #f5f5f5;
+            padding: 12px 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            color: var(--primary);
+            transition: all 0.3s;
+        }
+        
+        .sub-accordion-header:hover {
+            background-color: #e9e9e9;
+        }
+        
+        .sub-accordion-header.active {
+            background-color: #e9e9e9;
+        }
+        
+        .sub-accordion-content {
+            padding: 0 15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+        }
+        
+        .sub-accordion-content.show {
+            padding: 15px;
+            max-height: 5000px;
+        }
+        
+        .note-box {
+            background-color: var(--note);
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            position: relative;
+        }
+        
+        .note-box:before {
+            content: "❗";
+            position: absolute;
+            left: -25px;
+            top: 15px;
+            font-size: 20px;
+        }
+        
+        .quote-box {
+            background-color: var(--quote);
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        
+        .concept-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .concept-table th, .concept-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .concept-table th {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .concept-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .concept-table tr:hover {
+            background-color: #e9e9e9;
+        }
+        
+        .diagram {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        
+        .diagram-box {
+            display: inline-block;
+            width: 200px;
+            padding: 15px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            vertical-align: top;
+        }
+        
+        .diagram-box h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 5px;
+        }
+        
+        .icon {
+            margin-right: 8px;
+        }
+        
+        ul, ol {
+            padding-left: 25px;
+            margin: 15px 0;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .accordion-header, .sub-accordion-header {
+                padding: 12px 15px;
+                font-size: 14px;
+            }
+            
+            .diagram-box {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="icon">⚖️</span> Pluralisme Hukum di Indonesia</h1>
+        <h2>Ratno Lukito - Analisis Bab Introduction</h2>
+        
+        <!-- Accordion 1: Struktur Pembahasan Bab 01 -->
+        <div class="accordion">
+            <div class="accordion-header">
+                <span><span class="icon">📖</span> 1. Struktur Pembahasan Bab 01</span>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <div class="note-box">
+                    <strong>Catatan Penting:</strong> Bab Introduction membangun kerangka konseptual untuk memahami pluralisme hukum di Indonesia dengan pendekatan historis-yuridis.
+                </div>
+                
+                <!-- Sub-accordion 1.1 -->
+                <div class="sub-accordion">
+                    <div class="sub-accordion-header">
+                        <span><span class="icon">🔍</span> The discourse of law and society</span>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="sub-accordion-content">
+                        <ul>
+                            <li>Hubungan historis antara hukum dan pembentukan negara</li>
+                            <li>Kritik terhadap pendekatan legalisme modern yang terlalu instrumental</li>
+                            <li>Pendekatan baru: hukum sebagai relasi timbal balik dengan masyarakat</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Sub-accordion 1.2 -->
+                <div class="sub-accordion">
+                    <div class="sub-accordion-header">
+                        <span><span class="icon">🔍</span> Modern legalism and the fact of pluralism in Indonesia</span>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="sub-accordion-content">
+                        <ul>
+                            <li>Warisan kolonial dan masuknya doktrin modernisme</li>
+                            <li>Karakteristik hukum modern (Galanter): uniformitas, transaksional, universalitas, hierarkis, birokratis, rasional, profesional, teknikal, dan dapat diubah</li>
+                            <li>Problem legal centralism dan tantangan dari pluralisme hukum lokal (adat dan agama)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Sub-accordion 1.3 -->
+                <div class="sub-accordion">
+                    <div class="sub-accordion-header">
+                        <span><span class="icon">🔍</span> Theoretical approach</span>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="sub-accordion-content">
+                        <ul>
+                            <li>Pendekatan tiga aspek (teoretis, deskriptif, konflik/grievance)</li>
+                            <li>Teori legal pluralism menurut Masaji Chiba: tiga lapis hukum (resmi, tidak resmi, postulat hukum)</li>
+                            <li>Konsep postulat hukum nasional (national legal postulate)</li>
+                            <li>Tiga dikotomi hukum Chiba: resmi vs tidak resmi, aturan positif vs postulat hukum, hukum lokal vs hukum transplan</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Sub-accordion 1.4 -->
+                <div class="sub-accordion">
+                    <div class="sub-accordion-header">
+                        <span><span class="icon">🔍</span> Significance and scope of the study</span>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="sub-accordion-content">
+                        <ul>
+                            <li>Perkembangan studi pluralisme hukum sejak awal abad 20</li>
+                            <li>Pendekatan klasik vs pendekatan baru</li>
+                            <li>Ruang lingkup studi: dimensi historis dan yuridis dari pluralisme hukum di Indonesia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Accordion 2: Pemetaan Gagasan -->
+        <div class="accordion">
+            <div class="accordion-header">
+                <span><span class="icon">🗺️</span> 2. Pemetaan Gagasan</span>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <div class="quote-box">
+                    "Legal pluralism in Indonesia is not a deviation from modernity, but rather its contextual manifestation."
+                </div>
+                
+                <h3>Relasi Hukum dan Masyarakat</h3>
+                <ul>
+                    <li>Hukum bukan hanya alat rekayasa sosial tapi juga hasil dari proses sosial dan kultural</li>
+                    <li>Hukum dan norma sosial memiliki hubungan saling membentuk</li>
+                </ul>
+                
+                <h3>Kontradiksi antara Legalisme Modern dan Pluralisme Hukum</h3>
+                <ul>
+                    <li>Legalisme modern menekankan pada hukum negara sebagai satu-satunya hukum yang sah</li>
+                    <li>Realitas masyarakat Indonesia mencerminkan pluralisme hukum: adat, agama, dan hukum negara</li>
+                </ul>
+                
+                <h3>Kritik terhadap Positivisme Hukum</h3>
+                <ul>
+                    <li>Legal positivism mengabaikan hukum tidak resmi</li>
+                    <li>Pandangan alternatif melihat hukum sebagai entitas polisentris</li>
+                </ul>
+                
+                <h3>Kerangka Teoretis Legal Pluralism</h3>
+                <ul>
+                    <li>Teori Masaji Chiba digunakan sebagai dasar: tiga lapisan hukum</li>
+                    <li>Postulat hukum nasional berfungsi sebagai perekat dan penyaring interaksi hukum</li>
+                </ul>
+                
+                <h3>Tujuan Studi</h3>
+                <ul>
+                    <li>Menelaah dinamika interaksi antara hukum negara dan hukum non-negara</li>
+                    <li>Memahami pluralisme hukum Indonesia melalui dimensi historis dan yuridis</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Accordion 3: Fokus Masalah -->
+        <div class="accordion">
+            <div class="accordion-header">
+                <span><span class="icon">🎯</span> 3. Fokus Masalah</span>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <div class="note-box">
+                    <strong>Pertanyaan Utama:</strong> "Bagaimana realitas pluralisme hukum di Indonesia mempersoalkan dominasi legalisme modern yang bersifat sentralistik dan positivistik?"
+                </div>
+                
+                <p>Bab ini menggambarkan konflik antara upaya unifikasi hukum oleh negara pascakolonial dan kenyataan keberagaman sistem hukum yang hidup dalam masyarakat (adat dan agama).</p>
+                
+                <h3>Pertanyaan-Pertanyaan dan Jawabannya</h3>
+                
+                <div class="sub-accordion">
+                    <div class="sub-accordion-header">
+                        <span><span class="icon">❓</span> Apakah hukum hanya produk negara?</span>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="sub-accordion-content">
+                        <p><strong>Jawaban:</strong> Tidak. Hukum juga terbentuk dari proses sosial, kultural, dan religius. Pandangan polisentris memperluas definisi hukum di luar produk negara.</p>
+                    </div>
+                </div>
+                
+                <div class="sub-accordion">
+                    <div class="sub-accordion-header">
+                        <span><span class="icon">❓</span> Mengapa legalisme modern sulit diterapkan secara efektif di Indonesia?</span>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="sub-accordion-content">
+                        <p><strong>Jawaban:</strong> Karena pluralisme hukum yang sangat kuat dan berakar dari tradisi adat serta agama yang hidup di masyarakat.</p>
+                    </div>
+                </div>
+                
+                <div class="sub-accordion">
+                    <div class="sub-accordion-header">
+                        <span><span class="icon">❓</span> Bagaimana teori legal pluralism membantu memahami hukum di Indonesia?</span>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="sub-accordion-content">
+                        <p><strong>Jawaban:</strong> Dengan melihat adanya hukum resmi dan tidak resmi yang hidup berdampingan, serta adanya postulat hukum nasional yang menghubungkan keduanya.</p>
+                    </div>
+                </div>
+                
+                <div class="sub-accordion">
+                    <div class="sub-accordion-header">
+                        <span><span class="icon">❓</span> Apa fungsi postulat hukum nasional dalam kerangka pluralisme hukum?</span>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="sub-accordion-content">
+                        <p><strong>Jawaban:</strong> Sebagai nilai dasar yang menentukan apakah suatu norma dari hukum non-negara dapat diterima dalam sistem hukum negara.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Accordion 4: Analisis Mendalam -->
+        <div class="accordion">
+            <div class="accordion-header">
+                <span><span class="icon">📜</span> 4. Analisis Mendalam (Teori Chiba & Metodologi)</span>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <h3>Teori Tiga Lapisan Hukum Masaji Chiba</h3>
+                
+                <div class="diagram">
+                    <div class="diagram-box">
+                        <h4><span class="icon">⚖️</span> Hukum Resmi</h4>
+                        <p>Produk negara, memiliki legitimasi formal. Contoh: KUHP, KUH Perdata, UU Perkawinan.</p>
+                    </div>
+                    <div class="diagram-box">
+                        <h4><span class="icon">🏛️</span> Hukum Tidak Resmi</h4>
+                        <p>Dipraktikkan masyarakat tanpa pengakuan resmi negara. Contoh: hukum adat, norma lokal.</p>
+                    </div>
+                    <div class="diagram-box">
+                        <h4><span class="icon">🧩</span> Postulat Hukum</h4>
+                        <p>Sistem nilai/prinsip dasar yang menjadi fondasi filosofis hukum resmi dan tidak resmi.</p>
+                    </div>
+                </div>
+                
+                <h3>Tiga Dikotomi Hukum Chiba</h3>
+                <ol>
+                    <li><strong>Hukum resmi vs. tidak resmi</strong> - Konflik antara hukum yang dilegitimasi negara dengan hukum yang berkembang secara sosial</li>
+                    <li><strong>Aturan positif vs. postulat hukum</strong> - Ketegangan antara hukum formal dengan prinsip dasar yang tidak tertulis</li>
+                    <li><strong>Hukum lokal vs. hukum transplan</strong> - Perbedaan antara hukum asli masyarakat dengan hukum yang diimpor dari luar</li>
+                </ol>
+                
+                <div class="quote-box">
+                    <p><strong>Kutipan Kunci:</strong> "Postulat hukum terdiri dari gagasan hukum yang mapan, perintah dan ajaran agama, norma sosial dan budaya yang berkaitan dengan struktur sosial mendasar, atau ideologi politik yang seringkali erat kaitannya dengan kebijakan ekonomi."</p>
+                </div>
+                
+                <h3>Metodologi Lukito</h3>
+                <div class="sub-accordion">
+                    <div class="sub-accordion-header">
+                        <span><span class="icon">🔬</span> Pendekatan Historis-Yuridis</span>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="sub-accordion-content">
+                        <p>Mengkaji pluralisme hukum dari perspektif sejarah perkembangan hukum Indonesia, melihat bagaimana interaksi dan konflik hukum terjadi secara historis.</p>
+                    </div>
+                </div>
+                
+                <div class="sub-accordion">
+                    <div class="sub-accordion-header">
+                        <span><span class="icon">⚖️</span> Pendekatan Yudisial</span>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="sub-accordion-content">
+                        <p>Fokus pada pola-pola interaksi nyata antar sistem hukum dalam konteks resolusi kasus-kasus hukum di pengadilan.</p>
+                    </div>
+                </div>
+                
+                <div class="sub-accordion">
+                    <div class="sub-accordion-header">
+                        <span><span class="icon">📊</span> Tiga Aspek Kajian</span>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="sub-accordion-content">
+                        <ol>
+                            <li><strong>Aspek Teoretis:</strong> Membangun kerangka teori untuk mengatur perilaku hukum</li>
+                            <li><strong>Aspek Deskriptif:</strong> Menggambarkan pola hukum yang muncul dalam masyarakat</li>
+                            <li><strong>Aspek Konflik:</strong> Meneliti konflik hukum konkret dan mekanisme resolusinya</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <h3>Konsep-Konsep Utama</h3>
+                <table class="concept-table">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Konsep (Inggris - Indonesia)</th>
+                            <th>Deskripsi Singkat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><strong>Legal Pluralism – Pluralisme Hukum</strong></td>
+                            <td>Keberadaan lebih dari satu sistem hukum dalam satu masyarakat: hukum negara, hukum adat, dan hukum agama.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><strong>Modern Legalism – Legalisme Modern</strong></td>
+                            <td>Paradigma hukum modern yang menekankan sentralisme, kodifikasi, dan hukum negara sebagai otoritas tunggal.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><strong>Legal Centralism – Sentralisme Hukum</strong></td>
+                            <td>Pandangan bahwa hanya hukum negara yang sah dan mengikat; hukum lain dianggap tidak sah.</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><strong>National Legal Postulate – Postulat Hukum Nasional</strong></td>
+                            <td>Prinsip nilai dasar yang dijadikan negara untuk menilai dan menyaring norma dari hukum non-negara.</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><strong>Three-Layered Law – Hukum Tiga Lapisan</strong></td>
+                            <td>Konsep Chiba: (a) hukum resmi, (b) hukum tidak resmi, (c) postulat hukum.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Main accordion functionality
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const accordionContent = this.nextElementSibling;
+                    const toggleIcon = this.querySelector('.toggle-icon');
+                    
+                    // Close all other accordions
+                    document.querySelectorAll('.accordion-content').forEach(content => {
+                        if (content !== accordionContent) {
+                            content.classList.remove('show');
+                            content.previousElementSibling.classList.remove('active');
+                            content.previousElementSibling.querySelector('.toggle-icon').textContent = '+';
+                        }
+                    });
+                    
+                    // Toggle current accordion
+                    accordionContent.classList.toggle('show');
+                    this.classList.toggle('active');
+                    toggleIcon.textContent = accordionContent.classList.contains('show') ? '-' : '+';
+                });
+            });
+            
+            // Sub-accordion functionality
+            const subAccordionHeaders = document.querySelectorAll('.sub-accordion-header');
+            subAccordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const subAccordionContent = this.nextElementSibling;
+                    const toggleIcon = this.querySelector('.toggle-icon');
+                    
+                    subAccordionContent.classList.toggle('show');
+                    this.classList.toggle('active');
+                    toggleIcon.textContent = subAccordionContent.classList.contains('show') ? '-' : '+';
+                });
+            });
+            
+            // Open first accordion by default
+            if (accordionHeaders.length > 0) {
+                accordionHeaders[0].click();
+            }
+        });
+    </script>
+</body>
+</html>
