@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+/*# sourceURL=webpack://./node_modules/github-markdown-css/github-markdown.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9naXRodWItbWFya2Rvd24tY3NzL2dpdGh1Yi1tYXJrZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBMEI7RUFDMUIsMkRBQXF0RTtBQUN2dEU7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTs7Ozs7O0VBTUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7O0FBRUE7Ozs7OztFQU1FLHFCQUFxQjtBQUN2Qjs7QUFFQTs7Ozs7O0VBTUUsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLDhCQUE4QjtFQUM5QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGtJQUFrSTtFQUNsSSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7Ozs7OztFQU9FLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7OztFQUdFLGNBQWM7RUFDZCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxjQUFjO0VBQ2Qsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztFQUNkLDBCQUEwQjtBQUM1Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSw2QkFBNkI7QUFDL0I7O0FBRUE7O0VBRUUsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0Usb0JBQW9CO0VBQ3BCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxlQUFlO0FBQ2pCOztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBOzs7RUFHRSxnQ0FBZ0M7RUFDaEMsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHVCQUF1QjtFQUN2QixTQUFTO0VBQ1QsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsYUFBYTtFQUNiLFNBQVM7QUFDWDs7QUFFQTtFQUNFLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0QixVQUFVO0FBQ1o7O0FBRUE7RUFDRSxzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxvQkFBb0I7RUFDcEIsa0JBQWtCO0VBQ2xCLG9CQUFvQjtBQUN0Qjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSwwQkFBMEI7QUFDNUI7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSx1QkFBdUI7RUFDdkIsU0FBUztFQUNULGdDQUFnQztFQUNoQyxTQUFTO0VBQ1QsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsV0FBVztFQUNYLFdBQVc7RUFDWCxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLGlCQUFpQjtBQUNuQjs7QUFFQTs7RUFFRSxVQUFVO0FBQ1o7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBOzs7Ozs7RUFNRSxnQkFBZ0I7RUFDaEIsYUFBYTtBQUNmOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTs7RUFFRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTs7RUFFRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTs7RUFFRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsbUJBQW1CO0VBQ25CLGFBQWE7QUFDZjs7QUFFQTtFQUNFLFNBQVM7QUFDWDs7QUFFQTs7RUFFRSxnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLGVBQWU7QUFDakI7O0FBRUE7O0VBRUUsNEJBQTRCO0FBQzlCOztBQUVBOzs7O0VBSUUsNEJBQTRCO0FBQzlCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSw0RUFBNEU7RUFDNUUsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixhQUFhO0FBQ2Y7O0FBRUE7O0VBRUUsd0JBQXdCO0VBQ3hCLGdCQUFnQjtFQUNoQixTQUFTO0FBQ1g7O0FBRUE7RUFDRSxtQ0FBbUM7QUFDckM7O0FBRUE7RUFDRSxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSwwQ0FBMEM7QUFDNUM7O0FBRUE7RUFDRSw0QkFBNEI7QUFDOUI7O0FBRUE7RUFDRSxnQ0FBZ0M7QUFDbEM7O0FBRUE7RUFDRSxtQ0FBbUM7QUFDckM7O0FBRUE7RUFDRSx3QkFBd0I7QUFDMUI7O0FBRUE7RUFDRSwwQkFBMEI7QUFDNUI7O0FBRUE7RUFDRSw0QkFBNEI7RUFDNUIseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UsMkJBQTJCO0VBQzNCLHdCQUF3QjtBQUMxQjs7QUFFQTtFQUNFLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLDZCQUE2QjtFQUM3QiwwQkFBMEI7QUFDNUI7O0FBRUE7O0VBRUUsNEJBQTRCO0FBQzlCOztBQUVBO0VBQ0UsNkJBQTZCO0FBQy9COztBQUVBO0VBQ0UsNEJBQTRCO0FBQzlCOztBQUVBO0VBQ0UsNEJBQTRCO0FBQzlCOztBQUVBO0VBQ0UsNEJBQTRCO0FBQzlCOztBQUVBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UsMkJBQTJCO0FBQzdCOztBQUVBO0VBQ0UsMEJBQTBCO0FBQzVCOztBQUVBO0VBQ0UsV0FBVztFQUNYLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsV0FBVztFQUNYLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSwwQkFBMEI7QUFDNUI7O0FBRUE7RUFDRSxjQUFjO0VBQ2QscUJBQXFCO0FBQ3ZCOztBQUVBOzs7Ozs7O0VBT0UsbUJBQW1CO0VBQ25CLGFBQWE7QUFDZjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixTQUFTO0VBQ1QsYUFBYTtFQUNiLGNBQWM7RUFDZCxVQUFVO0FBQ1o7O0FBRUE7RUFDRSxnQ0FBZ0M7RUFDaEMsY0FBYztFQUNkLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxhQUFhO0FBQ2Y7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIseUJBQXlCO0VBQ3pCLDRCQUE0QjtFQUM1QixrQkFBa0I7RUFDbEIsa0NBQWtDO0VBQ2xDLGNBQWM7RUFDZCxxQkFBcUI7RUFDckIsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixnQkFBZ0I7RUFDaEIsc0JBQXNCO0FBQ3hCOztBQUVBOzs7Ozs7RUFNRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLG1CQUFtQjtFQUNuQixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGdDQUFnQztFQUNoQyxvQkFBb0I7QUFDdEI7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTs7RUFFRSxpQkFBaUI7QUFDbkI7O0FBRUE7Ozs7RUFJRSxnQkFBZ0I7RUFDaEIsYUFBYTtBQUNmOztBQUVBO0VBQ0Usb0JBQW9CO0FBQ3RCOztBQUVBO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsVUFBVTtBQUNaOztBQUVBO0VBQ0UsY0FBYztFQUNkLGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0VBQ2hCLFVBQVU7QUFDWjs7QUFFQTtFQUNFLG1CQUFtQjtFQUNuQixlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztFQUNkLGNBQWM7RUFDZCxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7O0VBRUUseUJBQXlCO0VBQ3pCLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0Qiw2QkFBNkI7QUFDL0I7O0FBRUE7RUFDRSx5QkFBeUI7QUFDM0I7O0FBRUE7RUFDRSxzQkFBc0I7RUFDdEIsdUJBQXVCO0VBQ3ZCLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxvQ0FBb0M7RUFDcEMsa0JBQWtCO0VBQ2xCLGNBQWM7RUFDZCxTQUFTO0VBQ1Qsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsdUJBQXVCO0VBQ3ZCLFNBQVM7RUFDVCxlQUFlO0VBQ2YsU0FBUztFQUNULFVBQVU7RUFDVixnQkFBZ0I7RUFDaEIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtBQUNwQjs7QUFFQTs7RUFFRSx5QkFBeUI7RUFDekIsa0JBQWtCO0VBQ2xCLGNBQWM7RUFDZCxpQkFBaUI7RUFDakIsY0FBYztFQUNkLGFBQWE7QUFDZjs7QUFFQTtFQUNFLDZCQUE2QjtFQUM3QixTQUFTO0VBQ1QsZUFBZTtFQUNmLG9CQUFvQjtFQUNwQixTQUFTO0VBQ1QsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixVQUFVO0VBQ1YsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsY0FBYztFQUNkLHFCQUFxQjtFQUNyQiw0RUFBNEU7RUFDNUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLDhCQUE4QjtFQUM5QiwrQkFBK0I7RUFDL0IsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxzQkFBc0I7RUFDdEIscUJBQXFCO0VBQ3JCLHlCQUF5QjtFQUN6Qix3QkFBd0I7RUFDeEIsZUFBZTtFQUNmLDRFQUE0RTtFQUM1RSxlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGVBQWU7RUFDZixrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLGlCQUFpQjtFQUNqQixpQkFBaUI7RUFDakIsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQixTQUFTO0FBQ1g7O0FBRUE7RUFDRSx3QkFBd0I7QUFDMUI7O0FBRUE7RUFDRSwrQkFBK0I7QUFDakM7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQixrQkFBa0I7RUFDbEIsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsY0FBYztFQUNkLDRFQUE0RTtFQUM1RSxlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGdCQUFnQjtFQUNoQixpQkFBaUI7QUFDbkI7O0FBRUE7O0VBRUUsbUJBQW1CO0VBQ25CLGVBQWU7QUFDakI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIseUJBQXlCO0VBQ3pCLDRCQUE0QjtFQUM1QixrQkFBa0I7RUFDbEIsa0NBQWtDO0VBQ2xDLGNBQWM7RUFDZCxxQkFBcUI7RUFDckIsMEVBQTBFO0VBQzFFLGlCQUFpQjtFQUNqQixnQkFBZ0I7RUFDaEIsc0JBQXNCO0FBQ3hCOztBQUVBO0VBQ0UscUJBQXFCO0VBQ3JCLGtCQUFrQjtFQUNsQixVQUFVO0FBQ1o7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsV0FBVztBQUNiOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsV0FBVztBQUNiOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsV0FBVztBQUNiOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsWUFBWTtBQUNkOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsMkJBQTJCO0VBQzNCLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDRCQUE0QjtBQUM5Qjs7QUFFQTtFQUNFLDZCQUE2QjtBQUMvQjs7QUFFQTtFQUNFLDZCQUE2QjtBQUMvQiIsInNvdXJjZVJvb3QiOiIifQ== */
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*# sourceURL=webpack://./node_modules/prismjs/themes/prism.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9wcmlzbWpzL3RoZW1lcy9wcmlzbS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7RUFJRTs7QUFFRjs7Q0FFQyxZQUFZO0NBQ1osZ0JBQWdCO0NBQ2hCLHdCQUF3QjtDQUN4QixzRUFBc0U7Q0FDdEUsY0FBYztDQUNkLGdCQUFnQjtDQUNoQixnQkFBZ0I7Q0FDaEIsb0JBQW9CO0NBQ3BCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsZ0JBQWdCOztDQUVoQixnQkFBZ0I7Q0FDaEIsY0FBYztDQUNkLFdBQVc7O0NBRVgscUJBQXFCO0NBQ3JCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsYUFBYTtBQUNkOztBQUVBOztDQUVDLGlCQUFpQjtDQUNqQixtQkFBbUI7QUFDcEI7O0FBRUE7O0NBRUMsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDOztFQUVDLGlCQUFpQjtDQUNsQjtBQUNEOztBQUVBLGdCQUFnQjtBQUNoQjtDQUNDLFlBQVk7Q0FDWixjQUFjO0NBQ2QsY0FBYztBQUNmOztBQUVBOztDQUVDLG1CQUFtQjtBQUNwQjs7QUFFQSxnQkFBZ0I7QUFDaEI7Q0FDQyxhQUFhO0NBQ2IsbUJBQW1CO0NBQ25CLG1CQUFtQjtBQUNwQjs7QUFFQTs7OztDQUlDLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTs7Ozs7OztDQU9DLFdBQVc7QUFDWjs7QUFFQTs7Ozs7O0NBTUMsV0FBVztBQUNaOztBQUVBOzs7OztDQUtDLGNBQWM7Q0FDZCxvRUFBb0U7Q0FDcEUsaUNBQWlDO0FBQ2xDOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsY0FBYztBQUNmOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxZQUFZO0FBQ2IiLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+
+/*# sourceURL=webpack://./src/muya/lib/assets/styles/exportStyle.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9tdXlhL2xpYi9hc3NldHMvc3R5bGVzL2V4cG9ydFN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFNBQVM7RUFDVCxVQUFVO0VBQ1YscUJBQXFCO0FBQ3ZCOztBQUVBOztFQUVFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBOzs7RUFHRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxPQUFPO0VBQ1AsY0FBYztFQUNkLGNBQWM7RUFDZCwrQkFBK0I7QUFDakMiLCJzb3VyY2VSb290IjoiIn0= */</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <article class="markdown-body"><h1 class="atx" id="pembacaan-bab-5-prof-ratno">PEMBACAAN BAB 5 PROF. RATNO</h1>
+<h2 class="atx" id="🔗-hubungan-antara-bab-introduction-dan-bab-5">🔗 <strong>Hubungan antara Bab Introduction dan Bab 5</strong></h2>
+<h3 class="atx" id="1-bab-introduction-sebagai-fondasi-teoretis-dan-metodologis">1. <strong>Bab Introduction sebagai Fondasi Teoretis dan Metodologis</strong></h3>
+<p>Bab Introduction membangun kerangka dasar konseptual, teoretis, dan metodologis buku secara keseluruhan. Dalam bab ini, Lukito:</p>
+<ul>
+<li><p>Memperkenalkan <strong>kerangka teori pluralisme hukum</strong> (terutama dari Masaji Chiba) dengan menekankan eksistensi hukum resmi, hukum tidak resmi, dan postulat hukum.</p>
+</li>
+<li><p>Menyampaikan <strong>pendekatan metodologis historis-yuridis dan yudisial</strong> untuk memahami konflik dan resolusi hukum yang muncul dari pluralisme hukum.</p>
+</li>
+<li><p>Menjelaskan bahwa konflik hukum di Indonesia sering muncul dalam <strong>kasus-kasus interpersonal</strong>, dan bahwa fokus utama buku ini adalah <strong>bagaimana negara (terutama melalui pengadilan) merespons pluralisme hukum dalam praktik</strong>.</p>
+</li>
+</ul>
+<blockquote>
+<p>*"...a number of interpersonal cases that have been adjudicated in the civil and religious courts will be analyzed to provide examples of how some substantive legal conflicts... were resolved by judges."*</p>
+</blockquote>
+<h3 class="atx" id="2-bab-5-sebagai-penerapan-dan-validasi-teori">2. <strong>Bab 5 sebagai Penerapan dan Validasi Teori</strong></h3>
+<p>Bab 5 mengambil <strong>kerangka teori</strong> dan <strong>pendekatan metodologis</strong> yang dirancang dalam bab Introduction untuk diterapkan secara konkret melalui studi kasus. Bab ini menyelidiki <strong>bagaimana pengadilan Indonesia—sebagai arena pluralisme hukum yang hidup—menyelesaikan kasus-kasus interpersonal yang kompleks</strong>, seperti:</p>
+<ul>
+<li><p>Perkawinan beda agama (interfaith marriage)</p>
+</li>
+<li><p>Warisan beda agama (interfaith inheritance)</p>
+</li>
+<li><p>Warisan berbasis gender (gendered inheritance)</p>
+</li>
+</ul>
+<p>Dalam semua kasus ini, Bab 5 menunjukkan bagaimana hakim:</p>
+<ul>
+<li><p>Menjadi <strong>agen negara yang aktif</strong>, menggunakan <strong>postulat hukum nasional</strong> dalam memutuskan perkara.</p>
+</li>
+<li><p>Tidak hanya menerapkan hukum secara tekstual, tetapi juga melakukan <strong>penalaran kontekstual</strong> yang sering melibatkan konstitusi, hak asasi manusia, dan prinsip keadilan.</p>
+</li>
+</ul>
+<h3 class="atx" id="3-keterhubungan-konseptual-dari-teori-ke-praktik">3. <strong>Keterhubungan Konseptual: Dari Teori ke Praktik</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Aspek</th>
+<th>Bab Introduction</th>
+<th>Bab 5</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Tema sentral</strong></td>
+<td>Membangun kerangka pluralisme hukum dan strategi negara</td>
+<td>Menganalisis konflik konkret dan resolusinya di pengadilan</td>
+</tr>
+<tr>
+<td><strong>Kerangka teori</strong></td>
+<td>Chiba (tiga lapisan hukum, tiga dikotomi), postulat hukum nasional</td>
+<td>Dipakai sebagai alat analisis terhadap keputusan hakim</td>
+</tr>
+<tr>
+<td><strong>Pendekatan</strong></td>
+<td>Historis, yuridis, yudisial</td>
+<td>Yudisial dan kasus konkret</td>
+</tr>
+<tr>
+<td><strong>Tujuan</strong></td>
+<td>Memahami bagaimana negara mengelola pluralisme hukum</td>
+<td>Menilai efektivitas peran negara (terutama pengadilan) dalam mengelola pluralisme hukum melalui resolusi kasus</td>
+</tr>
+<tr>
+<td><strong>Fungsi bab</strong></td>
+<td>Fondasi teoritis dan metodologis buku</td>
+<td>Validasi empiris atas teori dan pendekatan bab pendahuluan</td>
+</tr>
+</tbody></table>
+<h3 class="atx" id="4-contoh-keterkaitan-nyata">4. <strong>Contoh Keterkaitan Nyata</strong></h3>
+<p>Dalam kasus <strong>Andy Vony v. the State</strong> yang dibahas di Bab 5, hakim Mahkamah Agung menggunakan:</p>
+<ul>
+<li><p><strong>Postulat keadilan dan kesetaraan warga negara</strong> dari konstitusi (Pasal 27 UUD 1945)</p>
+</li>
+<li><p>Penafsiran kontekstual terhadap UU Perkawinan No. 1/1974</p>
+</li>
+<li><p><strong>Logika pluralisme hukum</strong>, karena hukum agama dan hukum negara tidak selalu harmonis</p>
+</li>
+</ul>
+<p>Semua ini merupakan aplikasi langsung dari ide-ide yang digariskan Lukito dalam pengantar.</p>
+<hr>
+<h2 class="atx" id="📌-kesimpulan">📌 <strong>Kesimpulan</strong></h2>
+<p>Bab <em>Introduction</em> dan Bab 5 memiliki hubungan yang erat dan organik:</p>
+<ul>
+<li><p>Bab <em>Introduction</em> menyusun dasar teoretis dan kerangka analitis untuk membaca realitas pluralisme hukum.</p>
+</li>
+<li><p>Bab 5 menunjukkan bagaimana realitas tersebut berlangsung dan direspon melalui praktik yudisial dalam konteks hukum interpersonal.</p>
+</li>
+</ul>
+<p>Dengan demikian, Bab 5 berfungsi sebagai <strong>pembuktian empiris dan aplikasi konkret</strong> atas seluruh fondasi yang dibangun di Bab Introduction.</p>
+<p>Jika Anda menginginkan visualisasi hubungan ini dalam diagram atau ringkasan tabel lebih lanjut, saya siap membantu.</p>
+<p>Baik, berikut ini uraian lengkap dan naratif mengenai Bab 5 dari buku <em>Legal Pluralism in Indonesia</em> karya Ratno Lukito, dengan menyoroti: (1) fokus pembahasan, (2) alur sistematis isi bab, dan (3) analisis kritis terhadap keterkaitan antar bagiannya.</p>
+<hr>
+<h1 class="atx" id="📘-analisis-naratif-bab-5-resolution-of-interpersonal-cases-in-the-courts">📘 <strong>Analisis Naratif Bab 5: <em>Resolution of Interpersonal Cases in the Courts</em></strong></h1>
+<h2 class="atx" id="1-🎯-fokus-pembahasan-bab">1. 🎯 <strong>Fokus Pembahasan Bab</strong></h2>
+<p>Bab 5 memfokuskan diri pada <strong>bagaimana sistem peradilan Indonesia menyelesaikan konflik hukum antarindividu yang timbul dari perbedaan latar belakang hukum</strong>—baik karena perbedaan agama, adat, maupun posisi gender—dalam masyarakat yang plural secara normatif.</p>
+<p>Bab ini memperlakukan pengadilan sebagai <strong>“arena pengujian pluralisme hukum”</strong>, di mana perjumpaan antara hukum negara, hukum agama (terutama Islam), dan hukum adat benar-benar terjadi dan harus diputuskan secara konkret.</p>
+<p>Fokus utamanya adalah:</p>
+<blockquote>
+<p><em>Bagaimana hakim sebagai agen negara merespons, menavigasi, dan memutus konflik normatif antar warga negara yang tunduk pada sistem hukum yang berbeda.</em></p>
+</blockquote>
+<p>Lukito menempatkan <strong>interpersonal cases</strong> sebagai titik kritis dari konflik pluralisme hukum karena di sinilah terjadi ketegangan tajam antara:</p>
+<ul>
+<li><p><strong>aturan formal negara (hukum nasional/positif),</strong></p>
+</li>
+<li><p><strong>doktrin agama yang hidup dan diikuti masyarakat (hukum Islam),</strong></p>
+</li>
+<li><p><strong>dan nilai-nilai lokal/adat.</strong></p>
+</li>
+</ul>
+<hr>
+<h2 class="atx" id="2-🧭-alur-pembahasan-secara-sistematis">2. 🧭 <strong>Alur Pembahasan Secara Sistematis</strong></h2>
+<p>Bab ini disusun secara sistematis dengan membagi pembahasan menjadi tiga <strong>kasus studi utama</strong> yang merepresentasikan tipe konflik antarhukum dalam ruang interpersonal. Berikut alurnya:</p>
+<h3 class="atx" id="a-pengantar-bab">a. <strong>Pengantar Bab</strong></h3>
+<ul>
+<li><p>Penegasan bahwa pengadilan adalah titik temu antara berbagai sistem hukum.</p>
+</li>
+<li><p>Negara, melalui peradilan, menguji apakah pluralisme hukum bisa diselesaikan secara rasional dan adil dalam kerangka hukum nasional.</p>
+</li>
+</ul>
+<h3 class="atx" id="b-kasus-1-perkawinan-beda-agama-interfaith-marriage">b. <strong>Kasus 1: Perkawinan Beda Agama (Interfaith Marriage)</strong></h3>
+<ul>
+<li><p>Fokus pada konflik antara hukum negara (UU No. 1 Tahun 1974) dan hukum agama (Islam maupun Kristen).</p>
+</li>
+<li><p>Dibahas melalui studi kasus <em>Andy Vony v. the State</em>, di mana MA memutuskan bahwa perkawinan antar agama sah berdasarkan prinsip konstitusional (hak warga negara).</p>
+</li>
+</ul>
+<h3 class="atx" id="c-kasus-2-warisan-beda-agama-interfaith-inheritance">c. <strong>Kasus 2: Warisan Beda Agama (Interfaith Inheritance)</strong></h3>
+<ul>
+<li><p>Menelaah konflik antara hukum Islam (yang melarang pewarisan lintas agama) dan prinsip konstitusi tentang kesetaraan dan keadilan.</p>
+</li>
+<li><p>Diperkuat melalui dua studi kasus besar (<em>Jazilah v. Subandiyah</em> dan <em>Sri Widyastuti v. Bambang Setyobudhi</em>), menunjukkan bagaimana MA menggunakan "wasiat wajibah" untuk menjembatani nilai Islam dan prinsip keadilan universal.</p>
+</li>
+</ul>
+<h3 class="atx" id="d-kasus-3-warisan-berbasis-gender-gendered-inheritance">d. <strong>Kasus 3: Warisan Berbasis Gender (Gendered Inheritance)</strong></h3>
+<ul>
+<li>Menyentuh soal diskriminasi dalam hukum waris Islam (anak laki-laki 2:1 dari anak perempuan), dan bagaimana hakim menggunakan tafsir kontekstual dan prinsip keadilan konstitusional untuk memberikan solusi yang lebih egaliter.</li>
+</ul>
+<h3 class="atx" id="e-refleksi-umum-dan-penutup">e. <strong>Refleksi Umum dan Penutup</strong></h3>
+<ul>
+<li><p>Penegasan bahwa pluralisme hukum tidak bisa diselesaikan melalui hukum tertulis saja.</p>
+</li>
+<li><p>Peran hakim menjadi kunci untuk membumikan prinsip pluralisme secara dinamis dan kontekstual.</p>
+</li>
+</ul>
+<hr>
+<h2 class="atx" id="3-🔗-analisis-kritis-keterkaitan-antarbagian">3. 🔗 <strong>Analisis Kritis Keterkaitan Antarbagian</strong></h2>
+<h3 class="atx" id="a-hubungan-antara-bagian-kasus-dan-pendahuluan">a. <strong>Hubungan antara Bagian Kasus dan Pendahuluan</strong></h3>
+<p>Setiap bagian kasus merupakan <strong>konkretisasi langsung</strong> dari pengantar teoretis bab. Lukito membuka bab ini dengan menyatakan bahwa <strong>konflik pluralisme hukum nyata adanya</strong>, dan hanya bisa dimengerti secara utuh jika dianalisis melalui praktik resolusinya. Setiap studi kasus dipilih untuk mewakili spektrum persoalan yang luas: dari agama, keluarga, hingga keadilan sosial (gender). Ini menunjukkan kesadaran struktur yang sangat baik dalam menautkan teori dengan praktik.</p>
+<h3 class="atx" id="b-keterkaitan-antar-studi-kasus">b. <strong>Keterkaitan antar studi kasus</strong></h3>
+<p>Ketiga kasus tidak berdiri sendiri, melainkan membentuk <strong>spektrum konflik hukum interpersonal</strong>:</p>
+<ul>
+<li><p>Kasus perkawinan lintas agama menekankan ketegangan antara hukum agama dan hukum negara.</p>
+</li>
+<li><p>Kasus warisan lintas agama menunjukkan bagaimana konflik itu berdampak ekonomi dan emosional.</p>
+</li>
+<li><p>Kasus gender menguji apakah prinsip agama bisa ditafsirkan ulang demi keadilan sosial.</p>
+</li>
+</ul>
+<p>Dengan demikian, ketiga kasus tersebut secara bertahap membangun narasi tentang <strong>fleksibilitas dan batas-batas hukum negara dalam mengakomodasi pluralisme</strong>.</p>
+<h3 class="atx" id="c-peran-hakim-sebagai-titik-temu">c. <strong>Peran Hakim sebagai Titik Temu</strong></h3>
+<p>Dalam ketiga kasus, Lukito menunjukkan bahwa hakim tidak sekadar menjalankan hukum positif, melainkan aktif menafsirkan, menyeimbangkan, dan kadang bahkan melampaui teks hukum. Mereka menggunakan:</p>
+<ul>
+<li><p>Konstitusi (Pasal 27 tentang kesetaraan)</p>
+</li>
+<li><p>Doktrin Islam (seperti <em>wasiat wajibah</em>)</p>
+</li>
+<li><p>Nilai keadilan substantif</p>
+</li>
+</ul>
+<p>Ini menunjukkan bahwa <strong>postulat hukum nasional</strong> yang dibahas dalam bab <em>Introduction</em> berperan dalam praktik konkret melalui <strong>penalaran yudisial</strong>.</p>
+<h3 class="atx" id="d-catatan-kritis">d. <strong>Catatan Kritis</strong></h3>
+<ul>
+<li><p><strong>Koherensi internal antar bagian sangat kuat.</strong> Tiap kasus dibangun dengan konteks, fakta hukum, posisi para pihak, analisis hakim, dan refleksi teoretis.</p>
+</li>
+<li><p>Namun, <strong>analisis terhadap dinamika kekuasaan negara terhadap agama</strong> masih bisa lebih didalami. Misalnya, apakah hakim berwenang menafsirkan agama, atau hanya menengahi?</p>
+</li>
+<li><p>Juga, keterlibatan komunitas adat dan hukum adat sebagai sistem hukum non-negara tidak banyak muncul dalam bab ini, padahal disebut dalam pengantar sebagai bagian dari pluralisme hukum.</p>
+</li>
+</ul>
+<hr>
+<h2 class="atx" id="📌-penutup">📌 <strong>Penutup</strong></h2>
+<p>Bab 5 merupakan puncak aplikatif dari keseluruhan kerangka teoritik yang dibangun dalam buku ini. Struktur bab ini memungkinkan pembaca untuk:</p>
+<ul>
+<li><p>Melihat langsung kompleksitas pluralisme hukum di pengadilan,</p>
+</li>
+<li><p>Mengamati bagaimana prinsip keadilan, kesetaraan, dan agama dinegosiasikan,</p>
+</li>
+<li><p>Menilai bahwa pluralisme hukum bukan sekadar kondisi sosial, tetapi arena politik hukum dan yurisprudensi aktif.</p>
+</li>
+</ul>
+<hr>
+<h1 class="atx" id="klaim-dan-argumentasi-dalam-bab-5">Klaim dan Argumentasi dalam Bab 5</h1>
+<h2 class="atx" id="🧩-1-klaim-utama-dan-sub-klaim-ratno-lukito-dalam-bab-5">🧩 <strong>1. Klaim Utama dan Sub-Klaim Ratno Lukito dalam Bab 5</strong></h2>
+<h3 class="atx" id="🟦-klaim-utama">🟦 <strong>Klaim Utama</strong></h3>
+<p>Klaim utama yang dinyatakan oleh Lukito dalam Bab 5 adalah bahwa:</p>
+<blockquote>
+<p><strong>“Pengadilan di Indonesia merupakan arena utama tempat pluralisme hukum diuji, dinegosiasikan, dan direkonstruksi melalui kasus-kasus konkret yang melibatkan konflik norma antara hukum negara, hukum agama, dan hukum adat.”</strong></p>
+</blockquote>
+<p>Klaim ini menyatakan bahwa pluralisme hukum di Indonesia bukan hanya fakta sosial, tetapi realitas hukum yang secara aktif dikonstruksi ulang dalam forum yudisial, terutama dalam <strong>kasus interpersonal</strong> yang menyentuh domain sensitif seperti perkawinan, warisan, dan gender.</p>
+<h3 class="atx" id="🟩-sub-klaim">🟩 <strong>Sub-Klaim</strong></h3>
+<p>Dari klaim utama ini, muncul sejumlah sub-klaim penting yang mendukung posisi Lukito:</p>
+<ol>
+<li><p><strong>Sub-Klaim 1</strong>: <strong>Konflik antar sistem hukum tidak dapat diselesaikan semata-mata melalui unifikasi hukum nasional.</strong><br>Negara cenderung gagal menangani pluralisme hukum hanya melalui produk legislasi, karena sistem hukum resmi tidak mampu mencakup kompleksitas norma sosial yang hidup di masyarakat.</p>
+</li>
+<li><p><strong>Sub-Klaim 2</strong>: <strong>Hakim memainkan peran aktif sebagai agen negara sekaligus penafsir nilai plural dalam masyarakat.</strong><br>Dalam kasus-kasus pluralisme hukum, hakim tidak hanya menerapkan hukum formal, tetapi juga menavigasi dan menafsir norma-norma adat dan agama.</p>
+</li>
+<li><p><strong>Sub-Klaim 3</strong>: <strong>Putusan pengadilan sering kali tidak berangkat dari kepatuhan literal (luruih taluncua) terhadap hukum agama atau hukum negara, melainkan berlandaskan pada postulat hukum nasional seperti keadilan, kesetaraan, dan kemanusiaan.</strong></p>
+</li>
+<li><p><strong>Sub-Klaim 4</strong>: <strong>Mekanisme kontekstual seperti wasiat wajibah, tafsir konstitusional, dan pembacaan progresif terhadap norma agama menjadi alat yudisial dalam menjembatani konflik antar sistem hukum.</strong></p>
+</li>
+</ol>
+<hr>
+<h2 class="atx" id="🔍-2-argumentasi-yang-digunakan-lukito-untuk-mendukung-klaim-klaim-tersebut">🔍 <strong>2. Argumentasi yang Digunakan Lukito untuk Mendukung Klaim-Klaim Tersebut</strong></h2>
+<p>Lukito menyusun argumentasinya dengan pendekatan yang bersifat deduktif dan berbasis pada kajian kasus konkret. Ia mengintegrasikan refleksi normatif, analisis tekstual hukum, dan praktik yudisial aktual. Berikut bentuk utama argumentasinya:</p>
+<h3 class="atx" id="🧭-a-penggunaan-studi-kasus-interpersonal">🧭 a. <strong>Penggunaan Studi Kasus Interpersonal</strong></h3>
+<p>Lukito menyajikan empat studi kasus utama sebagai <strong>evidence-based reasoning</strong> (argumentasi berdasarkan bukti) untuk menunjukkan bagaimana pluralisme hukum beroperasi di pengadilan:</p>
+<ul>
+<li><p><strong>Kasus perkawinan beda agama</strong> menunjukkan bahwa ketika UU tidak jelas, hakim berpijak pada konstitusi dan prinsip kesetaraan.</p>
+</li>
+<li><p><strong>Kasus warisan beda agama (Jazilah &amp; Sri Widyastuti)</strong> memperlihatkan bagaimana hakim menggunakan <em>wasiat wajibah</em> untuk mengatasi kekakuan fiqh.</p>
+</li>
+<li><p><strong>Kasus warisan berbasis gender</strong> menunjukkan bahwa bahkan prinsip eksplisit hukum Islam dapat ditafsirkan ulang melalui nilai keadilan substantif.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Kutipan dwibahasa (tentang pengadilan sebagai arena utama pluralisme hukum):</strong><br><strong>EN:</strong> "The courts are the real testing grounds of legal pluralism in Indonesia, since the several substantive rules of adat, Islamic, and Dutch civil law cannot be brought completely into line using legislation."<br><strong>ID:</strong> "Pengadilan adalah arena utama pengujian pluralisme hukum di Indonesia, karena berbagai aturan substantif dari hukum adat, Islam, dan hukum sipil Belanda tidak dapat sepenuhnya diselaraskan melalui legislasi."</p>
+</blockquote>
+<h3 class="atx" id="🧭-b-argumentasi-konstitusional-dan-filosofis">🧭 b. <strong>Argumentasi Konstitusional dan Filosofis</strong></h3>
+<p>Dalam setiap analisis kasus, Lukito menunjukkan bahwa hakim tidak hanya mengacu pada UU, tetapi menggunakan <strong>prinsip dasar konstitusi sebagai "postulat hukum nasional"</strong>, seperti kesetaraan warga negara, hak asasi, dan keadilan.</p>
+<blockquote>
+<p><strong>Kutipan dwibahasa (tentang postulat nasional):</strong><br><strong>EN:</strong> “...law cannot in fact be outlawed since its prohibition would only transgress the Constitutional Law of the country, particularly Article 27.”<br><strong>ID:</strong> "...tidak dapat dilarang oleh hukum karena pelarangannya justru akan melanggar Hukum Dasar Negara, khususnya Pasal 27."</p>
+</blockquote>
+<h3 class="atx" id="🧭-c-argumentasi-tafsir-dan-ijtihad">🧭 c. <strong>Argumentasi Tafsir dan Ijtihad</strong></h3>
+<p>Lukito mendukung klaimnya dengan menunjukkan bagaimana hakim menggunakan instrumen hukum Islam seperti <em>wasiat wajibah</em> untuk memungkinkan integrasi nilai agama dengan nilai hukum negara.</p>
+<blockquote>
+<p><strong>Kutipan dwibahasa:</strong><br><strong>EN:</strong> "The willingness of the Supreme Court to give a share to non-Muslim heirs by using the legal tool of obligatory bequest was, however, by no means an innovation..."<br><strong>ID:</strong> "Kesediaan Mahkamah Agung untuk memberikan bagian kepada ahli waris non-Muslim melalui alat hukum berupa wasiat wajibah, bukanlah suatu inovasi..."</p>
+</blockquote>
+<hr>
+<p>✅ Dengan demikian, klaim-klaim utama dan sub-klaim dalam Bab 5 didukung secara konsisten oleh serangkaian argumentasi berbasis praktik pengadilan, teks hukum, prinsip konstitusi, dan fleksibilitas tafsir dalam hukum Islam.</p>
+<p>Baik, saya lanjutkan dengan menjawab pertanyaan 3, 4, dan 5 secara sistematis dan mendalam. Setelah selesai, seluruh bagian ini akan saya masukkan ke dalam canvas <strong>Bab05 – Klaim dan Argumentasi</strong>.</p>
+<hr>
+<h2 class="atx" id="🔄-3-hubungan-antarklaim-secara-sistematis">🔄 <strong>3. Hubungan Antarklaim Secara Sistematis</strong></h2>
+<p>Klaim utama dan sub-klaim yang dikemukakan Lukito dalam Bab 5 tidak berdiri sendiri, tetapi saling menopang dan membentuk satu struktur argumentatif yang utuh. Hubungannya dapat dijelaskan sebagai berikut:</p>
+<ul>
+<li><p>Klaim bahwa <strong>pengadilan adalah arena utama pluralisme hukum</strong> menjadi poros utama, yang kemudian dibuktikan dengan <strong>sub-klaim bahwa legislasi tidak cukup menyelesaikan konflik pluralisme</strong>. Artinya, legislasi yang bersifat satu dimensi tidak mampu menjangkau kerumitan hubungan antarhukum dalam masyarakat.</p>
+</li>
+<li><p>Untuk menutupi kekosongan dan konflik yang tidak bisa diselesaikan oleh legislasi, <strong>peran aktif hakim sebagai agen interpretatif negara</strong> menjadi sangat penting. Ini tidak hanya soal penerapan hukum, tetapi soal perumusan makna hukum dalam konteks plural.</p>
+</li>
+<li><p>Kemampuan hakim dalam menjalankan fungsi ini tidak dilepaskan begitu saja, tetapi diarahkan oleh <strong>postulat hukum nasional</strong>, yang menjadi pengarah moral, ideologis, dan filosofis bagi praktik yudisial.</p>
+</li>
+<li><p>Dalam menjalankan tugas ini, hakim tidak hanya menerapkan hukum agama atau hukum negara, tetapi juga <strong>mengintegrasikan nilai konstitusi dengan fleksibilitas tafsir hukum Islam</strong>, seperti melalui wasiat wajibah, prinsip maslahat, dan kesetaraan substantif.</p>
+</li>
+</ul>
+<p>Dengan demikian, struktur argumentasi Lukito bersifat <strong>integratif dan berlapis</strong>, di mana klaim-klaim yang tampaknya bersifat spesifik (seperti penggunaan wasiat wajibah atau kesetaraan gender dalam waris) sebenarnya menjabarkan bagian-bagian dari kerangka klaim besar bahwa <strong>pengadilan adalah tempat negosiasi pluralisme hukum secara praksis</strong>.</p>
+<hr>
+<h2 class="atx" id="📚-4-penggunaan-konsep-konsep-bab-introduction-dalam-bab-5">📚 <strong>4. Penggunaan Konsep-Konsep Bab Introduction dalam Bab 5</strong></h2>
+<p>Bab 5 tidak hanya menggunakan konsep dari Bab <em>Introduction</em>, tetapi benar-benar <strong>mengimplementasikan kerangka teoretis dari Bab Introduction ke dalam analisis kasus nyata</strong>. Berikut ini elaborasi penggunaan konsep-konsep tersebut:</p>
+<h3 class="atx" id="a-pluralisme-hukum">a. <strong>Pluralisme Hukum</strong></h3>
+<p>Konsep ini menjadi dasar seluruh narasi Bab 5. Semua kasus yang dibahas—perkawinan beda agama, warisan lintas agama, dan warisan berbasis gender—merupakan manifestasi dari pluralisme hukum dalam konteks konkret.</p>
+<blockquote>
+<p><strong>Kutipan dwibahasa (Introduction):</strong><br><strong>EN:</strong> "Legal pluralism refers to the coexistence of different legal systems... within the same social field."<br><strong>ID:</strong> "Pluralisme hukum merujuk pada keberadaan sistem hukum yang berbeda... dalam satu ranah sosial yang sama."</p>
+</blockquote>
+<h3 class="atx" id="b-postulat-hukum-nasional">b. <strong>Postulat Hukum Nasional</strong></h3>
+<p>Bab 5 menunjukkan bagaimana hakim menggunakan prinsip-prinsip dasar seperti kesetaraan (Pasal 27 UUD 1945), keadilan, dan kemanusiaan untuk menafsir konflik hukum. Ini merupakan aplikasi langsung dari konsep postulat hukum nasional sebagai <strong>nilai penyaring</strong> antara norma tidak resmi dan hukum resmi.</p>
+<blockquote>
+<p><strong>EN:</strong> "Whether or not certain normative orderings... can be accepted as state law will depend on their conformity to the postulate."<br><strong>ID:</strong> "Apakah suatu tatanan normatif... dapat diterima sebagai hukum negara sangat tergantung pada kesesuaiannya dengan postulat hukum nasional."</p>
+</blockquote>
+<h3 class="atx" id="c-tiga-lapisan-hukum-three-layered-law">c. <strong>Tiga Lapisan Hukum (Three-Layered Law)</strong></h3>
+<p>Dalam Bab 5, setiap kasus dapat dilihat melalui lensa tiga lapisan:</p>
+<ul>
+<li><p>Hukum Resmi → UU Perkawinan, Kompilasi Hukum Islam</p>
+</li>
+<li><p>Hukum Tidak Resmi → norma agama (fiqh), hukum adat</p>
+</li>
+<li><p>Postulat Hukum → nilai-nilai konstitusi dan keadilan sosial</p>
+</li>
+</ul>
+<p>Ketiganya diolah oleh hakim dalam proses penyelesaian perkara.</p>
+<h3 class="atx" id="d-pendekatan-yudisial">d. <strong>Pendekatan Yudisial</strong></h3>
+<p>Bab 5 sepenuhnya menerapkan pendekatan yudisial seperti yang dijelaskan di Bab Introduction: <strong>pluralisme hukum tidak hanya dipahami sebagai fakta, tetapi ditelusuri melalui pola konflik dan resolusi konkret di pengadilan.</strong></p>
+<blockquote>
+<p><strong>EN:</strong> "The judicial approach... sees pluralism from patterns of conflict and resolution in specific legal issues."<br><strong>ID:</strong> "Pendekatan yudisial... melihat pluralisme dari pola konflik dan resolusi dalam isu hukum yang spesifik."</p>
+</blockquote>
+<hr>
+<h2 class="atx" id="🧠-5-kutipan-dwibahasa-yang-mengukuhkan-keterkaitan-konseptual">🧠 <strong>5. Kutipan Dwibahasa yang Mengukuhkan Keterkaitan Konseptual</strong></h2>
+<p>Berikut beberapa kutipan dwibahasa tambahan yang memperkuat hubungan antara teori di Bab <em>Introduction</em> dan praktik di Bab 5:</p>
+<blockquote>
+<p><strong>EN:</strong> “Judges are in essence an active agent in the process of national law development... The decision of the judges in the Supreme Court... reflected compliance with national legal values.”<br><strong>ID:</strong> “Hakim pada dasarnya adalah agen aktif dalam proses pembangunan hukum nasional... Putusan hakim Mahkamah Agung... mencerminkan kepatuhan terhadap nilai-nilai hukum nasional.”</p>
+</blockquote>
+<blockquote>
+<p><strong>EN:</strong> “Postulates of national law serve as a filter... whether non-state legal norms can be incorporated into state law.”<br><strong>ID:</strong> “Postulat hukum nasional berfungsi sebagai penyaring... apakah norma hukum non-negara dapat diadopsi ke dalam hukum negara.”</p>
+</blockquote>
+<hr>
+<h1 class="atx" id="ringkasan-klaim-dan-argumentasi-bab-5">Ringkasan Klaim dan Argumentasi Bab 5</h1>
+<h2 class="atx" id="1-klaim-utama-dan-sub-klaim-ratno-lukito-dalam-bab-5">1. Klaim Utama dan Sub-Klaim Ratno Lukito dalam Bab 5</h2>
+<h3 class="atx" id="klaim-utama">Klaim Utama</h3>
+<blockquote>
+<p><strong>“Pengadilan di Indonesia merupakan arena utama tempat pluralisme hukum diuji, dinegosiasikan, dan direkonstruksi melalui kasus-kasus konkret yang melibatkan konflik norma antara hukum negara, hukum agama, dan hukum adat.”</strong></p>
+</blockquote>
+<h3 class="atx" id="sub-klaim">Sub-Klaim</h3>
+<ol>
+<li>Legislasi tidak cukup menyelesaikan konflik pluralisme hukum.</li>
+<li>Hakim memainkan peran aktif sebagai agen negara dan penafsir norma plural.</li>
+<li>Putusan hakim berlandaskan pada postulat hukum nasional, bukan semata teks hukum positif.</li>
+<li>Instrumen seperti <em>wasiat wajibah</em> dan tafsir konstitusional dipakai untuk menjembatani konflik normatif.</li>
+</ol>
+<hr>
+<h2 class="atx" id="2-argumentasi-yang-mendukung-klaim-klaim">2. Argumentasi yang Mendukung Klaim-Klaim</h2>
+<h3 class="atx" id="a-studi-kasus-interpersonal">a. Studi Kasus Interpersonal</h3>
+<ul>
+<li>Perkawinan beda agama → Hakim gunakan Pasal 27 UUD 1945</li>
+<li>Warisan beda agama → Digunakan <em>wasiat wajibah</em></li>
+<li>Warisan berbasis gender → Tafsir progresif terhadap fiqh</li>
+</ul>
+<blockquote>
+<p><strong>EN:</strong> "The courts are the real testing grounds of legal pluralism in Indonesia..."<br><strong>ID:</strong> "Pengadilan adalah arena utama pengujian pluralisme hukum di Indonesia..."【99:0】</p>
+</blockquote>
+<h3 class="atx" id="b-argumentasi-konstitusional">b. Argumentasi Konstitusional</h3>
+<blockquote>
+<p><strong>EN:</strong> "...law cannot in fact be outlawed since its prohibition would only transgress the Constitutional Law..."<br><strong>ID:</strong> "...tidak dapat dilarang oleh hukum karena pelarangannya justru akan melanggar Hukum Dasar Negara..."【99:8】</p>
+</blockquote>
+<h3 class="atx" id="c-argumentasi-tafsir-hukum-islam">c. Argumentasi Tafsir Hukum Islam</h3>
+<blockquote>
+<p><strong>EN:</strong> "The willingness of the Supreme Court to give a share to non-Muslim heirs by using the legal tool of obligatory bequest..."<br><strong>ID:</strong> "Kesediaan Mahkamah Agung untuk memberikan bagian kepada ahli waris non-Muslim melalui alat hukum berupa wasiat wajibah..."【99:9】</p>
+</blockquote>
+<hr>
+
+
+<h2 class="atx" id="3-hubungan-sistematis-antar-klaim">3. Hubungan Sistematis antar Klaim</h2>
+<ul>
+<li>Legislasi gagal → Hakim jadi sentral → Perlu prinsip nilai → Gunakan postulat hukum nasional.</li>
+<li>Peran hakim menjadi penghubung antara hukum resmi, tidak resmi, dan nilai konstitusional.</li>
+<li>Seluruh kasus membentuk satu argumen bahwa pengadilan adalah titik temu dan arena mediasi pluralisme hukum secara praktis.</li>
+</ul>
+
+
+<hr>
+<h2 class="atx" id="4-penggunaan-konsep-konsep-bab-introduction-dalam-bab-5">4. Penggunaan Konsep-konsep Bab Introduction dalam Bab 5</h2>
+<h3 class="atx" id="a-pluralisme-hukum-1">a. Pluralisme Hukum</h3>
+<blockquote>
+<p><strong>EN:</strong> "Legal pluralism refers to the coexistence of different legal systems..."<br><strong>ID:</strong> "Pluralisme hukum merujuk pada keberadaan sistem hukum yang berbeda..."【93:0】</p>
+</blockquote>
+<h3 class="atx" id="b-postulat-hukum-nasional-1">b. Postulat Hukum Nasional</h3>
+<blockquote>
+<p><strong>EN:</strong> "...can be accepted as state law will depend on their conformity to the postulate."<br><strong>ID:</strong> "...dapat diterima sebagai hukum negara sangat tergantung pada kesesuaiannya dengan postulat..."【93:4】</p>
+</blockquote>
+<h3 class="atx" id="c-tiga-lapisan-hukum-three-layered-law-1">c. Tiga Lapisan Hukum (Three-Layered Law)</h3>
+<ul>
+<li>Hukum resmi: UU</li>
+<li>Hukum tidak resmi: fiqh, adat</li>
+<li>Postulat hukum: keadilan, kesetaraan, kemanusiaan</li>
+</ul>
+<h3 class="atx" id="d-pendekatan-yudisial-1">d. Pendekatan Yudisial</h3>
+<blockquote>
+<p><strong>EN:</strong> "The judicial approach... sees pluralism from patterns of conflict and resolution in specific legal issues."<br><strong>ID:</strong> "Pendekatan yudisial... melihat pluralisme dari pola konflik dan resolusi dalam isu hukum yang spesifik."【93:15】</p>
+</blockquote>
+<hr>
+<h2 class="atx" id="5-kutipan-dwibahasa-tambahan">5. Kutipan Dwibahasa Tambahan</h2>
+<blockquote>
+<p><strong>EN:</strong> "Judges are in essence an active agent in the process of national law development..."<br><strong>ID:</strong> "Hakim pada dasarnya adalah agen aktif dalam proses pembangunan hukum nasional..."【99:12】</p>
+</blockquote>
+<blockquote>
+<p><strong>EN:</strong> "Postulates of national law serve as a filter..."<br><strong>ID:</strong> "Postulat hukum nasional berfungsi sebagai penyaring..."【93:4】</p>
+</blockquote>
+<hr>
+
+
+<h2 class="atx" id="🔍-penerapan-teori-chiba-dalam-analisis-kasus-di-bab-5">🔍 <strong>Penerapan Teori Chiba dalam Analisis Kasus di Bab 5</strong></h2>
+<h3 class="atx" id="1-hukum-resmi-dan-hukum-tidak-resmi">1. <strong>Hukum Resmi dan Hukum Tidak Resmi</strong></h3>
+<p>Dalam setiap kasus, Lukito menekankan bahwa konflik hukum muncul karena <strong>benturan antara hukum resmi dan hukum tidak resmi</strong>:</p>
+<ul>
+<li><p>Dalam <strong>kasus Andy Vony</strong>, hukum resmi (UU No. 1 Tahun 1974) tidak secara eksplisit melarang perkawinan beda agama, tetapi tafsir hukum agama (hukum tidak resmi) melarangnya. Pengadilan akhirnya menggunakan <strong>konstitusi sebagai postulat hukum</strong> untuk mengesahkan pernikahan tersebut.</p>
+</li>
+<li><p>Dalam <strong>kasus warisan beda agama</strong> (Jazilah dan Sri Widyastuti), norma fiqh Islam (yang tidak mengakui waris beda agama) berbenturan dengan nilai-nilai kesetaraan konstitusional. Mahkamah Agung mengatasi konflik ini dengan menggunakan <em>wasiat wajibah</em>—yaitu instrumen internal fiqh—namun ditafsir secara sosial dan moral sesuai <strong>postulat keadilan nasional</strong>.</p>
+</li>
+<li><p>Dalam <strong>kasus warisan berbasis gender</strong>, norma fiqh (anak laki-laki mendapat dua kali bagian) ditafsir ulang secara progresif, menggunakan nilai konstitusi tentang <strong>kesetaraan gender</strong> sebagai dasar.</p>
+</li>
+</ul>
+<h3 class="atx" id="2-postulat-hukum-sebagai-penentu-arah">2. <strong>Postulat Hukum sebagai Penentu Arah</strong></h3>
+<p>Dalam semua kasus, <strong>postulat hukum nasional menjadi kunci</strong> yang memungkinkan pengadilan mengintegrasikan norma tidak resmi ke dalam putusan hukum yang sah. Nilai-nilai seperti:</p>
+<ul>
+<li><p><em>kesetaraan</em> (antara warga negara atau gender),</p>
+</li>
+<li><p><em>keadilan substantif</em>, dan</p>
+</li>
+<li><p><em>pengakuan identitas agama</em></p>
+</li>
+</ul>
+<p>…diposisikan sebagai penuntun bagaimana norma fiqh atau agama seharusnya diterapkan dalam konteks negara hukum modern.</p>
+<h3 class="atx" id="3-hakim-sebagai-penafsir-tiga-lapisan">3. <strong>Hakim sebagai Penafsir Tiga Lapisan</strong></h3>
+<p>Hakim tampil sebagai figur sentral yang <strong>menavigasi antara hukum resmi, hukum tidak resmi, dan postulat hukum</strong>. Ini adalah bentuk aplikasi konkret kerangka Chiba:</p>
+<ul>
+<li><p>Hakim tidak sekadar menjalankan hukum negara secara literal.</p>
+</li>
+<li><p>Ia tidak tunduk sepenuhnya pada otoritas keagamaan.</p>
+</li>
+<li><p>Ia juga tidak mengabaikan nilai-nilai sosial konstitusional.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Kutipan Pendukung (dwibahasa)</strong><br><strong>EN:</strong> “It can be said therefore that the judges were, without acknowledging it, basing themselves on the Dutch-rooted principle of 'voluntary acceptance' by the claimant...”<br><strong>ID:</strong> "Dapat dikatakan bahwa hakim, tanpa secara eksplisit mengakuinya, mendasarkan diri pada prinsip ‘penerimaan sukarela’ yang berakar dari hukum Belanda..."</p>
+</blockquote>
+<hr>
+<h2 class="atx" id="🧠-ulasan-kritis-terhadap-penggunaan-teori-chiba">🧠 <strong>Ulasan Kritis terhadap Penggunaan Teori Chiba</strong></h2>
+<h3 class="atx" id="🟩-kekuatan-penerapan">🟩 Kekuatan Penerapan</h3>
+<ul>
+<li><p><strong>Koherensi antara teori dan praktik sangat kuat.</strong> Lukito tidak hanya menyebut teori Chiba sebagai hiasan konseptual, tetapi benar-benar memakainya sebagai <em>alat baca</em> untuk memahami cara kerja pluralisme hukum dalam praktik yudisial.</p>
+</li>
+<li><p>Dengan teori ini, Lukito <strong>berhasil menjelaskan fleksibilitas hukum Islam di pengadilan</strong>, bukan sebagai pelanggaran terhadap doktrin agama, tetapi sebagai penyesuaian terhadap postulat keadilan konstitusional.</p>
+</li>
+</ul>
+<h3 class="atx" id="🟥-keterbatasan-dan-kritik">🟥 Keterbatasan dan Kritik</h3>
+<ol>
+<li><p><strong>Minim eksplorasi terhadap postulat hukum lokal (adat):</strong><br>Walau Chiba memberi tempat penting bagi hukum adat sebagai bagian dari sistem tidak resmi, Lukito lebih fokus pada relasi antara hukum negara dan Islam. Peran hukum adat dalam konflik interpersonal nyaris tidak muncul dalam Bab 5.</p>
+</li>
+<li><p><strong>Tidak problematisasi siapa yang menentukan postulat hukum nasional:</strong><br>Lukito cenderung menerima postulat nasional (seperti kesetaraan dan keadilan) sebagai nilai bersama yang netral, padahal dalam praktik politik hukum, nilai-nilai itu <strong>juga merupakan produk kekuasaan negara</strong>. Siapa yang menetapkan batas keadilan dan kesetaraan? Apakah hakim punya kebebasan penuh, atau justru dibatasi oleh ideologi negara?</p>
+</li>
+<li><p><strong>Kurangnya refleksi terhadap pluralisme kelembagaan:</strong><br>Sementara Chiba memberi ruang pada keberagaman sumber hukum, Lukito tidak banyak membahas bagaimana <strong>struktur kelembagaan pengadilan</strong> (umum vs agama) ikut memengaruhi fleksibilitas penerapan teori ini.</p>
+</li>
+</ol>
+<hr>
+<h2 class="atx" id="📌-kesimpulan-1">📌 Kesimpulan</h2>
+<p>Secara umum, <strong>teori Chiba sangat efektif digunakan Lukito sebagai kerangka analisis dalam membaca konflik dan resolusi pluralisme hukum</strong> di ruang yudisial. Ia membantu menjelaskan bagaimana hakim bukan hanya agen hukum negara, tetapi juga mediator nilai-nilai sosial dan keagamaan yang hidup dalam masyarakat. Meski demikian, pendekatan Lukito masih dapat diperkuat dengan eksplorasi lebih kritis terhadap dinamika kekuasaan dalam perumusan “postulat nasional” dan keberagaman kelembagaan hukum itu sendiri.</p>
+<p>&nbsp;</p>
+</article>
+</body>
+</html>
